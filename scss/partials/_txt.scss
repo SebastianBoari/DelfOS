@@ -1,50 +1,50 @@
 /* TXT */
 .bigtitle{
-    font-size: var(--bigtitle);
-    color: var(--darkblue);
+    font-size: $bigtitle;
+    color: $darkblue;
     font-weight: 600;
     line-height: 5.6rem;
 }
 .title{
-    font-size: var(--title);
-    color: var(--darkblue);
+    font-size: $title;
+    color: $darkblue;
     font-weight: 600;
     line-height: 5.6rem;
 }
 .smalltitle{
-    font-size: var(--smalltitle);
-    color: var(--darkblue);
+    font-size: $smalltitle;
+    color: $darkblue;
     font-weight: 600;
     line-height: 4rem;
 }
 .xstitle{
-    font-size: var(--txt);
-    color: var(--darkblue);
+    font-size: $txt;
+    color: $darkblue;
     font-weight: 600;
     line-height: 2.4rem;
 }
 .txt{
-    font-size: var(--txt);
-    color: var(--darkblue);
+    font-size: $txt;
+    color: $darkblue;
     line-height: 3.2rem;
 }
 .smalltxt{
-    font-size: var(--smalltxt);
-    color: var(--darkblue);
+    font-size: $smalltxt;
+    color: $darkblue;
     line-height: 2.4rem;
 }
 .txt--grey{
-    font-size: var(--txt);
-    color: var(--greyblue);
+    font-size: $txt;
+    color: $greyblue;
     line-height: 3.2rem;
 }
 .smalltxt--grey{
-    font-size: var(--smalltxt);
-    color: var(--greyblue);
+    font-size: $smalltxt;
+    color: $greyblue;
     line-height: 2.4rem;
 }
 .caption{
-    font-size: var(--caption);
-    color: var(--darkblue);
+    font-size: $caption;
+    color: $darkblue;
     line-height: 1.6rem;
 }

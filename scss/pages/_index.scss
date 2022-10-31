@@ -1,7 +1,7 @@
 
 /* SECTION HOME BLOQUE 1 */
 .section1__home{
-    padding: var(--xxlspace) 0;
+    padding: $xxlspace 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -25,16 +25,16 @@
     .section1__home{
         justify-content: center;
         padding-top: 0;
-        padding-bottom: var(--xlspace);
+        padding-bottom: $xlspace;
     }
     .home1__txt{
-        padding: var(--lspace);
+        padding: $lspace;
         max-width: 120rem;
         gap: 4rem;
     }
     .home1__img{
-        margin-top: var(--xlspace);
-        margin-bottom: var(--xlspace);
+        margin-top: $xlspace;
+        margin-bottom: $xlspace;
         order: -1;
     }
 
@@ -43,7 +43,7 @@
 /* SECTION HOME BLOQUE 2 */
 
 .section2__home{
-    padding: var(--xxlspace) 0;
+    padding: $xxlspace 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -66,17 +66,17 @@
 @media (max-width: 1400px){
     .section2__home{
         padding-top: 0;
-        padding-bottom: var(--xlspace);
+        padding-bottom: $xlspace;
         justify-content: center;
     }
     .home2__txt{
-        padding: var(--lspace);
+        padding: $lspace;
         max-width: 120rem;
         gap: 4rem;
     }
     .home2__img{
-        margin-top: var(--xlspace);
-        margin-bottom: var(--xlspace);
+        margin-top: $xlspace;
+        margin-bottom: $xlspace;
         order: -1;
     }
     .home2__button{
@@ -86,12 +86,12 @@
 
 /* SECTION HOME BLOQUE 3 y 4 */
 .section3__home{
-    padding-top: var(--xlspace);
-    padding-bottom: var(--lspace);
+    padding-top: $xlspace;
+    padding-bottom: $lspace;
 }
 .section4__home{
-    padding-top: var(--lspace);
-    padding-bottom: var(--xlspace);
+    padding-top: $lspace;
+    padding-bottom: $xlspace;
 }
 .section3__home, .section4__home{
     display: flex;
@@ -110,7 +110,7 @@
         justify-content: center;
     }
     .home3__txt, .home4__txt{
-        padding: var(--lspace);
+        padding: $lspace;
         max-width: 120rem;
     }
     .home4__img{
@@ -124,7 +124,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: var(--xlspace) 0;
+    padding: $xlspace 0;
 }
 
 .card{
@@ -145,7 +145,7 @@
 }
 
 .card__txt{
-    padding: var(--sspace);
+    padding: $sspace;
 }
 .card__title{
     padding-bottom: .8rem;
@@ -160,13 +160,13 @@
 .card__link{
     text-decoration: none;
     padding: .8rem 1.6rem;
-    font-size: var(--smalltxt);
-    color: var(--lightblue);
+    font-size: $smalltxt;
+    color: $lightblue;
     line-height: 1.6rem;
     transition: .3s;
 }
 .card__link:hover{
-    color: var(--darkblue);
+    color: $darkblue;
 }
 
 @media (max-width: 992px){
@@ -174,7 +174,7 @@
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
-        padding: var(--lspace) 0;
+        padding: $lspace 0;
         gap: 3.2rem;
     }
 }
@@ -183,7 +183,7 @@
 /* BLOQUE 6 CON FONDO DE IMAGEN */
 
 .background__img1{
-    background-image: url(../../img/backgroundimg1.png);
+    background-image: url(https://i.imgur.com/xo5mo08.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -193,7 +193,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: var(--xlspace) 0;
+    padding: $xlspace 0;
     gap: 1rem;
 }
 .section6__home .home6__txt{
@@ -206,10 +206,10 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    padding: var(--lspace);
+    padding: $lspace;
 }
 .home6__txt div .title{
-    padding-bottom: var(--sspace);
+    padding-bottom: $sspace;
 }
 
 @media (max-width: 992px){

@@ -8,7 +8,7 @@
     gap: 3.2rem;
 }
 .footer__form{
-    background-color: var(--white);
+    background-color: $white;
     height: 20rem;
     display: flex;
     flex-flow: row wrap;
@@ -24,22 +24,22 @@
     width: 65rem;
     height: 5rem;
     border: none;
-    color: var(--darkblue);
-    font-size: var(--smalltitle);
+    color: $darkblue;
+    font-size: $smalltitle;
 }
 ::placeholder{
     height: auto;
     font-weight: 400;
-    color: var(--darkblue);
+    color: $darkblue;
 }
 .form__btn{
     padding: 1.8rem 6rem;
     border: none;
-    font-size: var(--smalltxt);
-    color: var(--white);
-    background-color: var(--lightblue);
+    font-size: $smalltxt;
+    color: $white;
+    background-color: $lightblue;
 }.form__btn:hover{
-    background-color: var(--darkblue);
+    background-color: $darkblue;
 }
 .footer__navbar{
     display: flex;
@@ -67,15 +67,15 @@
 
 .footer__menu li a{
     text-decoration: none;
-    padding: var(--sspace);
+    padding: $sspace;
     padding-left: 0;
-    color: var(--darkblue);
-    font-size: var(--smalltxt);
+    color: $darkblue;
+    font-size: $smalltxt;
     font-weight: 400;
     transition: .8s;
 }
 .footer__menu li a:hover{
-    color: var(--lightblue);
+    color: $lightblue;
 }
 .footer__end{
     display: flex;
