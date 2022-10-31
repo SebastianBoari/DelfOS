@@ -1,24 +1,24 @@
-:root {
+/* VARIABLES */
+
     /* Colors */
-    --grey: #F2F4F7;
-    --white: #ffffff;
-    --darkblue: #244975;
-    --greyblue: #5D7698;
-    --lightblue: #0373E2;
+    $grey: #F2F4F7;
+    $white: #ffffff;
+    $darkblue: #244975;
+    $greyblue: #5D7698;
+    $lightblue: #0373E2;
 
     /* Font Sizes */
-    --bigtitle: 4.8em;
-    --title: 4em;
-    --smalltitle: 3.2em;
-    --txt: 2em;
-    --smalltxt: 1.6em;
-    --cardtxt: 1.4em;
-    --caption: 1.6em;
+    $bigtitle: 4.8em;
+    $title: 4em;
+    $smalltitle: 3.2em;
+    $txt: 2em;
+    $smalltxt: 1.6em;
+    $cardtxt: 1.4em;
+    $caption: 1.6em;
 
     /* Spacings */
-    --xxlspace: 12.8rem;
-    --xlspace: 6.4rem;
-    --lspace: 3.2rem;
-    --mspace: 1.6rem;
-    --sspace: 0.8rem;
-}
+    $xxlspace: 12.8rem;
+    $xlspace: 6.4rem;
+    $lspace: 3.2rem;
+    $mspace: 1.6rem;
+    $sspace: 0.8rem;
