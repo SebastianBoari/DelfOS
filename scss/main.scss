@@ -1,3 +1,20 @@
 // IMPORTS
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+/* MISC */
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/layout';
+
+/* PARTIALS */
+@import './partials/button';
+@import './partials/background';
+@import './partials/txt';
+@import './partials/img';
+@import './partials/header';
+@import './partials/prefooter';
+@import "./partials/footer";
+
+/* INICIO */
+@import 'pages/index';
+

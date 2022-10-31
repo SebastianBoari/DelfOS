@@ -1,0 +1,163 @@
+// HEADER Y NAVBAR
+@import '../partials/header';
+
+
+/* BLOQUE 1 CON FONDO DE IMAGEN TIENDA */
+.section1__tienda{
+    margin: 6.4rem auto;
+    background-image: url(../img/tiendaimg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6.4rem 16rem 6.4rem 3.2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.tienda1__txt{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    max-width: 61rem;
+}
+.tienda1__txt .txt--up{
+    display: flex;
+    flex-flow: column;
+    gap: 4rem;
+}
+
+.tienda1__btns{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 3.2rem;
+}
+.tienda1__link1{
+    background-color: var(--lightblue);
+    color: var(--white);
+    padding: 1.6rem 3.2rem;
+    font-size: var(--smalltxt);
+    border-radius: 0 0 0 0;
+}
+.tienda1__link2{
+    text-decoration: none;
+    font-size: var(--smalltxt);
+    color: var(--darkblue);
+    font-weight: 400;
+    transition: .8s;
+}
+@media (max-width: 1200px){
+    .section1__tienda{
+        justify-content: center;
+        padding: 6.4rem 3.2rem;
+        gap: 4rem;
+    }
+}
+@media (max-width: 992px){
+    .tienda1__img{
+        order: -1;
+    }
+}
+
+/* BLOQUE 2 TIENDA CARDS */
+
+.section2__tienda{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: var(--xxlspace) 0;
+    row-gap: 12.8rem;
+}
+
+.card2{
+    max-width: 36.1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+.card2__txt{
+    padding: .8rem 3.2rem .8rem 3.2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.card2__txt--upper{
+    display: flex;
+    flex-flow: column;
+    gap: 1.6rem;
+}
+
+@media (max-width: 992px){
+    .section2__tienda{
+        justify-content: center;
+    }
+}
+
+
+/* BLOQUE 3 TIENDA  */
+
+.section3__tienda{
+    margin: 6.4rem auto;
+    background-image: url(../img/tiendaimg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.tienda3__txt{
+    padding: 3.2rem 0 17.4rem 3.2rem;
+    max-width: 55rem;
+    display: flex;
+    flex-flow: column;
+    gap: 6.4rem;
+    
+}
+.tienda3__title, .tienda3__descrip{
+    color: var(--white);
+}
+@media (max-width: 992px){
+    .section3__tienda{
+        justify-content: center;
+    }
+}
+
+/* BLOQUE 4 TIENDA  */
+
+.tienda4__maintitle{
+    padding: 12.8rem 0;
+    text-align: center;
+}
+.tienda4__aoeimg{
+    background-image: url(../img/tiendaageofempires.png);
+}
+.tienda4__haloimg{
+    background-image: url(../img/tiendahaloinfinite.png);
+}
+.tienda4__fh5img{
+    background-image: url(../img/tiendaforzahorizon5.png);
+}
+.tienda4__bgimg{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 31rem;
+}
+.tienda4__txt{
+    display: flex;
+    flex-flow: column;
+    row-gap: 1.6rem;
+}
+.tienda4__txtdescrip{
+    display: flex;
+    flex-flow: column;
+    row-gap: 1.6rem;
+    padding-bottom: 6.4rem;
+}
+
+// PREFOOTER
+@import 'partials/prefooter';
+
+// FOOTER
+@import 'partials/footer';

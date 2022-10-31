@@ -1,0 +1,20 @@
+/* IMG */
+.centeredimg{
+    display: none;
+}
+@media (max-width: 1400px){
+    .uncenteredimg{
+        display: none;
+    }
+    .centeredimg{
+        display: block;
+    }
+    .img-fluid{
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+    body{
+        font-size: 0.8em;
+    }
+}

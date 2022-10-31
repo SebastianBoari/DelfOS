@@ -1,0 +1,226 @@
+
+/* SECTION HOME BLOQUE 1 */
+.section1__home{
+    padding: var(--xxlspace) 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.home1__txt{
+    max-width: 55rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.home1__txt--up{
+    display: flex;
+    flex-flow: column;
+    gap: 4rem;
+}
+.home1__button{
+    align-self: flex-end;
+}
+
+@media (max-width: 1400px){
+    .section1__home{
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: var(--xlspace);
+    }
+    .home1__txt{
+        padding: var(--lspace);
+        max-width: 120rem;
+        gap: 4rem;
+    }
+    .home1__img{
+        margin-top: var(--xlspace);
+        margin-bottom: var(--xlspace);
+        order: -1;
+    }
+
+}
+
+/* SECTION HOME BLOQUE 2 */
+
+.section2__home{
+    padding: var(--xxlspace) 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.home2__txt{
+    max-width: 55rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.home2__txt--up{
+    display: flex;
+    flex-flow: column;
+    gap: 4rem;
+}
+.home2__img{
+    order: -1;
+}
+
+@media (max-width: 1400px){
+    .section2__home{
+        padding-top: 0;
+        padding-bottom: var(--xlspace);
+        justify-content: center;
+    }
+    .home2__txt{
+        padding: var(--lspace);
+        max-width: 120rem;
+        gap: 4rem;
+    }
+    .home2__img{
+        margin-top: var(--xlspace);
+        margin-bottom: var(--xlspace);
+        order: -1;
+    }
+    .home2__button{
+        align-self: flex-end;
+    }
+}
+
+/* SECTION HOME BLOQUE 3 y 4 */
+.section3__home{
+    padding-top: var(--xlspace);
+    padding-bottom: var(--lspace);
+}
+.section4__home{
+    padding-top: var(--lspace);
+    padding-bottom: var(--xlspace);
+}
+.section3__home, .section4__home{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.home3__txt, .home4__txt{
+    max-width: 55rem;
+
+}
+
+@media (max-width: 1400px){
+    .section3__home, .section4__home{
+        justify-content: center;
+    }
+    .home3__txt, .home4__txt{
+        padding: var(--lspace);
+        max-width: 120rem;
+    }
+    .home4__img{
+        order: -1;
+    }
+}
+
+/* SECTION HOME BLOQUE 5 CARDS */
+
+.home__cards1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: var(--xlspace) 0;
+}
+
+.card{
+    max-width: 32rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    -webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);
+    box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);
+    border-radius: 4px 4px 4px 4px;
+    transition: 1s;
+}
+.card:hover{
+    -webkit-box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
+    -moz-box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
+    box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
+}
+
+.card__txt{
+    padding: var(--sspace);
+}
+.card__title{
+    padding-bottom: .8rem;
+    line-height: 2.4rem;
+}
+
+.card__buttons{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+.card__link{
+    text-decoration: none;
+    padding: .8rem 1.6rem;
+    font-size: var(--smalltxt);
+    color: var(--lightblue);
+    line-height: 1.6rem;
+    transition: .3s;
+}
+.card__link:hover{
+    color: var(--darkblue);
+}
+
+@media (max-width: 992px){
+    .home__cards1{
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: var(--lspace) 0;
+        gap: 3.2rem;
+    }
+}
+
+
+/* BLOQUE 6 CON FONDO DE IMAGEN */
+
+.background__img1{
+    background-image: url(../../img/backgroundimg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section6__home{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: var(--xlspace) 0;
+    gap: 1rem;
+}
+.section6__home .home6__txt{
+    max-width: 42rem;
+    background-color: rgba(242, 244, 247, .8);
+    border-radius: .4rem;
+}
+
+.home6__txt{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: var(--lspace);
+}
+.home6__txt div .title{
+    padding-bottom: var(--sspace);
+}
+
+@media (max-width: 992px){
+    .section6__home{
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+}
+
+
+
+
