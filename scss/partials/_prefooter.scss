@@ -5,19 +5,16 @@
     justify-content: center;
     align-items: center;
     gap: $xlspace;
-
     .prefooter__title{
         padding-bottom: $xlspace;
         text-align: center;
     }
-
     .prefooter__datos{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
         gap: 4rem;
-
         .dato{
             max-width: 24rem;
             display: flex;
@@ -26,7 +23,6 @@
             align-items: center;
             gap: 1.6rem;
             text-align: center;
-        
             p{
                 font-size: $smalltxt;
                 line-height: 2rem;
@@ -34,8 +30,6 @@
         }
     }
 }
-
-
 @media (max-width: 576px){
     .prefooter__datos{
         flex-flow: column wrap;
