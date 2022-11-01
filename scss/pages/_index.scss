@@ -1,19 +1,13 @@
 
 /* SECTION HOME BLOQUE 1 */
 .section1__home{
+    @include flex (row, wrap, space-between, stretch, 0);
     padding: $xxlspace 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
     .home1__txt{
+        @include flex (column, no-wrap, space-between, stretch, 0);
         max-width: 55rem;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
         .home1__txt--up{
-            display: flex;
-            flex-flow: column;
-            gap: 4rem;
+            @include flex (column, no-wrap, flex-start, stretch, 4rem);
         }
         .home1__button{
             align-self: flex-end;
@@ -22,19 +16,13 @@
 }
 /* SECTION HOME BLOQUE 2 */
 .section2__home{
+    @include flex (row, wrap, space-between, stretch, 0);
     padding: $xxlspace 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
     .home2__txt{
+        @include flex (column, no-wrap, space-between, stretch, 0);
         max-width: 55rem;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
         .home2__txt--up{
-            display: flex;
-            flex-flow: column;
-            gap: 4rem;
+            @include flex (column, no-wrap, flex-start, stretch, 4rem);
         }
     }
     .home2__img{
@@ -43,9 +31,7 @@
 }
 /* SECTION HOME BLOQUE 3 y 4 */
 .section3__home{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    @include flex (row, wrap, space-between, stretch, 0);
     padding-top: $xlspace;
     padding-bottom: $lspace;
     .home3__txt{
@@ -53,9 +39,7 @@
     }
 }
 .section4__home{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    @include flex (row, wrap, space-between, stretch, 0);
     padding-top: $lspace;
     padding-bottom: $xlspace;
     .home4__txt{
@@ -64,15 +48,11 @@
 }
 /* SECTION HOME BLOQUE 5 CARDS */
 .home__cards1{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    @include flex (row, wrap, space-between, stretch, 0);
     padding: $xlspace 0;
     .card{
+        @include flex (column, no-wrap, space-between, stretch, 0);
         max-width: 32rem;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
         -webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);
         -moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);
         box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);
@@ -93,9 +73,7 @@
             }
         }
         .card__buttons{
-            display: flex;
-            flex-flow: row wrap;
-            gap: 1rem;
+            @include flex (row, wrap, flex-start, stretch, 1rem);
             .card__link{
                 text-decoration: none;
                 padding: .8rem 1.6rem;
@@ -118,28 +96,19 @@
     background-attachment: fixed;
 }
 .section6__home{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    @include flex (row, wrap, space-between, stretch, 1rem);
     padding: $xlspace 0;
-    gap: 1rem;
     .home6__txt{
+        @include flex (column, wrap, space-between, stretch, 0);
         max-width: 42rem;
         background-color: rgba(242, 244, 247, .8);
         border-radius: .4rem;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
         padding: $lspace;
         div .title{
             padding-bottom: $sspace;
         }
     }
 }
-
-
-
-
 @media (max-width: 1400px){
     .section1__home{
         justify-content: center;
@@ -200,4 +169,3 @@
         gap: 4rem;
     }
 }
-

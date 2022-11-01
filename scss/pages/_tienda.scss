@@ -1,121 +1,78 @@
 
 /* BLOQUE 1 CON FONDO DE IMAGEN TIENDA */
 .section1__tienda{
+    @include flex (row, wrap, space-between, stretch, 0);
     margin: 6.4rem auto;
+    padding: 6.4rem 16rem 6.4rem 3.2rem;
     background-image: url(../img/tiendaimg1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 6.4rem 16rem 6.4rem 3.2rem;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-.tienda1__txt{
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    max-width: 61rem;
-}
-.tienda1__txt .txt--up{
-    display: flex;
-    flex-flow: column;
-    gap: 4rem;
+    .tienda1__txt{
+        @include flex (column, no-wrap, space-between, stretch, 0rem);
+        max-width: 61rem;
+        .txt--up{
+            @include flex (column, no-wrap, flex-start, stretch, 4rem);
+        }
+        .tienda1__btns{
+            @include flex (row, no-wrap, flex-start, center, 3.2rem);
+                .tienda1__link2{
+                    text-decoration: none;
+                    font-size: $smalltxt;
+                    color: $darkblue;
+                    font-weight: 400;
+                    transition: .8s;
+                    &:hover{
+                        color: $lightblue;
+                    }
+                }
+        }
+    }
 }
 
-.tienda1__btns{
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    gap: 3.2rem;
-}
+/* EN ESTE ESTILO NO PUDE UTILIZAR LA SYNTAXIS DE SASS PORQUE LO UTILIZO MAS ABAJO. LO VOY A HACER UN ELEMENTO DE BUTTONS EN PARTIAL. */
 .tienda1__link1{
+    @extend .btn-primary;
     background-color: $lightblue;
     color: $white;
     padding: 1.6rem 3.2rem;
     font-size: $smalltxt;
     border-radius: 0 0 0 0;
 }
-.tienda1__link2{
-    text-decoration: none;
-    font-size: $smalltxt;
-    color: $darkblue;
-    font-weight: 400;
-    transition: .8s;
-}
-@media (max-width: 1200px){
-    .section1__tienda{
-        justify-content: center;
-        padding: 6.4rem 3.2rem;
-        gap: 4rem;
-    }
-}
-@media (max-width: 992px){
-    .tienda1__img{
-        order: -1;
-    }
-}
 
 /* BLOQUE 2 TIENDA CARDS */
 
 .section2__tienda{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding: $xxlspace 0;
+    @include flex (row, wrap, space-between, stretch, 0);
     row-gap: 12.8rem;
-}
-
-.card2{
-    max-width: 36.1rem;
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-}
-
-.card2__txt{
-    padding: .8rem 3.2rem .8rem 3.2rem;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-}
-.card2__txt--upper{
-    display: flex;
-    flex-flow: column;
-    gap: 1.6rem;
-}
-
-@media (max-width: 992px){
-    .section2__tienda{
-        justify-content: center;
+    padding: $xxlspace 0;
+    .card2{
+        @include flex (column, no-wrap, flex-start, stretch, 0);
+        max-width: 36.1rem;
+        .card2__txt{
+            @include flex (column, no-wrap, space-between, stretch, 0);
+            padding: .8rem 3.2rem .8rem 3.2rem;
+            .card2__txt--upper{
+                @include flex (column, no-wrap, flex-start, stretch, 1.6rem);
+            }    
+        }
     }
 }
-
 
 /* BLOQUE 3 TIENDA  */
 
 .section3__tienda{
+    @include flex (row, wrap, space-between, stretch, 0);
     margin: 6.4rem auto;
     background-image: url(../img/tiendaimg2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-.tienda3__txt{
-    padding: 3.2rem 0 17.4rem 3.2rem;
-    max-width: 55rem;
-    display: flex;
-    flex-flow: column;
-    gap: 6.4rem;
-    
-}
-.tienda3__title, .tienda3__descrip{
-    color: $white;
-}
-@media (max-width: 992px){
-    .section3__tienda{
-        justify-content: center;
+    .tienda3__txt{
+        @include flex (column, no-wrap, flex-start, stretch, 6.4rem);
+        padding: 3.2rem 0 17.4rem 3.2rem;
+        max-width: 55rem;   
+        .tienda3__title, .tienda3__descrip{
+            color: $white;
+        }
     }
 }
 
@@ -142,14 +99,36 @@
     height: 31rem;
 }
 .tienda4__txt{
-    display: flex;
-    flex-flow: column;
+    @include flex (column, no-wrap, flex-start, stretch, 0);
     row-gap: 1.6rem;
 }
 .tienda4__txtdescrip{
-    display: flex;
-    flex-flow: column;
+    @include flex (column, no-wrap, flex-start, stretch, 0);
     row-gap: 1.6rem;
     padding-bottom: 6.4rem;
 }
 
+@media (max-width: 1200px){
+    .section1__tienda{
+        justify-content: center;
+        padding: 6.4rem 3.2rem;
+        gap: 4rem;
+    }
+}
+@media (max-width: 992px){
+    .tienda1__img{
+        order: -1;
+    }
+}
+
+@media (max-width: 992px){
+    .section2__tienda{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px){
+    .section3__tienda{
+        justify-content: center;
+    }
+}
