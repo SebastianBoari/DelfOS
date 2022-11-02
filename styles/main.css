@@ -372,7 +372,7 @@ body {
 
 /* BLOQUE 6 CON FONDO DE IMAGEN */
 .background__img1 {
-  background-image: url(../img/backgroundimg1.png);
+  background-image: url(https://i.imgur.com/xo5mo08.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
@@ -458,7 +458,7 @@ body {
   gap: 0;
   margin: 6.4rem auto;
   padding: 6.4rem 16rem 6.4rem 3.2rem;
-  background-image: url(../img/tiendaimg1.png);
+  background-image: url(https://i.imgur.com/aTKykIf.png);
   background-repeat: no-repeat;
   background-size: cover; }
   .section1__tienda .tienda1__txt {
@@ -543,7 +543,7 @@ body {
   align-items: stretch;
   gap: 0;
   margin: 6.4rem auto;
-  background-image: url(../img/tiendaimg2.png);
+  background-image: url(https://i.imgur.com/OeXk21l.png);
   background-repeat: no-repeat;
   background-size: cover; }
   .section3__tienda .tienda3__txt {
@@ -564,13 +564,13 @@ body {
   text-align: center; }
 
 .tienda4__aoeimg {
-  background-image: url(../img/tiendaageofempires.png); }
+  background-image: url(https://i.imgur.com/5k0j6Oi.png); }
 
 .tienda4__haloimg {
-  background-image: url(../img/tiendahaloinfinite.png); }
+  background-image: url(https://i.imgur.com/YmhYMTv.png); }
 
 .tienda4__fh5img {
-  background-image: url(../img/tiendaforzahorizon5.png); }
+  background-image: url(https://i.imgur.com/InrFws6.png); }
 
 .tienda4__bgimg {
   background-attachment: fixed;
