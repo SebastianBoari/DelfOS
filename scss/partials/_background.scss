@@ -1,7 +1,13 @@
 /* BACKGROUNDS */
-.background--grey{
+.background__grey{
     background-color: $grey;
 }
-.background--white{
+.background__grey--opacity{
+    background-color: rgba(242, 244, 247, 0.8);
+}
+.background__white{
     background-color: $white;
+}
+.background__white--opacity{
+    background-color: rgba(255, 255, 255, 0.8);
 }

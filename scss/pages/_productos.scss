@@ -1,0 +1,20 @@
+.section1__producto{
+    @include flex (row, wrap, space-between, center, 0);
+    .producto1__txt{
+        max-width: 40rem;
+        .txt--upper{
+            @include flex (column, no-wrap, flex-start, stretch, 0);
+            row-gap: 20rem;
+        }
+}
+
+
+
+.background__img2{
+    background-image: url(https://i.imgur.com/qwOSfLK.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    width: 100vw;
+    height: 91rem;
+}
