@@ -451,26 +451,161 @@ body {
     align-items: center;
     gap: 4rem; } }
 
+/* NOSOTROS */
 /* PRODUCTOS */
 .section1__producto {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  gap: 0; }
+  align-items: stretch;
+  gap: 0;
+  padding: 6.4rem 6.4rem; }
   .section1__producto .producto1__txt {
-    max-width: 40rem;
-    gap: 1rem; }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0; }
+    .section1__producto .producto1__txt .txt--upper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: no-wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      gap: 4rem;
+      max-width: 45rem;
+      max-height: 0; }
+    .section1__producto .producto1__txt .producto__btn {
+      align-self: flex-end; }
+
+.section2__producto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+  padding: 12.8rem 6.4rem; }
+  .section2__producto .producto2__txt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0; }
+    .section2__producto .producto2__txt .txt--upper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: no-wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      gap: 1rem;
+      max-width: 45rem;
+      max-height: 0; }
+    .section2__producto .producto2__txt .producto__btn {
+      align-self: flex-end; }
 
 .background__img2 {
   background-image: url(https://i.imgur.com/qwOSfLK.png);
   background-repeat: no-repeat;
   background-position: bottom;
+  background-attachment: fixed;
   background-size: cover;
-  width: 100vw;
-  height: 91rem; }
+  width: 100vw; }
+  .background__img2 .section3__producto {
+    padding: 38.4rem 0 12.8rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem; }
 
+.section4__producto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+  padding: 12.8rem 6.4rem; }
+  .section4__producto .producto4__txt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0; }
+    .section4__producto .producto4__txt .txt--upper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: no-wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      gap: 4rem;
+      max-width: 45rem;
+      max-height: 0; }
+    .section4__producto .producto4__txt .producto__btn {
+      align-self: flex-end; }
+
+.section5__producto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+  padding: 12.8rem 6.4rem; }
+  .section5__producto .producto5__txt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0; }
+    .section5__producto .producto5__txt .txt--upper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: no-wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      gap: 1rem;
+      max-width: 45rem;
+      max-height: 0; }
+    .section5__producto .producto5__txt .producto__btn {
+      align-self: flex-end; }
+
+@media (max-width: 1400px) {
+  .section1__producto {
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 6.4rem; }
+    .section1__producto .producto1__txt {
+      padding: 3.2rem;
+      max-width: 120rem;
+      gap: 4rem; }
+    .section1__producto .producto1__img {
+      margin-top: 6.4rem;
+      margin-bottom: 6.4rem;
+      order: -1; }
+  .section2__producto {
+    padding-top: 0;
+    padding-bottom: 6.4rem;
+    justify-content: center; }
+    .section2__producto .producto2__txt {
+      padding: 3.2rem;
+      max-width: 120rem;
+      gap: 4rem; }
+      .section2__producto .producto2__txt .producto2__button {
+        align-self: flex-end; }
+    .section2__producto .procuto2__img {
+      margin-top: 6.4rem;
+      margin-bottom: 6.4rem;
+      order: -1; } }
+
+/* PARTNERS */
 /* TIENDA */
 /* BLOQUE 1 CON FONDO DE IMAGEN TIENDA */
 .section1__tienda {

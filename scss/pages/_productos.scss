@@ -1,20 +1,121 @@
 .section1__producto{
-    @include flex (row, wrap, space-between, center, 0);
+    @include flex (row, wrap, space-between, stretch, 0);
+    padding: $xlspace $xlspace;
     .producto1__txt{
-        max-width: 40rem;
+        @include flex (column, wrap, space-between, stretch, 0);
         .txt--upper{
-            @include flex (column, no-wrap, flex-start, stretch, 0);
-            row-gap: 20rem;
+            @include flex (column, no-wrap, flex-start, stretch, 4rem);
+            @include max-sizes(45rem, 0)
         }
+        .producto__btn{
+            align-self: flex-end;
+        }
+    }
 }
 
-
+.section2__producto{
+    @include flex (row, wrap, space-between, stretch, 0);
+    padding: $xxlspace $xlspace;
+    .producto2__txt{
+        @include flex (column, no-wrap, space-between, stretch, 0);
+        .txt--upper{
+            @include flex (column, no-wrap, flex-start, stretch, 1rem);
+            @include max-sizes(45rem, 0)
+        }
+        .producto__btn{
+            align-self: flex-end;
+        }
+    }
+}
 
 .background__img2{
     background-image: url(https://i.imgur.com/qwOSfLK.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    background-attachment: fixed;
     background-size: cover;
-    width: 100vw;
-    height: 91rem;
+    width: 100vw;;
+    .section3__producto{
+        padding: 38.4rem 0 $xxlspace;
+        @include flex (column, no-wrap, flex-end, center, 2rem);
+    }
+
+}
+
+.section4__producto{
+    @include flex (row, wrap, space-between, stretch, 0);
+    padding: $xxlspace $xlspace;
+    .producto4__txt{
+        @include flex (column, no-wrap, space-between, stretch, 0);
+        .txt--upper{
+            @include flex (column, no-wrap, flex-start, stretch, 4rem);
+            @include max-sizes(45rem, 0)
+        }
+        .producto__btn{
+            align-self: flex-end;
+        }
+    }
+}
+
+.section5__producto{
+    @include flex (row, wrap, space-between, stretch, 0);
+    padding: $xxlspace $xlspace;
+    .producto5__txt{
+        @include flex (column, no-wrap, space-between, stretch, 0);
+        .txt--upper{
+            @include flex (column, no-wrap, flex-start, stretch, 1rem);
+            @include max-sizes(45rem, 0)
+        }
+        .producto__btn{
+            align-self: flex-end;
+        }
+    }
+}
+
+
+@media (max-width: 1400px){
+    .section1__producto{
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: $xlspace;
+        .producto1__txt{
+            padding: $lspace;
+            max-width: 120rem;
+            gap: 4rem;
+        }
+        .producto1__img{
+            margin-top: $xlspace;
+            margin-bottom: $xlspace;
+            order: -1;
+        }
+    }
+    .section2__producto{
+        padding-top: 0;
+        padding-bottom: $xlspace;
+        justify-content: center;
+        .producto2__txt{
+            padding: $lspace;
+            max-width: 120rem;
+            gap: 4rem;
+            .producto2__button{
+                align-self: flex-end;
+            }
+        }
+        .procuto2__img{
+            margin-top: $xlspace;
+            margin-bottom: $xlspace;
+            order: -1;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
