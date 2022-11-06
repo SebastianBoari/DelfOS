@@ -577,6 +577,48 @@ body {
     .section5__producto .producto5__txt .producto__btn {
       align-self: flex-end; }
 
+.section6__producto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0; }
+  .section6__producto .producto6__maintitle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 12.8rem; }
+  .section6__producto .producto6__article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0; }
+    .section6__producto .producto6__article .product6__txt {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: no-wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      gap: 0.8rem; }
+      .section6__producto .producto6__article .product6__txt p {
+        font-size: 3.2em;
+        line-height: 3.6rem;
+        max-width: 36rem;
+        max-height: 36rem; }
+    .section6__producto .producto6__article .product6__images {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1.6rem; }
+
 @media (max-width: 1400px) {
   .section1__producto {
     justify-content: center;
@@ -606,6 +648,46 @@ body {
       order: -1; } }
 
 /* PARTNERS */
+.section1__partners {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0; }
+  .section1__partners .partners1__article1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0;
+    max-width: 55rem;
+    max-height: auto; }
+    .section1__partners .partners1__article1 .article1__txt {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: no-wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 1.6rem; }
+    .section1__partners .partners1__article1 .article1__img {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 0; }
+  .section1__partners .partners1__article2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0;
+    max-width: 56rem;
+    max-height: auto; }
+
 /* TIENDA */
 /* BLOQUE 1 CON FONDO DE IMAGEN TIENDA */
 .section1__tienda {

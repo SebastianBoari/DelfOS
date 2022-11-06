@@ -72,6 +72,29 @@
     }
 }
 
+.section6__producto{
+    @include flex (column, no-wrap, center, stretch, 0);
+    .producto6__maintitle{
+        @include flex (row, wrap, center, center, 0);
+        padding: $xxlspace;
+    }
+    .producto6__article{
+        @include flex (row, wrap, space-between, stretch, 0);
+        .product6__txt{
+            @include flex (column, no-wrap, flex-start, stretch, .8rem);
+            p{
+                font-size: 3.2em;
+                line-height: 3.6rem;
+                @include max-sizes(36rem, 36rem)
+            }
+        }
+    .product6__images{
+        @include flex (row, wrap, center, center, 1.6rem);
+    }   
+
+    }
+}
+
 
 @media (max-width: 1400px){
     .section1__producto{

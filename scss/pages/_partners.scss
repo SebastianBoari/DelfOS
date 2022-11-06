@@ -1,0 +1,17 @@
+.section1__partners{
+    @include flex (row, wrap, space-between, stretch, 0);
+    .partners1__article1{
+        @include flex (column, no-wrap, space-between, stretch, 0);
+        @include max-sizes(55rem, auto);
+        .article1__txt{
+            @include flex (column, no-wrap, space-between, stretch, 1.6rem);
+        }
+        .article1__img{
+            @include flex (row, no-wrap, space-between, stretch, 0);
+        }
+    }
+    .partners1__article2{
+        @include flex (column, no-wrap, space-between, stretch, 0);
+        @include max-sizes(56rem, auto);
+    }
+}

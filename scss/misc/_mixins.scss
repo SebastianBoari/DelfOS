@@ -6,15 +6,6 @@
     align-items: $ai;
     gap: $gap;
 }
-@mixin flex-gap($dir, $wrap, $jc, $ai, $rowgap, $colgap){
-    display: flex;
-    flex-direction: $dir;
-    flex-wrap: $wrap;
-    justify-content: $jc;
-    align-items: $ai;
-    row-gap: $rowgap;
-    column-gap: $colgap;
-}
 @mixin sizes($width, $height){
     width: $width;
     height: $height;
