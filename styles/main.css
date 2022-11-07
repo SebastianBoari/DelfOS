@@ -452,6 +452,137 @@ body {
     gap: 4rem; } }
 
 /* NOSOTROS */
+.section1__nosotros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+  padding-top: 3.2rem;
+  padding-bottom: 6.4rem; }
+  .section1__nosotros .nosotros1__article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 6.4rem;
+    max-width: 54rem;
+    max-height: auto; }
+    .section1__nosotros .nosotros1__article .article__txt {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: no-wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 1.6rem; }
+      .section1__nosotros .nosotros1__article .article__txt h1 {
+        line-height: 7.3rem; }
+    .section1__nosotros .nosotros1__article .article__button {
+      align-self: flex-end; }
+      .section1__nosotros .nosotros1__article .article__button a {
+        padding-left: 5rem;
+        padding-right: 5rem; }
+    .section1__nosotros .nosotros1__article .article__img {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: no-wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 0; }
+
+.section2__nosotros {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 12.8rem; }
+  .section2__nosotros .employee__right, .section2__nosotros .employee__left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 6.4rem;
+    max-width: auto;
+    max-height: 44.8rem;
+    align-self: flex-end;
+    -webkit-box-shadow: -2px 5px 7px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 5px 7px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 5px 7px -2px rgba(0, 0, 0, 0.75); }
+    .section2__nosotros .employee__right .employee__txt, .section2__nosotros .employee__left .employee__txt {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: no-wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 0;
+      max-width: 55rem;
+      max-height: auto;
+      padding-top: 3.2rem;
+      padding-bottom: 3.2rem;
+      padding-left: 3.2rem;
+      padding-right: 0; }
+      .section2__nosotros .employee__right .employee__txt .caption, .section2__nosotros .employee__left .employee__txt .caption {
+        font-size: 1.2em; }
+      .section2__nosotros .employee__right .employee__txt figure, .section2__nosotros .employee__left .employee__txt figure {
+        align-self: flex-end; }
+    .section2__nosotros .employee__right .employee__img img, .section2__nosotros .employee__left .employee__img img {
+      margin: 0; }
+  .section2__nosotros .employee__left {
+    align-self: flex-start;
+    max-width: auto;
+    max-height: 49.8rem;
+    -webkit-box-shadow: 2px 5px 7px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 5px 7px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 5px 7px -2px rgba(0, 0, 0, 0.75); }
+    .section2__nosotros .employee__left .employee__txt {
+      padding-left: 0;
+      padding-right: 3.2rem; }
+      .section2__nosotros .employee__left .employee__txt figure {
+        align-self: flex-start; }
+  .section2__nosotros .resize {
+    max-width: auto;
+    max-height: 45.6rem; }
+
+.section3__nosotros {
+  padding-top: 12.8rem;
+  padding-bottom: 3.2rem; }
+  .section3__nosotros .nosotros3__article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0; }
+    .section3__nosotros .nosotros3__article h2 {
+      max-width: 41rem;
+      max-height: auto;
+      line-height: 10rem; }
+
+.section4__nosotros {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem; }
+  .section4__nosotros .nosotros4__article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0; }
+    .section4__nosotros .nosotros4__article figure {
+      order: -1; }
+    .section4__nosotros .nosotros4__article h2 {
+      max-width: 45rem;
+      max-height: auto;
+      font-size: 6.4em;
+      line-height: 10rem; }
+    .section4__nosotros .nosotros4__article p {
+      max-width: 45rem;
+      max-height: auto; }
+
 /* PRODUCTOS */
 .section1__producto {
   display: flex;

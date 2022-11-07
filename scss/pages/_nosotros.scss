@@ -1,0 +1,106 @@
+.section1__nosotros{
+    @include flex(row, wrap, space-between, stretch, 0);
+    padding-top: $lspace;
+    padding-bottom: $xlspace;
+    .nosotros1__article{
+        @include flex(column, no-wrap, flex-start, stretch, 6.4rem);
+        @include max-sizes(54rem, auto);
+        .article__txt{
+            @include flex(column, no-wrap, space-between, stretch, 1.6rem);
+            h1{
+                line-height: 7.3rem;
+            }
+        }
+        .article__button{
+            align-self: flex-end;
+            a{
+                padding-left: 5rem;
+                padding-right: 5rem;
+            }
+        }
+        .article__img{
+            @include flex(row, no-wrap, space-between, stretch, 0);
+        }
+
+    }
+}
+
+.section2__nosotros{
+    @include flex(column, no-wrap, space-between, stretch, 12.8rem);
+    .employee__right{
+        @include flex(row, no-wrap, space-between, stretch, 6.4rem);
+        @include max-sizes(auto, 44.8rem);
+        align-self: flex-end;
+        -webkit-box-shadow: -2px 5px 7px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: -2px 5px 7px -2px rgba(0,0,0,0.75);
+        box-shadow: -2px 5px 7px -2px rgba(0,0,0,0.75);
+        .employee__txt{
+            @include flex(column, no-wrap, space-between, stretch, 0);
+            @include max-sizes(55rem, auto);
+            padding-top: $lspace;
+            padding-bottom: $lspace;
+            padding-left: $lspace;
+            padding-right: 0;
+            .caption{
+                font-size: 1.2em;
+            }
+            figure{
+                align-self: flex-end;
+            }     
+        }
+        .employee__img{
+                img{
+                    margin: 0;
+                }
+        }
+    }
+    .employee__left{
+        @extend .employee__right;
+        align-self: flex-start;
+        @include max-sizes(auto, 49.8rem);
+        -webkit-box-shadow: 2px 5px 7px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 5px 7px -2px rgba(0,0,0,0.75);
+        box-shadow: 2px 5px 7px -2px rgba(0,0,0,0.75);
+        .employee__txt{
+            padding-left: 0;
+            padding-right: $lspace;
+            figure{
+                align-self: flex-start;
+            }
+        }
+    }
+    .resize{
+        @include max-sizes(auto, 45.6rem);
+    }
+
+}
+.section3__nosotros{
+    padding-top: $xxlspace;
+    padding-bottom: $lspace;
+    .nosotros3__article{
+        @include flex(row, wrap, space-between, stretch, 0);
+        h2{
+            @include max-sizes(41rem, auto);
+            line-height: 10rem;
+        }        
+    }
+}
+
+.section4__nosotros{
+    padding-top: $lspace;
+    padding-bottom: $lspace;
+    .nosotros4__article{
+        @include flex(row, wrap, space-between, stretch, 0);
+        figure{
+            order: -1;
+        }
+        h2{
+            @include max-sizes(45rem, auto);
+            font-size: 6.4em;
+            line-height: 10rem;
+        }
+        p{
+            @include max-sizes(45rem, auto);
+        }
+    }
+}
