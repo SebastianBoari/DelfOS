@@ -1,3 +1,4 @@
+// BLOQUE 1
 .section1__nosotros{
     @include flex(row, wrap, space-between, stretch, 0);
     padding-top: $lspace;
@@ -24,7 +25,33 @@
 
     }
 }
-
+@media (max-width: 1200px){
+    .background__img5{
+        background-image: url(https://i.imgur.com/g5Oc9Qn.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-attachment: fixed;
+        background-size: cover;
+        @include flex(row, wrap, center, stretch, 0);
+        .section1__nosotros{
+            font-size: 1.5em;
+            @include flex(row, wrap, center, stretch, 0);
+            .nosotros1__article{
+                background-color: rgba(242, 244, 247, .8);
+                border-radius: .4rem;
+                padding: $xlspace;
+                @include flex(column, no-wrap, center, stretch, 6.4rem);
+                .article__button{
+                    align-self: center;
+                }       
+            }
+            .nosotros1__img{
+                display: none;
+            }
+        }
+    }
+}
+// BLOQUE 2
 .section2__nosotros{
     @include flex(column, no-wrap, space-between, stretch, 12.8rem);
     .employee__right{
@@ -72,8 +99,12 @@
     .resize{
         @include max-sizes(auto, 45.6rem);
     }
-
 }
+@media (max-width: 1200px){
+
+    
+}
+// BLOQUE 3 
 .section3__nosotros{
     padding-top: $xxlspace;
     padding-bottom: $lspace;
@@ -82,10 +113,31 @@
         h2{
             @include max-sizes(41rem, auto);
             line-height: 10rem;
+        }
+        iframe{
+            width: 84.8rem; 
+            height: 48rem;
         }        
     }
 }
+@media (max-width: 1400px){
+    .section3__nosotros{
 
+        .nosotros3__article{
+            @include flex(row, wrap, center, stretch, 1.6rem);
+            h2{
+                @include max-sizes(120rem, auto);
+                text-align: center;
+            }
+            iframe{
+
+            }        
+        }
+    }
+}
+
+
+// BLOQUE 4 
 .section4__nosotros{
     padding-top: $lspace;
     padding-bottom: $lspace;
@@ -101,6 +153,25 @@
         }
         p{
             @include max-sizes(45rem, auto);
+        }
+    }
+}
+@media (max-width: 1400px){
+    .section4__nosotros{
+
+        .nosotros4__article{
+            @include flex(row, wrap, center, stretch, 1.6rem);
+            figure{
+                order: 0;
+            }
+            h2{
+                @include max-sizes(120rem, auto);
+                text-align: center
+            }
+            p{
+                @include max-sizes(120rem, auto);
+                text-align: center;
+            }
         }
     }
 }

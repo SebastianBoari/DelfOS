@@ -151,7 +151,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 4rem; }
-    .prefooter .prefooter__datos .dato {
+    .prefooter .prefooter__datos .dato, .prefooter .prefooter__datos .dato--center {
       max-width: 24rem;
       display: flex;
       flex-flow: column;
@@ -159,7 +159,7 @@ body {
       align-items: center;
       gap: 1.6rem;
       text-align: center; }
-      .prefooter .prefooter__datos .dato p {
+      .prefooter .prefooter__datos .dato p, .prefooter .prefooter__datos .dato--center p {
         font-size: 1.6em;
         line-height: 2rem; }
 
@@ -168,7 +168,9 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    gap: 4rem; } }
+    gap: 4rem; }
+    .prefooter__datos .dato--center {
+      justify-self: center; } }
 
 /* FOOTER */
 #footer {
@@ -492,6 +494,42 @@ body {
       align-items: stretch;
       gap: 0; }
 
+@media (max-width: 1200px) {
+  .background__img5 {
+    background-image: url(https://i.imgur.com/g5Oc9Qn.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0; }
+    .background__img5 .section1__nosotros {
+      font-size: 1.5em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      gap: 0; }
+      .background__img5 .section1__nosotros .nosotros1__article {
+        background-color: rgba(242, 244, 247, 0.8);
+        border-radius: .4rem;
+        padding: 6.4rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: no-wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 6.4rem; }
+        .background__img5 .section1__nosotros .nosotros1__article .article__button {
+          align-self: center; }
+      .background__img5 .section1__nosotros .nosotros1__img {
+        display: none; } }
+
 .section2__nosotros {
   display: flex;
   flex-direction: column;
@@ -561,6 +599,22 @@ body {
       max-width: 41rem;
       max-height: auto;
       line-height: 10rem; }
+    .section3__nosotros .nosotros3__article iframe {
+      width: 84.8rem;
+      height: 48rem; }
+
+@media (max-width: 1400px) {
+  .section3__nosotros .nosotros3__article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.6rem; }
+    .section3__nosotros .nosotros3__article h2 {
+      max-width: 120rem;
+      max-height: auto;
+      text-align: center; } }
 
 .section4__nosotros {
   padding-top: 3.2rem;
@@ -582,6 +636,25 @@ body {
     .section4__nosotros .nosotros4__article p {
       max-width: 45rem;
       max-height: auto; }
+
+@media (max-width: 1400px) {
+  .section4__nosotros .nosotros4__article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.6rem; }
+    .section4__nosotros .nosotros4__article figure {
+      order: 0; }
+    .section4__nosotros .nosotros4__article h2 {
+      max-width: 120rem;
+      max-height: auto;
+      text-align: center; }
+    .section4__nosotros .nosotros4__article p {
+      max-width: 120rem;
+      max-height: auto;
+      text-align: center; } }
 
 /* PRODUCTOS */
 .section1__producto {

@@ -28,6 +28,9 @@
                 line-height: 2rem;
             }
         }
+        .dato--center{
+            @extend .dato;
+        }
     }
 }
 @media (max-width: 576px){
@@ -36,5 +39,8 @@
         justify-content: center;
         align-items: center;
         gap: 4rem;
+        .dato--center{
+            justify-self: center;
+        }
     }
 }
