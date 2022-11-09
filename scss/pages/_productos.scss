@@ -1,100 +1,18 @@
+// BLOQUE 1
 .section1__producto{
     @include flex (row, wrap, space-between, stretch, 0);
     padding: $xlspace $xlspace;
     .producto1__txt{
-        @include flex (column, wrap, space-between, stretch, 0);
-        .txt--upper{
-            @include flex (column, no-wrap, flex-start, stretch, 4rem);
-            @include max-sizes(45rem, 0)
-        }
-        .producto__btn{
-            align-self: flex-end;
-        }
-    }
-}
-
-.section2__producto{
-    @include flex (row, wrap, space-between, stretch, 0);
-    padding: $xxlspace $xlspace;
-    .producto2__txt{
         @include flex (column, no-wrap, space-between, stretch, 0);
-        .txt--upper{
-            @include flex (column, no-wrap, flex-start, stretch, 1rem);
-            @include max-sizes(45rem, 0)
+        @include max-sizes(45rem, auto);
+        .txt1--up{
+            @include flex (column, no-wrap, space-between, stretch, 4rem);
         }
-        .producto__btn{
+        .producto1__btn{
             align-self: flex-end;
         }
     }
 }
-
-.background__img2{
-    background-image: url(https://i.imgur.com/qwOSfLK.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100vw;;
-    .section3__producto{
-        padding: 38.4rem 0 $xxlspace;
-        @include flex (column, no-wrap, flex-end, center, 2rem);
-    }
-
-}
-
-.section4__producto{
-    @include flex (row, wrap, space-between, stretch, 0);
-    padding: $xxlspace $xlspace;
-    .producto4__txt{
-        @include flex (column, no-wrap, space-between, stretch, 0);
-        .txt--upper{
-            @include flex (column, no-wrap, flex-start, stretch, 4rem);
-            @include max-sizes(45rem, 0)
-        }
-        .producto__btn{
-            align-self: flex-end;
-        }
-    }
-}
-
-.section5__producto{
-    @include flex (row, wrap, space-between, stretch, 0);
-    padding: $xxlspace $xlspace;
-    .producto5__txt{
-        @include flex (column, no-wrap, space-between, stretch, 0);
-        .txt--upper{
-            @include flex (column, no-wrap, flex-start, stretch, 1rem);
-            @include max-sizes(45rem, 0)
-        }
-        .producto__btn{
-            align-self: flex-end;
-        }
-    }
-}
-
-.section6__producto{
-    @include flex (column, no-wrap, center, stretch, 0);
-    .producto6__maintitle{
-        @include flex (row, wrap, center, center, 0);
-        padding: $xxlspace;
-    }
-    .producto6__article{
-        @include flex (row, wrap, space-between, stretch, 0);
-        .product6__txt{
-            @include flex (column, no-wrap, flex-start, stretch, .8rem);
-            p{
-                font-size: 3.2em;
-                line-height: 3.6rem;
-                @include max-sizes(36rem, 36rem)
-            }
-        }
-    .product6__images{
-        @include flex (row, wrap, center, center, 1.6rem);
-    }   
-
-    }
-}
-
 
 @media (max-width: 1400px){
     .section1__producto{
@@ -103,42 +21,180 @@
         padding-bottom: $xlspace;
         .producto1__txt{
             padding: $lspace;
-            max-width: 120rem;
+            max-width: 66.3rem;
             gap: 4rem;
         }
         .producto1__img{
-            margin-top: $xlspace;
-            margin-bottom: $xlspace;
+            padding-top: $xlspace;
+            padding-bottom: $xlspace;
             order: -1;
         }
     }
+}
+
+
+
+// BLOQUE 2
+.section2__producto{
+    @include flex (row, wrap, space-between, stretch, 0);
+    padding: $xxlspace $xlspace;
+    .producto2__txt{
+        @include flex (column, no-wrap, space-between, stretch, 0);
+        @include max-sizes(45rem, auto);
+        .txt2--up{
+            @include flex (column, no-wrap, space-between, stretch, 1.6rem);
+        }
+        .producto__btn{
+            align-self: flex-start;
+        }
+    }
+}
+
+@media (max-width: 1400px){
     .section2__producto{
+        justify-content: center;
         padding-top: 0;
         padding-bottom: $xlspace;
-        justify-content: center;
         .producto2__txt{
             padding: $lspace;
-            max-width: 120rem;
+            max-width: 66.3rem;
             gap: 4rem;
-            .producto2__button{
+            .txt2--up{
+                @include flex (column, no-wrap, space-between, stretch, 4rem);
+            }
+            .producto2__btn{
                 align-self: flex-end;
             }
         }
-        .procuto2__img{
-            margin-top: $xlspace;
-            margin-bottom: $xlspace;
+        .producto2__img{
+            padding-top: $xlspace;
+            padding-bottom: $xlspace;
             order: -1;
         }
     }
+}
+
+// BLOQUE 3
+.background__img2{
+    background-image: url(https://i.imgur.com/qwOSfLK.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    .section3__producto{
+        padding: 38.4rem 0 $xxlspace;
+        @include flex (column, no-wrap, flex-end, center, 2rem);
+    }
+
+}
+
+// BLOQUE 4
+.section4__producto{
+    @include flex (row, wrap, space-between, stretch, 0);
+    padding: $xxlspace $xlspace;
+    .producto4__txt{
+        @include flex (column, no-wrap, space-between, stretch, 0);
+        @include max-sizes(45rem, auto);
+        .txt4--up{
+            @include flex (column, no-wrap, flex-start, stretch, 4rem);
+        }
+        .producto4__btn{
+            align-self: flex-end;
+        }
+    }
+}
+@media (max-width: 1400px){
+    .section4__producto{
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: $xlspace;
+        .producto4__txt{
+            padding: $lspace;
+            max-width: 66.3rem;
+            gap: 4rem;
+        }
+        .producto4__img{
+            padding-top: $xlspace;
+            padding-bottom: $xlspace;
+            order: -1;
+        }
+    }
+}
+
+
+// BLOQUE 5
+.section5__producto{
+    @include flex (row, wrap, space-between, stretch, 0);
+    padding: $xxlspace $xlspace;
+    .producto5__txt{
+        @include flex (column, no-wrap, space-between, stretch, 0);
+        @include max-sizes(45rem, auto);
+        .txt5--up{
+            @include flex (column, no-wrap, space-between, stretch, 3.2rem);
+        }
+        .producto5__btn{
+            align-self: flex-end;
+        }
+    }
+}
+@media (max-width: 1400px){
+    .section5__producto{
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: $xlspace;
+        .producto5__txt{
+            padding: $lspace;
+            max-width: 66.3rem;
+            gap: 4rem;
+        }
+        .producto5__img{
+            padding-top: $xlspace;
+            padding-bottom: $xlspace;
+            order: -1;
+        }
+    }
+}
 
 
 
+// BLOQUE 6
+.section6__producto{
+    @include flex (column, no-wrap, center, stretch, 0);
+    .producto6__maintitle{
+        @include flex (row, wrap, center, center, 0);
+        padding: $xxlspace;
+    }
+    .producto6__article{
+        @include flex (row, wrap, space-between, stretch, 0);
+        .producto6__txt{
+            @include flex (column, no-wrap, flex-start, stretch, .8rem);
+            p{
+                font-size: 3.2em;
+                line-height: 3.6rem;
+                @include max-sizes(36rem, 36rem);
+            }
+        }
+    .product6__images{
+        @include flex (row, wrap, center, center, 1.6rem);
+    }
 
+    }
+}
 
-
-
-
-
-
-
+@media (max-width: 1400px){
+    .section6__producto{
+        .producto6__maintitle{
+            padding: $lspace;
+        }
+        .producto6__article{
+            justify-content: center;
+            .producto6__txt{
+                p{
+                    text-align: center;
+                    @include max-sizes(120rem, auto);
+                }
+            }
+        }
+    }
 }
