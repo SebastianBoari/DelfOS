@@ -3,7 +3,7 @@
     @include flex (row, wrap, space-between, stretch, 0);
     padding: $xlspace $xlspace;
     .producto1__txt{
-        @include flex (column, no-wrap, space-between, stretch, 0);
+        @include flex (column, no-wrap, flex-start, stretch, 12.8rem);
         @include max-sizes(45rem, auto);
         .txt1--up{
             @include flex (column, no-wrap, space-between, stretch, 4rem);
@@ -92,7 +92,9 @@
 
     }
 }
-// RESPONSIVE DE LA PAGINA
+// RESPONSIVE
+
+// 1400PX
 @media (max-width: 1400px){
     // BLOQUE 1
     .section1__producto{

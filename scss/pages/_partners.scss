@@ -1,11 +1,13 @@
-// BLOQUE 1 DESKTOP
+// DESKTOP STYLES
+
+// BLOQUE 1
 .section1__partners{
     @include flex (row, wrap, space-between, stretch, 0);
     padding-top: $xlspace;
     padding-bottom: $xlspace;
     .partners1__article1{
-        @include flex (column, no-wrap, space-between, stretch, 0);
-        @include max-sizes(55rem, auto);
+        @include flex (column, no-wrap, space-between, stretch, 3.2rem);
+        @include max-sizes(56rem, none);
         .article1__txt{
             @include flex (column, no-wrap, space-between, stretch, 3.2rem);
             .article1__txt--lower{
@@ -18,38 +20,38 @@
     }
     .partners1__article2{
         @include flex (column, no-wrap, space-between, stretch, 3.2rem);
-        @include max-sizes(56rem, auto);
+        @include max-sizes(56rem, none);
         
     }
 }
-// BLOQUE 2 DESKTOP
+// BLOQUE 2
 .section2__partners{
     @include flex (row, wrap, space-between, stretch, 0);
     padding-top: $xlspace;
     padding-bottom: $xlspace;
     .partners2__article1{
         @include flex (column, no-wrap, space-between, stretch, 3.2rem);
-        @include max-sizes(55rem, auto);
+        @include max-sizes(55rem, none);
         p{
             line-height: 3.2rem;
         }
     }
     .partners2__article2{
         @include flex (column, no-wrap, space-between, stretch, 3.2rem);
-        @include max-sizes(55rem, auto);
+        @include max-sizes(55rem, none);
         p{
             line-height: 3.2rem;
         }
     }
 }
-// BLOQUE 3 DESKTOP
+// BLOQUE 3
 .background__img3{
     background-image: url(https://i.imgur.com/s0awAEU.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
-    @include sizes(100vw, 65rem);
+    @include sizes(100%, 65rem);
     @include flex (column, no-wrap, center, center, 0);
     .section3__partners{
         @include flex (column, no-wrap, center, center, 3.2rem);
@@ -68,19 +70,18 @@
         }
     }
 }
-
-// BLOQUE 4 DESKTOP
+// BLOQUE 4
 .section4__partners{
     @include flex (row, wrap, space-between, stretch, 0);
     padding-top: $xxlspace;
     padding-bottom: $xxlspace;
     .partners4__article1{
         @include flex (column, no-wrap, space-between, stretch, 3.2rem);
-        @include max-sizes(52rem, auto);
+        @include max-sizes(52rem, none);
     }
     .partners4__article2{
-        @include flex (column, no-wrap, space-between, stretch, 0);
-        @include max-sizes(56rem, auto);
+        @include flex (column, no-wrap, space-between, stretch, 3.2rem);
+        @include max-sizes(56rem, none);
         .article2__txt{
             @include flex (column, no-wrap, space-between, stretch, 3.2rem);
             .article2__txt--lower{
@@ -92,15 +93,14 @@
         }
     }
 }
-
-// BLOQUE 5 DESKTOP
+// BLOQUE 5
 .section5__partners{
     @include flex (row, wrap, space-between, stretch, 0);
     padding-top: $xxlspace;
     padding-bottom: $xxlspace;
     .partners5__article1{
         @include flex (column, no-wrap, space-between, stretch, .6rem);
-        @include max-sizes(33.3rem, auto);
+        @include max-sizes(33.3rem, none);
         h3{
             @extend .smalltitle;
             font-size: 2.5em;
@@ -117,15 +117,14 @@
         @extend .partners5__article1;
     }
 }
-
-// BLOQUE 6 DESKTOP
+// BLOQUE 6
 .background__img4{
     background-image: url(https://i.imgur.com/NBJbLJN.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
-    @include sizes(100vw, 65rem);
+    @include sizes(100%, 65rem);
     @include flex (column, no-wrap, center, center, 0);
     .section6__partners{
         @include flex (column, no-wrap, center, center, 0rem);
@@ -145,6 +144,51 @@
                 text-align: center;
                 line-height: 3.2rem;
             }
+        }
+    }
+}
+// RESPONSIVE
+
+// 1200PX
+@media (max-width: 1200px){
+    // BLOQUE 1
+    .section1__partners{
+        justify-content: center;
+        gap: 6.4rem;
+    }
+    // BLOQUE 2
+    .section2__partners{
+        padding-top: $lspace;
+        justify-content: center;
+        gap: 6.4rem;
+        .partners2__article1{
+            align-items: center;
+            text-align: center;
+        }
+        .partners2__article2{
+            align-items: center;
+            text-align: center;
+        }
+    }
+    // BLOQUE 4
+    .section4__partners{
+        justify-content: center;
+        gap: 6.4rem;
+        .partners4__article1{
+            order: 1;
+            @include max-sizes(56rem, none);
+        }
+    }
+    // BLOQUE 5
+    .section5__partners{
+        @include flex (column, no-wrap, center, center, 3.2rem);
+        padding-top: $xlspace;
+        padding-bottom: $xlspace;
+        .partners5__article1{
+            gap: 1.6rem;
+            @include max-sizes(56rem, auto);
+            align-items: center;
+            text-align: center;
         }
     }
 }
