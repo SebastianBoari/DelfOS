@@ -6,20 +6,20 @@
     padding-top: $xlspace;
     padding-bottom: $xlspace;
     .partners1__article1{
-        @include flex (column, no-wrap, space-between, stretch, 3.2rem);
+        @include flex (column, nowrap, space-between, stretch, 3.2rem);
         @include max-sizes(56rem, none);
         .article1__txt{
-            @include flex (column, no-wrap, space-between, stretch, 3.2rem);
+            @include flex (column, nowrap, space-between, stretch, 3.2rem);
             .article1__txt--lower{
-                @include flex (column, no-wrap, space-between, stretch, 1.6rem);
+                @include flex (column, nowrap, space-between, stretch, 1.6rem);
             }
         }
         .article1__img{
-            @include flex (row, no-wrap, space-between, stretch, 0);
+            @include flex (row, nowrap, space-between, stretch, 0);
         }
     }
     .partners1__article2{
-        @include flex (column, no-wrap, space-between, stretch, 3.2rem);
+        @include flex (column, nowrap, space-between, stretch, 3.2rem);
         @include max-sizes(56rem, none);
         
     }
@@ -30,14 +30,14 @@
     padding-top: $xlspace;
     padding-bottom: $xlspace;
     .partners2__article1{
-        @include flex (column, no-wrap, space-between, stretch, 3.2rem);
+        @include flex (column, nowrap, space-between, stretch, 3.2rem);
         @include max-sizes(55rem, none);
         p{
             line-height: 3.2rem;
         }
     }
     .partners2__article2{
-        @include flex (column, no-wrap, space-between, stretch, 3.2rem);
+        @include flex (column, nowrap, space-between, stretch, 3.2rem);
         @include max-sizes(55rem, none);
         p{
             line-height: 3.2rem;
@@ -52,9 +52,9 @@
     background-attachment: fixed;
     background-size: cover;
     @include sizes(100%, 65rem);
-    @include flex (column, no-wrap, center, center, 0);
+    @include flex (column, nowrap, center, center, 0);
     .section3__partners{
-        @include flex (column, no-wrap, center, center, 3.2rem);
+        @include flex (column, nowrap, center, center, 3.2rem);
         .bigtitle--white{
             @extend .bigtitle;
             text-align: center;
@@ -76,20 +76,20 @@
     padding-top: $xxlspace;
     padding-bottom: $xxlspace;
     .partners4__article1{
-        @include flex (column, no-wrap, space-between, stretch, 3.2rem);
+        @include flex (column, nowrap, space-between, stretch, 3.2rem);
         @include max-sizes(52rem, none);
     }
     .partners4__article2{
-        @include flex (column, no-wrap, space-between, stretch, 3.2rem);
+        @include flex (column, nowrap, space-between, stretch, 3.2rem);
         @include max-sizes(56rem, none);
         .article2__txt{
-            @include flex (column, no-wrap, space-between, stretch, 3.2rem);
+            @include flex (column, nowrap, space-between, stretch, 3.2rem);
             .article2__txt--lower{
-                @include flex (column, no-wrap, space-between, stretch, 1.6rem);
+                @include flex (column, nowrap, space-between, stretch, 1.6rem);
             }
         }
         .article2__img{
-            @include flex (row, no-wrap, space-between, stretch, 0);
+            @include flex (row, nowrap, space-between, stretch, 0);
         }
     }
 }
@@ -99,7 +99,7 @@
     padding-top: $xxlspace;
     padding-bottom: $xxlspace;
     .partners5__article1{
-        @include flex (column, no-wrap, space-between, stretch, .6rem);
+        @include flex (column, nowrap, space-between, stretch, .6rem);
         @include max-sizes(33.3rem, none);
         h3{
             @extend .smalltitle;
@@ -125,11 +125,11 @@
     background-attachment: fixed;
     background-size: cover;
     @include sizes(100%, 65rem);
-    @include flex (column, no-wrap, center, center, 0);
+    @include flex (column, nowrap, center, center, 0);
     .section6__partners{
-        @include flex (column, no-wrap, center, center, 0rem);
+        @include flex (column, nowrap, center, center, 0rem);
         .partners6__article{
-            @include flex (column, no-wrap, center, center, 3.2rem);
+            @include flex (column, nowrap, center, center, 3.2rem);
             background-color: rgba(242, 244, 247, .8);
             border-radius: .4rem;
             padding: $xlspace;
@@ -181,7 +181,7 @@
     }
     // BLOQUE 5
     .section5__partners{
-        @include flex (column, no-wrap, center, center, 3.2rem);
+        @include flex (column, nowrap, center, center, 3.2rem);
         padding-top: $xlspace;
         padding-bottom: $xlspace;
         .partners5__article1{

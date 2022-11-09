@@ -4,10 +4,10 @@
     @include flex (row, wrap, space-between, stretch, 0);
     padding: $xxlspace 0;
     .home1__txt{
-        @include flex (column, no-wrap, space-between, stretch, 0);
+        @include flex (column, nowrap, space-between, stretch, 0);
         max-width: 55rem;
         .home1__txt--up{
-            @include flex (column, no-wrap, flex-start, stretch, 4rem);
+            @include flex (column, nowrap, flex-start, stretch, 4rem);
         }
         .home1__button{
             align-self: flex-end;
@@ -19,10 +19,10 @@
     @include flex (row, wrap, space-between, stretch, 0);
     padding: $xxlspace 0;
     .home2__txt{
-        @include flex (column, no-wrap, space-between, stretch, 0);
+        @include flex (column, nowrap, space-between, stretch, 0);
         max-width: 55rem;
         .home2__txt--up{
-            @include flex (column, no-wrap, flex-start, stretch, 4rem);
+            @include flex (column, nowrap, flex-start, stretch, 4rem);
         }
     }
     .home2__img{
@@ -51,7 +51,7 @@
     @include flex (row, wrap, space-between, stretch, 0);
     padding: $xlspace 0;
     .card{
-        @include flex (column, no-wrap, space-between, stretch, 0);
+        @include flex (column, nowrap, space-between, stretch, 0);
         max-width: 32rem;
         -webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);
         -moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);

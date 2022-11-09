@@ -6,10 +6,10 @@
     padding-top: $lspace;
     padding-bottom: $xlspace;
     .nosotros1__article{
-        @include flex(column, no-wrap, flex-start, stretch, 6.4rem);
+        @include flex(column, nowrap, flex-start, stretch, 6.4rem);
         @include max-sizes(54rem, auto);
         .article__txt{
-            @include flex(column, no-wrap, space-between, stretch, 1.6rem);
+            @include flex(column, nowrap, space-between, stretch, 1.6rem);
             h1{
                 line-height: 7.3rem;
             }
@@ -22,24 +22,24 @@
             }
         }
         .article__img{
-            @include flex(row, no-wrap, space-between, stretch, 0);
+            @include flex(row, nowrap, space-between, stretch, 0);
         }
     }
 }
 // BLOQUE 2
 .section2__nosotros{
-    @include flex(column, no-wrap, space-between, stretch, 12.8rem);
+    @include flex(column, nowrap, space-between, stretch, 12.8rem);
     padding-top: $xlspace;
     padding-bottom: $xlspace;
     .employee__right{
-        @include flex(row, no-wrap, space-between, stretch, 6.4rem);
+        @include flex(row, nowrap, space-between, stretch, 6.4rem);
         @include max-sizes(auto, 49.8rem);
         align-self: flex-end;
         -webkit-box-shadow: -2px 5px 7px -2px rgba(0,0,0,0.75);
         -moz-box-shadow: -2px 5px 7px -2px rgba(0,0,0,0.75);
         box-shadow: -2px 5px 7px -2px rgba(0,0,0,0.75);
         .employee__txt{
-            @include flex(column, no-wrap, space-between, stretch, 0);
+            @include flex(column, nowrap, space-between, stretch, 0);
             @include max-sizes(55rem, auto);
             padding-top: $lspace;
             padding-bottom: $lspace;
@@ -56,14 +56,14 @@
         }
     }
     .employee__left{
-        @include flex(row, no-wrap, space-between, stretch, 6.4rem);
+        @include flex(row, nowrap, space-between, stretch, 6.4rem);
         @include max-sizes(auto, 49.8rem);
         align-self: flex-start;
         -webkit-box-shadow: 2px 5px 7px -2px rgba(0,0,0,0.75);
         -moz-box-shadow: 2px 5px 7px -2px rgba(0,0,0,0.75);
         box-shadow: 2px 5px 7px -2px rgba(0,0,0,0.75);
         .employee__txt{
-            @include flex(column, no-wrap, space-between, stretch, 0);
+            @include flex(column, nowrap, space-between, stretch, 0);
             @include max-sizes(55rem, auto);
             padding-top: $lspace;
             padding-bottom: $lspace;
@@ -168,7 +168,7 @@
                 background-color: rgba(242, 244, 247, .8);
                 border-radius: .4rem;
                 padding: $xlspace;
-                @include flex(column, no-wrap, center, stretch, 6.4rem);
+                @include flex(column, nowrap, center, stretch, 6.4rem);
                 .article__button{
                     align-self: center;
                 }       
@@ -198,10 +198,10 @@
             -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
             -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
             box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
-            @include flex(column, no-wrap, space-between, stretch, 1.6rem);
+            @include flex(column, nowrap, space-between, stretch, 1.6rem);
             @include max-sizes(none, none);
             .employee__txt{
-                @include flex(column, no-wrap, space-between, stretch, 1.6rem);
+                @include flex(column, nowrap, space-between, stretch, 1.6rem);
                 @include max-sizes(55rem, none);
                 padding: $lspace;
                 figure{
@@ -223,10 +223,10 @@
             -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
             -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
             box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
-            @include flex(column, no-wrap, space-between, stretch, 1.6rem);
+            @include flex(column, nowrap, space-between, stretch, 1.6rem);
             @include max-sizes(none, none);
             .employee__txt{
-                @include flex(column, no-wrap, space-between, stretch, 1.6rem);
+                @include flex(column, nowrap, space-between, stretch, 1.6rem);
                 @include max-sizes(55rem, none);
                 padding: $lspace;
                 figure{

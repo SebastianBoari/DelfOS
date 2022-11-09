@@ -3,10 +3,10 @@
     @include flex (row, wrap, space-between, stretch, 0);
     padding: $xlspace $xlspace;
     .producto1__txt{
-        @include flex (column, no-wrap, flex-start, stretch, 12.8rem);
+        @include flex (column, nowrap, flex-start, stretch, 12.8rem);
         @include max-sizes(45rem, auto);
         .txt1--up{
-            @include flex (column, no-wrap, space-between, stretch, 4rem);
+            @include flex (column, nowrap, space-between, stretch, 4rem);
         }
         .producto1__btn{
             align-self: flex-end;
@@ -18,10 +18,10 @@
     @include flex (row, wrap, space-between, stretch, 0);
     padding: $xxlspace $xlspace;
     .producto2__txt{
-        @include flex (column, no-wrap, space-between, stretch, 0);
+        @include flex (column, nowrap, space-between, stretch, 0);
         @include max-sizes(45rem, auto);
         .txt2--up{
-            @include flex (column, no-wrap, space-between, stretch, 1.6rem);
+            @include flex (column, nowrap, space-between, stretch, 1.6rem);
         }
         .producto__btn{
             align-self: flex-start;
@@ -38,7 +38,7 @@
     width: 100%;
     .section3__producto{
         padding: 38.4rem 0 $xxlspace;
-        @include flex (column, no-wrap, flex-end, center, 2rem);
+        @include flex (column, nowrap, flex-end, center, 2rem);
     }
 }
 
@@ -47,10 +47,10 @@
     @include flex (row, wrap, space-between, stretch, 0);
     padding: $xxlspace $xlspace;
     .producto4__txt{
-        @include flex (column, no-wrap, space-between, stretch, 0);
+        @include flex (column, nowrap, space-between, stretch, 0);
         @include max-sizes(45rem, auto);
         .txt4--up{
-            @include flex (column, no-wrap, flex-start, stretch, 4rem);
+            @include flex (column, nowrap, flex-start, stretch, 4rem);
         }
         .producto4__btn{
             align-self: flex-end;
@@ -62,16 +62,16 @@
     @include flex (row, wrap, space-between, stretch, 0);
     padding: $xxlspace $xlspace;
     .producto5__txt{
-        @include flex (column, no-wrap, space-between, stretch, 0);
+        @include flex (column, nowrap, space-between, stretch, 0);
         @include max-sizes(45rem, auto);
         .txt5--up{
-            @include flex (column, no-wrap, space-between, stretch, 3.2rem);
+            @include flex (column, nowrap, space-between, stretch, 3.2rem);
         }
     }
 }
 // BLOQUE 6
 .section6__producto{
-    @include flex (column, no-wrap, center, stretch, 0);
+    @include flex (column, nowrap, center, stretch, 0);
     .producto6__maintitle{
         @include flex (row, wrap, center, center, 0);
         padding: $xxlspace;
@@ -79,7 +79,7 @@
     .producto6__article{
         @include flex (row, wrap, space-between, stretch, 0);
         .producto6__txt{
-            @include flex (column, no-wrap, flex-start, stretch, .8rem);
+            @include flex (column, nowrap, flex-start, stretch, .8rem);
             p{
                 font-size: 3.2em;
                 line-height: 3.6rem;
@@ -122,7 +122,7 @@
             max-width: 66.3rem;
             gap: 4rem;
             .txt2--up{
-                @include flex (column, no-wrap, space-between, stretch, 4rem);
+                @include flex (column, nowrap, space-between, stretch, 4rem);
             }
             .producto2__btn{
                 align-self: flex-end;

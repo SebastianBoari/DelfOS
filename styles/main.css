@@ -261,7 +261,7 @@ body {
   .section1__home .home1__txt {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 0;
@@ -269,7 +269,7 @@ body {
     .section1__home .home1__txt .home1__txt--up {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: flex-start;
       align-items: stretch;
       gap: 4rem; }
@@ -288,7 +288,7 @@ body {
   .section2__home .home2__txt {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 0;
@@ -296,7 +296,7 @@ body {
     .section2__home .home2__txt .home2__txt--up {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: flex-start;
       align-items: stretch;
       gap: 4rem; }
@@ -340,7 +340,7 @@ body {
   .home__cards1 .card {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 0;
@@ -466,7 +466,7 @@ body {
   .section1__nosotros .nosotros1__article {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: stretch;
     gap: 6.4rem;
@@ -475,7 +475,7 @@ body {
     .section1__nosotros .nosotros1__article .article__txt {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
       gap: 1.6rem; }
@@ -489,7 +489,7 @@ body {
     .section1__nosotros .nosotros1__article .article__img {
       display: flex;
       flex-direction: row;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
       gap: 0; }
@@ -497,7 +497,7 @@ body {
 .section2__nosotros {
   display: flex;
   flex-direction: column;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: stretch;
   gap: 12.8rem;
@@ -506,7 +506,7 @@ body {
   .section2__nosotros .employee__right {
     display: flex;
     flex-direction: row;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 6.4rem;
@@ -519,7 +519,7 @@ body {
     .section2__nosotros .employee__right .employee__txt {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
       gap: 0;
@@ -536,7 +536,7 @@ body {
   .section2__nosotros .employee__left {
     display: flex;
     flex-direction: row;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 6.4rem;
@@ -549,7 +549,7 @@ body {
     .section2__nosotros .employee__left .employee__txt {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
       gap: 0;
@@ -661,7 +661,7 @@ body {
         padding: 6.4rem;
         display: flex;
         flex-direction: column;
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: stretch;
         gap: 6.4rem; }
@@ -683,7 +683,7 @@ body {
     box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 1.6rem;
@@ -692,7 +692,7 @@ body {
     .section2__nosotros .employee__right .employee__txt {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
       gap: 1.6rem;
@@ -714,7 +714,7 @@ body {
     box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 1.6rem;
@@ -723,7 +723,7 @@ body {
     .section2__nosotros .employee__left .employee__txt {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
       gap: 1.6rem;
@@ -752,7 +752,7 @@ body {
   .section1__producto .producto1__txt {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: stretch;
     gap: 12.8rem;
@@ -761,7 +761,7 @@ body {
     .section1__producto .producto1__txt .txt1--up {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
       gap: 4rem; }
@@ -779,7 +779,7 @@ body {
   .section2__producto .producto2__txt {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 0;
@@ -788,7 +788,7 @@ body {
     .section2__producto .producto2__txt .txt2--up {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
       gap: 1.6rem; }
@@ -806,7 +806,7 @@ body {
     padding: 38.4rem 0 12.8rem;
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: flex-end;
     align-items: center;
     gap: 2rem; }
@@ -822,7 +822,7 @@ body {
   .section4__producto .producto4__txt {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 0;
@@ -831,7 +831,7 @@ body {
     .section4__producto .producto4__txt .txt4--up {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: flex-start;
       align-items: stretch;
       gap: 4rem; }
@@ -849,7 +849,7 @@ body {
   .section5__producto .producto5__txt {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 0;
@@ -858,7 +858,7 @@ body {
     .section5__producto .producto5__txt .txt5--up {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
       gap: 3.2rem; }
@@ -866,7 +866,7 @@ body {
 .section6__producto {
   display: flex;
   flex-direction: column;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: stretch;
   gap: 0; }
@@ -888,7 +888,7 @@ body {
     .section6__producto .producto6__article .producto6__txt {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: flex-start;
       align-items: stretch;
       gap: 0.8rem; }
@@ -929,7 +929,7 @@ body {
       .section2__producto .producto2__txt .txt2--up {
         display: flex;
         flex-direction: column;
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
         align-items: stretch;
         gap: 4rem; }
@@ -985,7 +985,7 @@ body {
   .section1__partners .partners1__article1 {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 3.2rem;
@@ -994,28 +994,28 @@ body {
     .section1__partners .partners1__article1 .article1__txt {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
       gap: 3.2rem; }
       .section1__partners .partners1__article1 .article1__txt .article1__txt--lower {
         display: flex;
         flex-direction: column;
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
         align-items: stretch;
         gap: 1.6rem; }
     .section1__partners .partners1__article1 .article1__img {
       display: flex;
       flex-direction: row;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
       gap: 0; }
   .section1__partners .partners1__article2 {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 3.2rem;
@@ -1034,7 +1034,7 @@ body {
   .section2__partners .partners2__article1 {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 3.2rem;
@@ -1045,7 +1045,7 @@ body {
   .section2__partners .partners2__article2 {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 3.2rem;
@@ -1064,14 +1064,14 @@ body {
   height: 65rem;
   display: flex;
   flex-direction: column;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 0; }
   .background__img3 .section3__partners {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 3.2rem; }
@@ -1098,7 +1098,7 @@ body {
   .section4__partners .partners4__article1 {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 3.2rem;
@@ -1107,7 +1107,7 @@ body {
   .section4__partners .partners4__article2 {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 3.2rem;
@@ -1116,21 +1116,21 @@ body {
     .section4__partners .partners4__article2 .article2__txt {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
       gap: 3.2rem; }
       .section4__partners .partners4__article2 .article2__txt .article2__txt--lower {
         display: flex;
         flex-direction: column;
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
         align-items: stretch;
         gap: 1.6rem; }
     .section4__partners .partners4__article2 .article2__img {
       display: flex;
       flex-direction: row;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
       gap: 0; }
@@ -1147,7 +1147,7 @@ body {
   .section5__partners .partners5__article1, .section5__partners .partners5__article2, .section5__partners .partners5__article3 {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 0.6rem;
@@ -1167,21 +1167,21 @@ body {
   height: 65rem;
   display: flex;
   flex-direction: column;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 0; }
   .background__img4 .section6__partners {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 0rem; }
     .background__img4 .section6__partners .partners6__article {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: center;
       align-items: center;
       gap: 3.2rem;
@@ -1221,7 +1221,7 @@ body {
   .section5__partners {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 3.2rem;
@@ -1251,7 +1251,7 @@ body {
   .section1__tienda .tienda1__txt {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 0rem;
@@ -1259,14 +1259,14 @@ body {
     .section1__tienda .tienda1__txt .txt--up {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: flex-start;
       align-items: stretch;
       gap: 4rem; }
     .section1__tienda .tienda1__txt .tienda1__btns {
       display: flex;
       flex-direction: row;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: flex-start;
       align-items: center;
       gap: 3.2rem; }
@@ -1300,7 +1300,7 @@ body {
   .section2__tienda .card2 {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: stretch;
     gap: 0;
@@ -1308,7 +1308,7 @@ body {
     .section2__tienda .card2 .card2__txt {
       display: flex;
       flex-direction: column;
-      flex-wrap: no-wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
       gap: 0;
@@ -1316,7 +1316,7 @@ body {
       .section2__tienda .card2 .card2__txt .card2__txt--upper {
         display: flex;
         flex-direction: column;
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: stretch;
         gap: 1.6rem; }
@@ -1336,7 +1336,7 @@ body {
   .section3__tienda .tienda3__txt {
     display: flex;
     flex-direction: column;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: stretch;
     gap: 6.4rem;
@@ -1369,7 +1369,7 @@ body {
 .tienda4__txt {
   display: flex;
   flex-direction: column;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: stretch;
   gap: 0;
@@ -1378,7 +1378,7 @@ body {
 .tienda4__txtdescrip {
   display: flex;
   flex-direction: column;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: stretch;
   gap: 0;
