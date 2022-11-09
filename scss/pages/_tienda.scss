@@ -1,5 +1,6 @@
+// DESKTOP STYLES
 
-/* BLOQUE 1 CON FONDO DE IMAGEN TIENDA */
+//BLOQUE 1
 .section1__tienda{
     @include flex (row, wrap, space-between, stretch, 0);
     margin: 6.4rem auto;
@@ -28,8 +29,6 @@
         }
     }
 }
-
-/* EN ESTE ESTILO NO PUDE UTILIZAR LA SYNTAXIS DE SASS PORQUE LO UTILIZO MAS ABAJO. LO VOY A HACER UN ELEMENTO DE BUTTONS EN PARTIAL. */
 .tienda1__link1{
     @extend .btn-primary;
     background-color: $lightblue;
@@ -38,9 +37,7 @@
     font-size: $smalltxt;
     border-radius: 0 0 0 0;
 }
-
-/* BLOQUE 2 TIENDA CARDS */
-
+//BLOQUE 2
 .section2__tienda{
     @include flex (row, wrap, space-between, stretch, 0);
     row-gap: 12.8rem;
@@ -57,9 +54,7 @@
         }
     }
 }
-
-/* BLOQUE 3 TIENDA  */
-
+//BLOQUE 3
 .section3__tienda{
     @include flex (row, wrap, space-between, stretch, 0);
     margin: 6.4rem auto;
@@ -75,9 +70,7 @@
         }
     }
 }
-
-/* BLOQUE 4 TIENDA  */
-
+// BLOQUE 4
 .tienda4__maintitle{
     padding: 12.8rem 0;
     text-align: center;
@@ -107,28 +100,29 @@
     row-gap: 1.6rem;
     padding-bottom: 6.4rem;
 }
-
+// RESPONSIVE
+// 1200PX
 @media (max-width: 1200px){
+    // BLOQUE 1 
     .section1__tienda{
         justify-content: center;
         padding: 6.4rem 3.2rem;
         gap: 4rem;
     }
 }
+// 992PX
 @media (max-width: 992px){
+    // BLOQUE 1
     .tienda1__img{
         order: -1;
     }
-}
-
-@media (max-width: 992px){
+    // BLOQUE 2
     .section2__tienda{
         justify-content: center;
     }
-}
-
-@media (max-width: 992px){
+    // BLOQUE 3
     .section3__tienda{
         justify-content: center;
     }
 }
+

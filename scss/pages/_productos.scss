@@ -41,7 +41,6 @@
         @include flex (column, nowrap, flex-end, center, 2rem);
     }
 }
-
 // BLOQUE 4
 .section4__producto{
     @include flex (row, wrap, space-between, stretch, 0);
@@ -93,7 +92,6 @@
     }
 }
 // RESPONSIVE
-
 // 1400PX
 @media (max-width: 1400px){
     // BLOQUE 1
