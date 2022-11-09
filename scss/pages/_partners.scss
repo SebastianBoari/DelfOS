@@ -73,8 +73,8 @@
 // BLOQUE 4
 .section4__partners{
     @include flex (row, wrap, space-between, stretch, 0);
-    padding-top: $xxlspace;
-    padding-bottom: $xxlspace;
+    padding-top: $xlspace;
+    padding-bottom: $xlspace;
     .partners4__article1{
         @include flex (column, nowrap, space-between, stretch, 3.2rem);
         @include max-sizes(52rem, none);
@@ -96,8 +96,8 @@
 // BLOQUE 5
 .section5__partners{
     @include flex (row, wrap, space-between, stretch, 0);
-    padding-top: $xxlspace;
-    padding-bottom: $xxlspace;
+    padding-top: $xlspace;
+    padding-bottom: $xlspace;
     .partners5__article1{
         @include flex (column, nowrap, space-between, stretch, .6rem);
         @include max-sizes(33.3rem, none);
@@ -181,7 +181,7 @@
     // BLOQUE 5
     .section5__partners{
         @include flex (column, nowrap, center, center, 3.2rem);
-        padding-top: $xlspace;
+        padding-top: $xlspace;;
         padding-bottom: $xlspace;
         .partners5__article1{
             gap: 1.6rem;

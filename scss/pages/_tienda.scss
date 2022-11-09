@@ -3,14 +3,13 @@
 //BLOQUE 1
 .section1__tienda{
     @include flex (row, wrap, space-between, stretch, 0);
-    margin: 6.4rem auto;
     padding: 6.4rem 16rem 6.4rem 3.2rem;
     background-image: url(https://i.imgur.com/aTKykIf.png);
     background-repeat: no-repeat;
     background-size: cover;
     .tienda1__txt{
         @include flex (column, nowrap, space-between, stretch, 0rem);
-        max-width: 61rem;
+        @include max-sizes(61rem, none);
         .txt--up{
             @include flex (column, nowrap, flex-start, stretch, 4rem);
         }
@@ -42,15 +41,27 @@
     @include flex (row, wrap, space-between, stretch, 0);
     row-gap: 12.8rem;
     padding: $xxlspace 0;
-    .card2{
-        @include flex (column, nowrap, flex-start, stretch, 0);
-        max-width: 36.1rem;
-        .card2__txt{
-            @include flex (column, nowrap, space-between, stretch, 0);
-            padding: .8rem 3.2rem .8rem 3.2rem;
-            .card2__txt--upper{
-                @include flex (column, nowrap, flex-start, stretch, 1.6rem);
-            }    
+    a{
+        text-decoration: none;
+        .juliuspersonal{
+            height: 51rem;
+        }
+        .card2{
+            @include flex (column, nowrap, flex-start, stretch, 0);
+            @include max-sizes(36.1rem, auto);
+            transition: all .3s;
+            .card2__txt{
+                @include flex (column, nowrap, space-between, stretch, 0);
+                padding: .8rem 3.2rem .8rem 3.2rem;
+                .card2__txt--upper{
+                    @include flex (column, nowrap, flex-start, stretch, 1.6rem);
+                }    
+            }
+        }
+        .card2:hover{
+            -webkit-box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
+            -moz-box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
+            box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
         }
     }
 }
@@ -63,8 +74,8 @@
     background-size: cover;
     .tienda3__txt{
         @include flex (column, nowrap, flex-start, stretch, 6.4rem);
+        @include max-sizes(55rem, none);
         padding: 3.2rem 0 17.4rem 3.2rem;
-        max-width: 55rem;   
         .tienda3__title, .tienda3__descrip{
             color: $white;
         }
@@ -85,11 +96,10 @@
     background-image: url(https://i.imgur.com/InrFws6.png);
 }
 .tienda4__bgimg{
+    @include sizes(100%, 31rem);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 31rem;
 }
 .tienda4__txt{
     @include flex (column, nowrap, flex-start, stretch, 0);

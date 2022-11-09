@@ -60,7 +60,7 @@
         box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);
         border-radius: 4px 4px 4px 4px;
         transition: 1s;
-        &:hover{
+        .card:hover{
             -webkit-box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
             -moz-box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
             box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
@@ -83,7 +83,7 @@
                 color: $lightblue;
                 line-height: 1.6rem;
                 transition: .3s;
-                &:hover{
+                .card:hover{
                     color: $darkblue;
                 }
             }
