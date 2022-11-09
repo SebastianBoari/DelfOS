@@ -34,9 +34,9 @@
         background-size: cover;
         @include flex(row, wrap, center, stretch, 0);
         .section1__nosotros{
-            font-size: 1.5em;
             @include flex(row, wrap, center, stretch, 0);
             .nosotros1__article{
+                @include max-sizes(120rem, auto);
                 background-color: rgba(242, 244, 247, .8);
                 border-radius: .4rem;
                 padding: $xlspace;
@@ -54,9 +54,11 @@
 // BLOQUE 2
 .section2__nosotros{
     @include flex(column, no-wrap, space-between, stretch, 12.8rem);
+    padding-top: $xlspace;
+    padding-bottom: $xlspace;
     .employee__right{
         @include flex(row, no-wrap, space-between, stretch, 6.4rem);
-        @include max-sizes(auto, 44.8rem);
+        @include max-sizes(auto, 49.8rem);
         align-self: flex-end;
         -webkit-box-shadow: -2px 5px 7px -2px rgba(0,0,0,0.75);
         -moz-box-shadow: -2px 5px 7px -2px rgba(0,0,0,0.75);
@@ -68,42 +70,114 @@
             padding-bottom: $lspace;
             padding-left: $lspace;
             padding-right: 0;
-            .caption{
-                font-size: 1.2em;
-            }
             figure{
                 align-self: flex-end;
             }     
         }
         .employee__img{
-                img{
-                    margin: 0;
+                .employeecol{
+                    display: none;
                 }
         }
     }
     .employee__left{
-        @extend .employee__right;
-        align-self: flex-start;
+        @include flex(row, no-wrap, space-between, stretch, 6.4rem);
         @include max-sizes(auto, 49.8rem);
+        align-self: flex-start;
         -webkit-box-shadow: 2px 5px 7px -2px rgba(0,0,0,0.75);
         -moz-box-shadow: 2px 5px 7px -2px rgba(0,0,0,0.75);
         box-shadow: 2px 5px 7px -2px rgba(0,0,0,0.75);
         .employee__txt{
+            @include flex(column, no-wrap, space-between, stretch, 0);
+            @include max-sizes(55rem, auto);
+            padding-top: $lspace;
+            padding-bottom: $lspace;
             padding-left: 0;
             padding-right: $lspace;
             figure{
                 align-self: flex-start;
             }
         }
-    }
-    .resize{
-        @include max-sizes(auto, 45.6rem);
+        .employee__img{
+            .employeecol{
+                display: none;
+            }
+        }
     }
 }
-@media (max-width: 1200px){
 
-    
+//RESPONSIVE 
+@media (max-width: 1200px){
+    // BLOQUE 2
+    .section2__nosotros{
+        justify-content: center;
+        .employee__right{
+            align-self: center;
+        }
+        .employee__left{
+            align-self: center;
+        }
+    }
 }
+@media (max-width: 992px){
+    .section2__nosotros{
+        .employee__right{
+            -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
+            -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
+            box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
+            @include flex(column, no-wrap, space-between, stretch, 1.6rem);
+            @include max-sizes(none, none);
+            .employee__txt{
+                @include flex(column, no-wrap, space-between, stretch, 1.6rem);
+                @include max-sizes(55rem, none);
+                padding: $lspace;
+                figure{
+                    align-self: flex-end;
+                    }  
+            }
+            .employee__img{
+                align-self: center;
+                order: -1;
+                .employeecol{
+                    display: block;
+                }
+                .employeecard{
+                    display: none;
+                }
+            }
+        }
+
+        .employee__left{
+            -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
+            -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
+            box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
+            @include flex(column, no-wrap, space-between, stretch, 1.6rem);
+            @include max-sizes(none, none);
+            .employee__txt{
+                @include flex(column, no-wrap, space-between, stretch, 1.6rem);
+                @include max-sizes(55rem, none);
+                padding: $lspace;
+                figure{
+                    align-self: flex-end;
+                    }  
+            }
+            .employee__img{
+                align-self: center;
+                order: -1;
+                .employeecol{
+                    display: block;
+                }
+                .employeecard{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+
 // BLOQUE 3 
 .section3__nosotros{
     padding-top: $xxlspace;
@@ -128,9 +202,6 @@
             h2{
                 @include max-sizes(120rem, auto);
                 text-align: center;
-            }
-            iframe{
-
             }        
         }
     }
