@@ -15,6 +15,7 @@
 @import './partials/header';
 @import './partials/prefooter';
 @import "./partials/footer";
+@import "./partials/cards";
 
 /* INICIO */
 @import 'pages/index';
@@ -30,3 +31,6 @@
 
 /* TIENDA */
 @import 'pages/tienda';
+
+/* WIREFRAME */
+@import 'pages/wireframe';

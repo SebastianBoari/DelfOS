@@ -3,6 +3,7 @@
 //BLOQUE 1
 .section1__tienda{
     @include flex (row, wrap, space-between, stretch, 0);
+    margin-top: $xlspace;
     padding: 6.4rem 16rem 6.4rem 3.2rem;
     background-image: url(https://i.imgur.com/aTKykIf.png);
     background-repeat: no-repeat;
@@ -21,9 +22,9 @@
                     color: $darkblue;
                     font-weight: 400;
                     transition: .8s;
-                    &:hover{
-                        color: $lightblue;
-                    }
+                }
+                .tienda1__link2:hover{
+                    color: $lightblue;
                 }
         }
     }
@@ -35,6 +36,11 @@
     padding: 1.6rem 3.2rem;
     font-size: $smalltxt;
     border-radius: 0 0 0 0;
+    transition: all .3s;
+}
+.tienda1__link1:hover{
+    background-color: $darkblue;
+    color: $white;
 }
 //BLOQUE 2
 .section2__tienda{
