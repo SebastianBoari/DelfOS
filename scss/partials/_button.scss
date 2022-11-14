@@ -12,7 +12,7 @@
     display: inline-block;
     transition: .8s;
 
-    &:hover{
+    .btn-primary:hover{
         background-color: $darkblue;
         color: $white;
     }
