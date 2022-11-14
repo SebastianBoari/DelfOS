@@ -22,7 +22,7 @@ Desarrollar un sitio web de 5 páginas desde su prototipado hasta su finalizaci�
 ## Comentarios
 Mi intención con este repositorio es dejar asentado lo trabajado y aprendido de forma intacta. Tambien voy a listar algunos errores que tuve en los que voy a practicar en futuros repositorios. La intención final de todo esto es tener una historia documentada de mi progreso.
 
-###Errores
+### Errores
 ###### En este repositorio se pueden encontrar los siguientes errores:
 - Metodologia BEM poco/mal aplicada/aprovechada
 - Falta de animaciones nativas en CSS
