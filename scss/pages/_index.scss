@@ -59,12 +59,7 @@
         -moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);
         box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);
         border-radius: 4px 4px 4px 4px;
-        transition: 1s;
-        .card:hover{
-            -webkit-box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
-            -moz-box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
-            box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
-        }
+        transition: all .8s;
         .card__header{
             .card__txt{
                 padding: $sspace;
@@ -83,11 +78,16 @@
                 color: $lightblue;
                 line-height: 1.6rem;
                 transition: .3s;
-                .card:hover{
-                    color: $darkblue;
-                }
+            }
+            .card__link:hover{
+                color: $darkblue;
             }
         }        
+    }
+    .card:hover{
+        -webkit-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
     }
 }
 // BLOQUE 6

@@ -1,26 +1,26 @@
 {
-  "name": "scssdelfos",
+  "name": "delfos",
   "version": "1.0.0",
-  "description": "Empiezo mi proyecto intentando aplicar buenas practicas de Git y Github. También intentaré añadir estilos con CSS, Bootstrap y SASS.",
+  "description": "DelfOS es mi primer proyecto de desarrollo web. Este sitio fué realizado en el marco de un curso de desarrollo web tomado en CoderHouse en los meses de octubre y noviembre de 2022.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/main.scss styles/main.css",
+    "build-css":"node-sass --include-path scss scss/main.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SebastianBoari/scssdelfos.git"
+    "url": "git+https://github.com/SebastianBoari/tercerentregaboari.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SebastianBoari/scssdelfos/issues"
+    "url": "https://github.com/SebastianBoari/tercerentregaboari.github.io/issues"
   },
-  "homepage": "https://github.com/SebastianBoari/scssdelfos#readme",
+  "homepage": "https://github.com/SebastianBoari/tercerentregaboari.github.io#readme",
   "devDependencies": {
-    "node-sass": "^7.0.3",
+    "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"
   }
 }

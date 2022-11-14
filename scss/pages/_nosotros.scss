@@ -82,8 +82,8 @@
 }
 // BLOQUE 3 
 .section3__nosotros{
-    padding-top: $xxlspace;
-    padding-bottom: $lspace;
+    padding-top: $xlspace;
+    padding-bottom: $xlspace;
     .nosotros3__article{
         @include flex(row, wrap, space-between, stretch, 0);
         h2{
@@ -98,8 +98,8 @@
 }
 // BLOQUE 4 
 .section4__nosotros{
-    padding-top: $lspace;
-    padding-bottom: $lspace;
+    padding-top: $xlspace;
+    padding-bottom: $xlspace;
     .nosotros4__article{
         @include flex(row, wrap, space-between, stretch, 0);
         figure{
