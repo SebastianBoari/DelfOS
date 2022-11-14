@@ -7,6 +7,7 @@
     <meta name="description" content="DelfOS · La empresa desarrolla, fabrica, licencia y da soporte a ordenadores personales, servidores, dispositivos electrónicos y servicios.">
     <meta name="keywords" content="DELFOS, SISTEMA OPERATIVO, DELFOS 14, DELFOS 13, APLICACIONES, DESKTOP, PC ESCRITORIO, PC, PERSONAL COMPUTER, ORDENADOR DE ESCRITORIO, ORDENADOR, CLAVE DE DELFOS 14, CLAVE DE DELFOS 13, ACTIVAR DELFOS, NOVEDADES, TECNOLOGIA, PC LENTO">
     <link rel="icon" href="./img/delfosiconoapollo.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>DelfOS</title>
@@ -37,7 +38,7 @@
 <main id="main">
 <!-- BLOQUE 1 -->
     <div class="background__grey">
-        <section class="section1__home container">
+        <section class="section1__home container" data-aos="fade-down" data-aos-duration="800">
                 <article class="home1__txt">
                     <div class="home1__txt--up">
                         <h1 class="bigtitle">Por qué DelfOS?</h1>
@@ -62,7 +63,7 @@
 <!--BLOQUE 2-->
     <div class="background__grey">
         <section class="section2__home container">
-            <article class="home2__txt">
+            <article class="home2__txt" data-aos="fade-left" data-aos-duration="800">
                 <div class="home2__txt--up">
                      <h2 class="bigtitle">Productividad y workstation</h1>
                           <p class="txt--grey">DelfOS 14 cuenta con herramientas fáciles de usar que te
@@ -78,7 +79,7 @@
                   <a class="btn btn-primary background__white" href="./pages/productos.html">Ver más</a>
                 </div>
            </article>
-           <figure class="home2__img">
+           <figure class="home2__img" data-aos="fade-right" data-aos-duration="800">
               <img class="img-fluid uncenteredimg" src="https://i.imgur.com/6WQmEkb.png" alt="">
               <img class="img-fluid centeredimg" src="https://i.imgur.com/4jQdy2W.png" alt="">
            </figure>
@@ -86,7 +87,7 @@
     </div>
 <!--BLOQUE 3 Y 4-->
     <div class="background__grey">
-      <section class="section3__home container">
+      <section class="section3__home container" data-aos="fade-right" data-aos-duration="800">
         <figure class="home3__img">
           <img class="img-fluid" src="https://i.imgur.com/1b4olLS.png" alt="Un padre y su hijo disfrutando del centro de entrtenimiento DelfOS Live">
         </figure>
@@ -95,7 +96,7 @@
             <p class="txt--grey">La mejor conectividad para tus dispositivos. Compatibilidad total con las herramientas de trabajo más grandes del mercado. Mantente conectado con cualquiera de tus dispositivos móviles de una forma súper intuitiva.</p>
         </article>
       </section>
-      <section class="section4__home container">
+      <section class="section4__home container" data-aos="fade-left" data-aos-duration="800">
         <article class="home4__txt">
           <h2 class="title">El mejor rendimiento con DelfOS.</h2>
           <p class="txt--grey">Disfruta de los juegos más recientes con gráficos que se asemejan a la
@@ -305,6 +306,11 @@
                </div>
           </footer>
      </div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+     AOS.init();
+</script>
 <script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html>
