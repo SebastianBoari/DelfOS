@@ -16,6 +16,10 @@ DelfOS es mi primer proyecto de desarrollo web. Este sitio fué realizado en el 
 - Boostrap
 - SASS
 
+### Donde ver el Wireframe
+En el sitio hay un link que te dirije hacia el wireframe. O tambnien puedes hacer click en la imagen de aqui debajo para verlo en Figma.
+[![wireframe](https://i.imgur.com/NABNL1g.png "wireframe")](https://www.figma.com/file/WVy74OZmykeYRvBy3VRewh/delfOS?node-id=0%3A1&t=7vYfJdkuD3WnzabX-1 "wireframe")
+
 ### Objetivos del proyecto
 Desarrollar un sitio web de 5 páginas desde su prototipado hasta su finalización. 
 
