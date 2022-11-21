@@ -1,46 +1,23 @@
+// DESKTOP 
 .prefooter{
-    padding: $xxlspace 0;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    gap: $xlspace;
+    @include flex(column, nowrap, space-between, stretch, 6.4rem);
+    padding: $xlspace 0;
     .prefooter__title{
-        padding-bottom: $xlspace;
         text-align: center;
     }
     .prefooter__datos{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: center;
-        gap: 4rem;
+        @include flex(row, wrap, space-between, stretch, 0);
         .dato{
-            max-width: 24rem;
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            gap: 1.6rem;
+            @include max-sizes(24rem, none);
             text-align: center;
-            p{
-                font-size: $smalltxt;
-                line-height: 2rem;
-            }
-        }
-        .dato--center{
-            @extend .dato;
         }
     }
 }
-@media (max-width: 576px){
-    .prefooter__datos{
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 4rem;
-        .dato--center{
-            justify-self: center;
+// RESPONSIVE
+@media (max-width: 992px){
+    .prefooter{
+        .prefooter__datos{
+            @include flex(column, nowrap, space-between, center, 3.2rem);
         }
     }
 }

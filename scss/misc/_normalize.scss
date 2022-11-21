@@ -8,9 +8,16 @@
 html{
     font-size: 62.5%;
 }
-
+body{
+    font-family: 'Inter', sans-serif;
+}
 @media (max-width: 576px){
     body{
-        font-size: 1.1em;
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 375px){
+    body{
+        font-size: 0.7em;
     }
 }

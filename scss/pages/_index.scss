@@ -1,59 +1,75 @@
-// DESKTOP STYLES
-
+// DESKTOP
 // BLOQUE 1
-.section1__home{
-    @include flex (row, wrap, space-between, stretch, 0);
-    padding: $xxlspace 0;
+.section1__home {
+    justify-content: space-between;
+    padding:  $xxlspace 0;
     .home1__txt{
-        @include flex (column, nowrap, space-between, stretch, 0);
-        max-width: 55rem;
+        @include flex (column, nowrap, space-between, stretch, 3.2rem);
+        @include max-sizes(55rem, none);
         .home1__txt--up{
-            @include flex (column, nowrap, flex-start, stretch, 4rem);
+            @include flex (column, nowrap, flex-start, stretch, 3.2rem);
         }
         .home1__button{
-            align-self: flex-end;
+            align-self: flex-end
         }
+    }
+    .home1__img{
+        @include max-sizes(60rem, none);
     }
 }
 // BLOQUE 2
-.section2__home{
-    @include flex (row, wrap, space-between, stretch, 0);
-    padding: $xxlspace 0;
+.section2__home {
+    justify-content: space-between;
+    padding:  $xxlspace 0;
     .home2__txt{
-        @include flex (column, nowrap, space-between, stretch, 0);
-        max-width: 55rem;
+        @include flex (column, nowrap, space-between, stretch, 3.2rem);
+        @include max-sizes(55rem, none);
         .home2__txt--up{
-            @include flex (column, nowrap, flex-start, stretch, 4rem);
+            @include flex (column, nowrap, flex-start, stretch, 3.2rem);
+        }
+        .home2__button{
+            align-self: flex-end
         }
     }
     .home2__img{
+        @include max-sizes(60rem, none);
         order: -1;
     }
 }
 // BLOQUE 3
 .section3__home{
-    @include flex (row, wrap, space-between, stretch, 0);
-    padding-top: $xlspace;
+    justify-content: space-between;
+    padding-top: $xxlspace;
     padding-bottom: $lspace;
     .home3__txt{
         max-width: 55rem;
     }
+    .home3__img{
+        @include flex(row, nowrap, flex-start, stretch, 0);
+        @include max-sizes(556px, none);
+    }
 }
 //BLOQUE 4
 .section4__home{
-    @include flex (row, wrap, space-between, stretch, 0);
+    justify-content: space-between;
     padding-top: $lspace;
-    padding-bottom: $xlspace;
+    padding-bottom: $xxlspace;
     .home4__txt{
         max-width: 55rem;
+    }
+    .home4__img{
+        @include flex(row, nowrap, flex-end, stretch, 0);
+        @include max-sizes(556px, none);
     }
 }
 // BLOQUE 5
 .home__cards1{
-    @include flex (row, wrap, space-between, stretch, 0);
-    padding: $xlspace 0;
+    justify-content: space-between;
+    grid-auto-flow: column;
+    padding: $xxlspace 0;
     .card{
         @include flex (column, nowrap, space-between, stretch, 0);
+        height: 100%;
         max-width: 32rem;
         -webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);
         -moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);
@@ -112,70 +128,82 @@
     }
 }
 // RESPONSIVE
-// 1400PX
-@media (max-width: 1400px){
+//1200PX
+@media (max-width: 1200px){
     //BLOQUE 1
     .section1__home{
         justify-content: center;
-        padding-top: 0;
-        padding-bottom: $xlspace;
+        padding:  $xlspace 0;
         .home1__txt{
-            padding: $lspace;
-            max-width: 120rem;
-            gap: 4rem;
+            margin: 0 auto;
         }
         .home1__img{
-            margin-top: $xlspace;
-            margin-bottom: $xlspace;
             order: -1;
         }
     }
-    // BLOQUE 2
+    //BLOQUE 2
     .section2__home{
-        padding-top: 0;
-        padding-bottom: $xlspace;
         justify-content: center;
+        padding:  $xlspace 0;
         .home2__txt{
-            padding: $lspace;
-            max-width: 120rem;
-            gap: 4rem;
-            .home2__button{
-                align-self: flex-end;
-            }
-        }
-        .home2__img{
-            margin-top: $xlspace;
-            margin-bottom: $xlspace;
-            order: -1;
+            margin: 0 auto;
         }
     }
-    //BLOQUE 3 / BLOQUE 4
-    .section3__home, .section4__home{
-        justify-content: center;
+    //BLOQUE 3
+    .section3__home{
+        @include flex(column, nowrap, space-between, center, 3.2rem);
     }
-    .home3__txt, .home4__txt{
-        padding: $lspace;
-        max-width: 120rem;
+    //BLOQUE 4
+    .section4__home{
+        @include flex(column, nowrap, space-between, center, 3.2rem);
+        .home4__img{
+           order: -1;
+        }
     }
-    .home4__img{
-        order: -1;
+    //BLOQUE 5
+    .home__cards1{
+        @include flex(column, nowrap, center, stretch, 3.2rem);
+        .home__card{
+            @include flex(row, nowrap, center, stretch, 0);
+            
+        }
     }
 }
-// 992PX
+//992
 @media (max-width: 992px){
-    // BLOQUE 5
-    .home__cards1{
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        padding: $lspace 0;
-        gap: 3.2rem;
-    }
-    // BLOQUE 6
     .section6__home{
-        flex-flow: column wrap;
         justify-content: center;
-        align-items: center;
-        gap: 4rem;
+    }
+}
+//576PX
+@media (max-width: 576px){
+    //BLOQUE 1
+    .section1__home{
+        padding:  $lspace 0;
+        .home1__txt{
+            padding: $lspace;
+        }
+    }
+    //BLOQUE 2
+    .section2__home{
+        padding:  $lspace 0;
+        .home2__txt{
+            padding: $lspace;
+        }
+    }
+    //BLOQUE 5
+    .home__cards1{
+        padding: $lspace 0;
+    }
+}
+//412PX
+@media (max-width: 412px){
+    //BLOQUE 1
+    .section1__home{
+        padding:  $lspace 0;
+    }
+    //BLOQUE 2
+    .section2__home{
+        padding:  $lspace 0;
     }
 }

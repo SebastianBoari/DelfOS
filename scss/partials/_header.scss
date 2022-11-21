@@ -3,7 +3,7 @@
     padding: $mspace 0;
     .navbar{
         .nav-item{
-            padding: 1.6rem;
+            padding: 1.6rem 2rem;
             .nav-link{
                 color: $darkblue;
                 font-size: $txt;
@@ -20,5 +20,16 @@
 @media (max-width: 1400px){
     #header{
         padding: $sspace 0;
+    }
+}
+@media (max-width: 576px){
+    #header{
+        .navbar{
+            .navbar-brand{
+                img{
+                    max-width: 5rem;
+                }
+            }
+        }
     }
 }

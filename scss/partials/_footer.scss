@@ -1,96 +1,139 @@
-/* FOOTER */
 #footer{
-    max-width: 120rem;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    gap: 3.2rem;
+    padding: $xxlspace 0 $lspace;
+    row-gap: 3.2rem;
     .footer__form{
+        -webkit-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.75);
         background-color: $white;
-        height: 20rem;
-        display: flex;
-        flex-flow: row wrap;
         justify-content: center;
-        align-items: center;
-        align-self: center;
-        -webkit-box-shadow: 0px 11px 21px 1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 11px 21px 1px rgba(0,0,0,0.75);
-        box-shadow: 0px 11px 21px 1px rgba(0,0,0,0.75);
-        .form__input{
-            width: 65rem;
-            height: 5rem;
-            border: none;
-            color: $darkblue;
-            font-size: $smalltitle;
-        }
-        ::placeholder{
-            height: auto;
-            font-weight: 400;
-            color: $darkblue;
-        }
-        .form__btn{
-            padding: 1.8rem 6rem;
-            border: none;
-            font-size: $smalltxt;
-            color: $white;
-            background-color: $lightblue;
-            &:hover{
+        margin: 0;
+        padding: 0;
+        .form__items{
+            @include flex(row, wrap, center, center, .8rem);
+            @include sizes(none, 23rem);
+            .form__input{
+                @include sizes(none, 5.5rem);
+                min-width: 57.6rem;
+                border: none;
+                font-size: 2.8em;
+                color: $darkblue;
+            }
+            .form__input::placeholder{
+                color: $darkblue;
+            }
+            .form__input:focus{
+                outline: $greyblue 1px solid;
+                border-radius: 4px;
+            }
+            .form__btn{
+                width: 200px;
+                height: 56px;
+                color: $white;
+                background-color: $lightblue;
+            }
+            .form__btn:hover{
                 background-color: $darkblue;
             }
         }
     }
     .footer__navbar{
-        display: flex;
-        flex-flow: row wrap;
         justify-content: space-between;
-        align-items: center;
-        padding-bottom: 3.2rem;
         border-bottom: solid rgba(0,0,0,0.16) .2rem;
-        .footer__links{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: 3.2rem;
-        }
+        margin: 0;
+        padding: $lspace 0 $sspace;
         .footer__menu{
-            max-width: 43rem;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            align-items: center; 
+            @include flex(row, nowrap, space-between, stretch, 3.2rem);
+            li{
+                a{
+                    text-decoration: none;
+                    font-size: 1.6em;
+                    transition: all .8s;
+                }
+            }
         }
-        .footer__menu li a{
-            text-decoration: none;
-            padding: $sspace;
-            padding-left: 0;
-            color: $darkblue;
-            font-size: $smalltxt;
-            font-weight: 400;
-            transition: .8s;
-        }
-        .footer__menu li a:hover{
-            color: $lightblue;
+        .footer__links{
+            @include flex(row, nowrap, space-between, stretch, 3.2rem);
+
         }
     }
     .footer__end{
-        display: flex;
-        flex-flow: row wrap;
         justify-content: space-between;
-        align-items: center;
-        padding-bottom: 6.4rem;
-
+        margin: 0;
+        padding: 0;
         .footer__misc{
-            display: flex;
-            gap: 3.2rem;
+            @include flex(row, nowrap, space-between, stretch, 3.2rem);
+            a{
+                text-decoration: none;
+            }
         }
     }
 }
 
+@media (max-width: 992px){
+    #footer{
+        .footer__form{
+            .form__items{
+                .form__input{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
 
+@media (max-width: 768px){
+    #footer{
+        .footer__form{
+            .form__items{
+                .form__input{
+                    min-width: 41.2rem;
+                    font-size: 1.6em;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 412px){
+    #footer{
+        padding: $lspace 0;
+        text-align: center;
+        .footer__form{
+            .form__items{
+                .form__input{
+                    gap: 0;
+                    min-width: 28rem;
+                    font-size: 1.6em;
+                }
+            }
+        }
+        .footer__navbar{
+            .footer__menu{
+                gap: 0;
+            }
+            .footer__links{
+                gap: 0;
+            }
+        }
+    }
+}
 
-
+@media (max-width: 280px){
+    #footer{
+        .footer__form{
+            .form__items{
+                .form__input{
+                    min-width: 16rem;
+                    font-size: 1.6em;
+                }
+                .form__btn{
+                    width: 120px;
+                    height: 46px;
+                }
+            }
+        }
+    }
+}
 
 
 
