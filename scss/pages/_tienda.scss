@@ -1,74 +1,68 @@
-// DESKTOP STYLES
-
+// DESKTOP
 //BLOQUE 1
 .section1__tienda{
-    @include flex (row, wrap, space-between, stretch, 0);
-    margin-top: $xlspace;
-    padding: 6.4rem 16rem 6.4rem 3.2rem;
-    background-image: url(https://i.imgur.com/aTKykIf.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    .tienda1__txt{
-        @include flex (column, nowrap, space-between, stretch, 0rem);
-        @include max-sizes(61rem, none);
-        .txt--up{
-            @include flex (column, nowrap, flex-start, stretch, 4rem);
-        }
-        .tienda1__btns{
-            @include flex (row, nowrap, flex-start, center, 3.2rem);
-                .tienda1__link2{
-                    text-decoration: none;
-                    font-size: $smalltxt;
-                    color: $darkblue;
-                    font-weight: 400;
-                    transition: .8s;
-                }
-                .tienda1__link2:hover{
-                    color: $lightblue;
-                }
+justify-content: space-between;
+align-items: center;
+margin: $xlspace 0;
+padding: $xlspace;
+background-image: url(https://i.imgur.com/aTKykIf.png);
+background-repeat: no-repeat;
+background-size: cover;
+.tienda1__txt{
+    @include max-sizes(60rem, none);
+    @include flex(column, nowrap, space-between, stretch, 6.4rem);
+    .txt--up{
+        @include flex (column, nowrap, flex-start, stretch, 6.4rem);
+    }
+    .tienda1__btns{
+        @include flex (row, nowrap, flex-start, center, 3.2rem);
+            .tienda1__link2{
+                text-decoration: none;
+                font-size: $smalltxt;
+                color: $darkblue;
+                font-weight: 400;
+                transition: .8s;
+            }
+            .tienda1__link2:hover{
+                color: $lightblue;
+            }
+            .tienda1__link1{
+                background-color: $lightblue;
+                color: $white;
+                padding: 1.6rem 3.2rem;
+                font-size: $smalltxt;
+                border-radius: 0 0 0 0;
+                transition: all .3s;
+            }
+            .tienda1__link1:hover{
+                background-color: $darkblue;
+                color: $white;
+            }
         }
     }
 }
-.tienda1__link1{
-    @extend .btn-primary;
-    background-color: $lightblue;
-    color: $white;
-    padding: 1.6rem 3.2rem;
-    font-size: $smalltxt;
-    border-radius: 0 0 0 0;
-    transition: all .3s;
-}
-.tienda1__link1:hover{
-    background-color: $darkblue;
-    color: $white;
-}
 //BLOQUE 2
 .section2__tienda{
-    @include flex (row, wrap, space-between, stretch, 0);
-    row-gap: 12.8rem;
     padding: $xxlspace 0;
-    a{
-        text-decoration: none;
-        .juliuspersonal{
-            height: 51rem;
+    @include flex(row, wrap, space-between, stretch, 0);
+    row-gap: 6.4rem;
+    .card2{
+        @include flex (column, nowrap, flex-start, stretch, 0);
+        @include max-sizes(36.1rem, none);
+        transition: all .3s;
+        padding: 0;
+        .card2__txt{
+            @include flex (column, nowrap, space-between, stretch, 0);
+            padding: .8rem 3.2rem .8rem 3.2rem;
+            .card2__txt--upper{
+                @include flex (column, nowrap, flex-start, stretch, 1.6rem);
+            }    
         }
-        .card2{
-            @include flex (column, nowrap, flex-start, stretch, 0);
-            @include max-sizes(36.1rem, auto);
-            transition: all .3s;
-            .card2__txt{
-                @include flex (column, nowrap, space-between, stretch, 0);
-                padding: .8rem 3.2rem .8rem 3.2rem;
-                .card2__txt--upper{
-                    @include flex (column, nowrap, flex-start, stretch, 1.6rem);
-                }    
-            }
-        }
-        .card2:hover{
-            -webkit-box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
-            -moz-box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
-            box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
-        }
+    }
+    .card2:hover{
+        -webkit-box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
+        -moz-box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
+        box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
     }
 }
 //BLOQUE 3
@@ -85,6 +79,18 @@
         .tienda3__title, .tienda3__descrip{
             color: $white;
         }
+    }
+    .tienda3__btn a{
+        background-color: $lightblue;
+        color: $white;
+        padding: 1.6rem 3.2rem;
+        font-size: $smalltxt;
+        border-radius: 0 0 0 0;
+        transition: all .3s;
+    }
+    .tienda3__btn a:hover{
+        background-color: $darkblue;
+        color: $white;
     }
 }
 // BLOQUE 4
@@ -116,29 +122,46 @@
     row-gap: 1.6rem;
     padding-bottom: 6.4rem;
 }
-// RESPONSIVE
-// 1200PX
+//RESPONSIVE
+//1200PX
 @media (max-width: 1200px){
-    // BLOQUE 1 
     .section1__tienda{
-        justify-content: center;
-        padding: 6.4rem 3.2rem;
-        gap: 4rem;
+        @include flex(column, nowrap, space-between, center, 0);
+        .tienda1__img{
+            order: -1;
+            @include max-sizes(24rem, none);
+        }
     }
 }
-// 992PX
+//912PX
 @media (max-width: 992px){
-    // BLOQUE 1
-    .tienda1__img{
-        order: -1;
-    }
-    // BLOQUE 2
     .section2__tienda{
         justify-content: center;
     }
-    // BLOQUE 3
-    .section3__tienda{
-        justify-content: center;
+}
+//412PX
+@media (max-width: 412px){
+    .section1__tienda{
+        @include flex(column, nowrap, space-between, center, 0);
+        margin-top: 0;
+        padding: $xlspace 0;
+        .tienda1__img{
+            order: -1;
+            @include max-sizes(24rem, none);
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,21 +1,18 @@
 // DESKTOP STYLES
-
 // BLOQUE 1
 .wireframe{
     @include flex(row, wrap, space-between, stretch, 0);
     padding-top: $xxlspace;
     padding-bottom: 20rem;
     .wireframe__txt{
-        @include flex(column, nowrap, space-between, stretch, 0);
+        @include flex(column, nowrap, flex-start, stretch, 6.4rem);
         @include max-sizes(50rem, none);
         .caption{
             line-height: 2.4rem
         }
     }
-    .wireframe__iframe{
-        @include flex(column, nowrap, center, stretch, .8rem);
-        iframe{
-            @include sizes(70rem, 45rem);
-        }
-    }
+}
+.wireframe__img{
+    background-color: $greyblue;
+    padding: $xxlspace;
 }

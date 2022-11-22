@@ -1,34 +1,27 @@
-// DESKTOP STYLES
-
+// DESKTOP
 // BLOQUE 1
 .section1__partners{
-    @include flex (row, wrap, space-between, stretch, 0);
-    padding-top: $xlspace;
-    padding-bottom: $xlspace;
+    justify-content: space-between;
+    padding: $xlspace 0;
     .partners1__article1{
-        @include flex (column, nowrap, space-between, stretch, 3.2rem);
+        @include flex (column, nowrap, space-between, stretch, 0);
         @include max-sizes(56rem, none);
         .article1__txt{
-            @include flex (column, nowrap, space-between, stretch, 3.2rem);
-            .article1__txt--lower{
-                @include flex (column, nowrap, space-between, stretch, 1.6rem);
-            }
+            @include flex (column, nowrap, space-between, stretch, 1.6rem);
         }
         .article1__img{
             @include flex (row, nowrap, space-between, stretch, 0);
         }
     }
     .partners1__article2{
-        @include flex (column, nowrap, space-between, stretch, 3.2rem);
+        @include flex (column, nowrap, space-between, stretch, 0);
         @include max-sizes(56rem, none);
-        
     }
 }
 // BLOQUE 2
 .section2__partners{
-    @include flex (row, wrap, space-between, stretch, 0);
-    padding-top: $xlspace;
-    padding-bottom: $xlspace;
+    justify-content: space-between;
+    padding: $xlspace 0;
     .partners2__article1{
         @include flex (column, nowrap, space-between, stretch, 3.2rem);
         @include max-sizes(55rem, none);
@@ -70,51 +63,53 @@
         }
     }
 }
-// BLOQUE 4
+//BLOQUE 4
 .section4__partners{
-    @include flex (row, wrap, space-between, stretch, 0);
-    padding-top: $xlspace;
-    padding-bottom: $xlspace;
-    .partners4__article1{
-        @include flex (column, nowrap, space-between, stretch, 3.2rem);
-        @include max-sizes(52rem, none);
-    }
+    justify-content: space-between;
+    padding: $xlspace 0;
     .partners4__article2{
-        @include flex (column, nowrap, space-between, stretch, 3.2rem);
+        @include flex (column, nowrap, space-between, stretch, 0);
         @include max-sizes(56rem, none);
         .article2__txt{
-            @include flex (column, nowrap, space-between, stretch, 3.2rem);
-            .article2__txt--lower{
-                @include flex (column, nowrap, space-between, stretch, 1.6rem);
-            }
+            @include flex (column, nowrap, space-between, stretch, 1.6rem);
         }
         .article2__img{
             @include flex (row, nowrap, space-between, stretch, 0);
         }
     }
+    .partners4__article1{
+        @include flex (column, nowrap, space-between, stretch, 1.6rem);
+        @include max-sizes(56rem, none);
+    }
 }
+
 // BLOQUE 5
 .section5__partners{
-    @include flex (row, wrap, space-between, stretch, 0);
-    padding-top: $xlspace;
-    padding-bottom: $xlspace;
+    justify-content: space-between;
+    padding: $xlspace 0;
     .partners5__article1{
         @include flex (column, nowrap, space-between, stretch, .6rem);
         @include max-sizes(33.3rem, none);
         h3{
-            @extend .smalltitle;
             font-size: 2.5em;
             line-height: 3.2rem;
         }
-        p{
-            @extend .smalltxt--grey;
-        }
     }
     .partners5__article2{
-        @extend .partners5__article1;
+        @include flex (column, nowrap, space-between, stretch, .6rem);
+        @include max-sizes(33.3rem, none);
+        h3{
+            font-size: 2.5em;
+            line-height: 3.2rem;
+        }
     }
     .partners5__article3{
-        @extend .partners5__article1;
+        @include flex (column, nowrap, space-between, stretch, .6rem);
+        @include max-sizes(33.3rem, none);
+        h3{
+            font-size: 2.5em;
+            line-height: 3.2rem;
+        }
     }
 }
 // BLOQUE 6
@@ -134,13 +129,10 @@
             border-radius: .4rem;
             padding: $xlspace;
             .bigtitle{
-                @extend .bigtitle;
                 text-align: center;
-                font-size: 4em;
             }
             .txt{
                 @include max-sizes(120rem, auto);
-                @extend .txt;
                 text-align: center;
                 line-height: 3.2rem;
             }
@@ -148,46 +140,191 @@
     }
 }
 // RESPONSIVE
-// 1200PX
+// 1200 PX
 @media (max-width: 1200px){
-    // BLOQUE 1
+    //BLOQUE 1
     .section1__partners{
         justify-content: center;
-        gap: 6.4rem;
+        padding: $xlspace 0;
+        .partners1__article1{
+            @include flex (column, nowrap, space-between, stretch, 3.2rem);
+            @include max-sizes(none, none);
+            .article1__img{
+                @include flex (row, nowrap, flex-start, stretch, 3.2rem);
+            }
+        }
+        .partners1__article2{
+            @include flex (row, wrap, space-between, stretch, 0);
+            @include max-sizes(none, none);
+            padding: $xlspace 0;
+            img{
+                @include max-sizes(56rem, none);
+            }
+            p{
+                @include max-sizes(36rem, none);
+                line-height: 4.2rem;
+                font-size: 2em;
+            }
+        }
     }
-    // BLOQUE 2
+    //BLOQUE 2
     .section2__partners{
-        padding-top: $lspace;
-        justify-content: center;
-        gap: 6.4rem;
+        padding: 0 0 $xlspace;
         .partners2__article1{
-            align-items: center;
-            text-align: center;
+            @include max-sizes(46rem, none);
         }
         .partners2__article2{
-            align-items: center;
-            text-align: center;
+            @include max-sizes(46rem, none);
         }
     }
-    // BLOQUE 4
+    //BLOQUE 4
     .section4__partners{
         justify-content: center;
-        gap: 6.4rem;
+        padding: $xlspace 0;
+        .partners4__article2{
+            @include flex (column, nowrap, space-between, stretch, 3.2rem);
+            @include max-sizes(none, none);
+            .article2__img{
+                @include flex (row, nowrap, flex-start, stretch, 3.2rem);
+            }
+        }
         .partners4__article1{
-            order: 1;
-            @include max-sizes(56rem, none);
+            @include flex (row, wrap, space-between, stretch, 0);
+            @include max-sizes(none, none);
+            padding: $xlspace 0;
+            img{
+                @include max-sizes(56rem, none);
+            }
+            p{
+                @include max-sizes(36rem, none);
+                line-height: 6.4rem;
+                font-size: 2.2em;
+            }
         }
     }
-    // BLOQUE 5
+    //BLOQUE 5
     .section5__partners{
-        @include flex (column, nowrap, center, center, 3.2rem);
-        padding-top: $xlspace;;
-        padding-bottom: $xlspace;
+        justify-content: space-between;
+        padding: $xlspace 0;
         .partners5__article1{
-            gap: 1.6rem;
-            @include max-sizes(56rem, auto);
-            align-items: center;
-            text-align: center;
+            @include max-sizes(46rem, none);
+        }
+        .partners5__article2{
+            @include max-sizes(46rem, none);
+        }
+        .partners5__article3{
+            @include max-sizes(none, none);
+            padding: $xlspace 0 0;
         }
     }
 }
+//992PX
+@media (max-width: 992px){
+    //BLOQUE 1
+    .section1__partners{
+        padding: $lspace 0;
+        .partners1__article1{
+            .article1__txt{
+                h1{
+                    font-size: 3.8em;
+                }
+            }
+            .article1__img{
+                @include flex (row, nowrap, space-between, stretch, 0);
+            }
+        }
+        .partners1__article2{
+            @include flex (column, nowrap, space-between, center, 3.2rem);
+            @include max-sizes(none, none);
+            padding: $xlspace 0 0;
+            img{
+                @include max-sizes(none, none);
+            }
+            p{
+                @include max-sizes(none, none);
+                line-height: 2.4rem;
+                font-size: 1.6em;
+            }
+        }
+    }
+    //BLOQUE 2
+    .section2__partners{
+        padding: 0 0 $xlspace;
+        .partners2__article1{
+            @include max-sizes(none, none);
+        }
+        .partners2__article2{
+            @include max-sizes(none, none);
+        }
+    }
+    //BLOQUE 4
+    .section4__partners{
+        padding: $lspace 0;
+        .partners4__article2{
+            .article2__txt{
+                h2{
+                    font-size: 3.8em;
+                }
+            }
+            .article2__img{
+                @include flex (row, nowrap, space-between, stretch, 0);
+            }
+        }
+        .partners4__article1{
+            @include flex (column, nowrap, space-between, center, 3.2rem);
+            @include max-sizes(none, none);
+            padding: $xlspace 0 0;
+            img{
+                @include max-sizes(none, none);
+            }
+            p{
+                @include max-sizes(none, none);
+                line-height: 2.4rem;
+                font-size: 1.6em;
+            }
+        }
+    }
+    //BLOQUE 5
+    .section5__partners{
+        justify-content: space-between;
+        padding: $xlspace 0;
+        .partners5__article1{
+            @include max-sizes(none, none);
+        }
+        .partners5__article2{
+            @include max-sizes(none, none);
+        }
+        .partners5__article3{
+            @include max-sizes(none, none);
+            padding: 0;
+        }
+    }
+}
+@media (max-width: 412px){
+    // BLOQUE 6
+    .background__img4{
+        .section6__partners{
+            .partners6__article{
+                padding: $xlspace 0;
+            }
+        }
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

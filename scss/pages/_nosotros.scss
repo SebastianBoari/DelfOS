@@ -1,5 +1,4 @@
 //DESKTOP STYLES
-
 // BLOQUE 1
 .section1__nosotros{
     justify-content: space-between;
@@ -24,42 +23,6 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // BLOQUE 2
 .section2__nosotros{
     @include flex(column, nowrap, space-between, stretch, 12.8rem);
@@ -135,13 +98,12 @@
     padding-top: $xlspace;
     padding-bottom: $xlspace;
     .nosotros4__article{
-        @include flex(row, wrap, space-between, stretch, 0);
+        justify-content: space-between;
         figure{
             order: -1;
         }
         h2{
             @include max-sizes(45rem, auto);
-            font-size: 6.4em;
             line-height: 10rem;
         }
         p{
@@ -149,14 +111,11 @@
         }
     }
 }
-
 //RESPONSIVE
-
 // 1400PX
 @media (max-width: 1400px){
     //BLOQUE 3
     .section3__nosotros{
-
         .nosotros3__article{
             @include flex(row, wrap, center, stretch, 1.6rem);
             h2{
@@ -167,7 +126,6 @@
     }
     //BLOQUE4
     .section4__nosotros{
-
         .nosotros4__article{
             @include flex(row, wrap, center, stretch, 1.6rem);
             figure{
@@ -184,7 +142,6 @@
         }
     }
 }
-
 // 1200PX
 @media (max-width: 1200px){
     //BLOQUE 1
@@ -299,5 +256,12 @@
                 display: none;
             }
         }
+    }
+    //BLOQUE 3
+    .nosotros3__article{
+        iframe{
+            width: auto; 
+            height: auto;
+        }        
     }
 }
