@@ -19,7 +19,7 @@ DelfOS es mi primer proyecto de desarrollo web. Este sitio fué realizado en el 
 ### Donde ver el Wireframe
 En el sitio hay un link que te dirije hacia el wireframe. O tambnien puedes hacer click en la imagen de aqui debajo para verlo en Figma.
 
-[![wireframe](https://i.imgur.com/NABNL1g.png "wireframe")](https://www.figma.com/file/WVy74OZmykeYRvBy3VRewh/delfOS?node-id=0%3A1&t=7vYfJdkuD3WnzabX-1 "wireframe")
+[![wireframe](https://i.imgur.com/NABNL1g.png "wireframe")](http://https://terceraentregaboari.000webhostapp.com/pages/wireframe.html "wireframe")
 
 ### Objetivos del proyecto
 Desarrollar un sitio web de 5 páginas desde su prototipado hasta su finalización. 
@@ -32,7 +32,6 @@ Mi intención con este repositorio es dejar asentado lo trabajado y aprendido de
 - Metodologia BEM poco/mal aplicada/aprovechada
 - Falta de animaciones nativas en CSS
 - Manejo muy pobre del Framework (Boostrap)
-- Responsive roto
 - No se aplica Grids
 - Manejo muy simple de Flex-box
 
@@ -45,4 +44,8 @@ Mi intención con este repositorio es dejar asentado lo trabajado y aprendido de
 - Realizar layouts complejos con Grids
 - Realizar layouts complejos con Flex-box
 
+### A TENER EN CUENTA
+Utilicé Animate On Scroll en el proyecto, el mismo me genera problemas con el responsive del proyecto. Dejé comentado link, para ver las animaciones que pretendía agregar
+solamente hay que descomentar esta linea de código de cáda página.
 
+![](https://i.imgur.com/F80iLsR.png)
