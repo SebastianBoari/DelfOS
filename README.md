@@ -2,7 +2,7 @@
 
 DelfOS es mi primer proyecto de desarrollo web. Este sitio fué realizado en el marco de un curso de desarrollo web tomado en CoderHouse en los meses de octubre y noviembre de 2022.
 
-[![DelfOS](https://i.imgur.com/BJZImbh.png "DelfOS")](https://sebastianboari.github.io/DelfOS.github.io/ "DelfOS")
+[![DelfOS](https://i.imgur.com/BJZImbh.png "DelfOS")](https://sebastianboari.github.io/delfos.github.io/ "DelfOS")
 
 ### Herramientas utilizadas
 
