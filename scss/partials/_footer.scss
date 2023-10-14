@@ -1,80 +1,113 @@
-#footer{
-    padding: $xxlspace 0 $lspace;
-    row-gap: 3.2rem;
-    .footer__form{
-        -webkit-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.75);
-        box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.75);
-        background-color: $white;
-        justify-content: center;
+.footer {
+    padding: $xlspace 0;
+
+    &_form {
         margin: 0;
         padding: 0;
-        .form__items{
+        border-radius: 6px;
+        background: $white;
+        -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+        &-items {
             @include flex(row, wrap, center, center, .8rem);
             @include sizes(none, 23rem);
-            .form__input{
-                @include sizes(none, 5.5rem);
+
+            .items_email {
+                @include sizes(none, 5.6rem);
                 min-width: 57.6rem;
+                text-align: center;
+                font-size: 2.4em;
+                font-weight: 400;
+                color: $darkblue;
                 border: none;
-                font-size: 2.8em;
-                color: $darkblue;
+                transition: all .3s ease-in;
+
+                &::placeholder {
+                    color: $darkblue;
+                }
+
+                &:focus {
+                    outline: none;
+                    border-radius: 6px;
+                    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                }
             }
-            .form__input::placeholder{
-                color: $darkblue;
-            }
-            .form__input:focus{
-                outline: $greyblue 1px solid;
-                border-radius: 4px;
-            }
-            .form__btn{
-                width: 200px;
-                height: 56px;
+
+            .items_suscribe {
+                @include sizes(200px, 56px);
                 color: $white;
-                background-color: $lightblue;
-            }
-            .form__btn:hover{
-                background-color: $darkblue;
-            }
-        }
-    }
-    .footer__navbar{
-        justify-content: space-between;
-        border-bottom: solid rgba(0,0,0,0.16) .2rem;
-        margin: 0;
-        padding: $lspace 0 $sspace;
-        .footer__menu{
-            @include flex(row, nowrap, space-between, stretch, 3.2rem);
-            li{
-                a{
-                    text-decoration: none;
-                    font-size: 1.6em;
-                    transition: all .8s;
+                background: $darkblue;
+                font-weight: 400;
+                transition: all .3s ease-in;
+
+                &:hover {
+                    background: $lightblue;
+                    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                 }
             }
         }
-        .footer__links{
+    }
+
+    .footer_navbar {
+        justify-content: space-between;
+        border-bottom: solid rgba(0, 0, 0, 0.16) .2rem;
+        margin: 0;
+        padding: $lspace 0 $sspace;
+
+        &-menu {
             @include flex(row, nowrap, space-between, stretch, 3.2rem);
 
+            .menu_item {
+                &-link {
+                    color: $darkblue;
+                    text-decoration: none;
+                    font-size: 1.6em;
+                    transition: all .3s;
+
+                    &:hover {
+                        color: $greyblue;
+                    }
+                }
+            }
+        }
+
+        &-social {
+            @include flex(row, nowrap, space-between, stretch, 3.2rem);
+
+            .social_item {
+                &-link {
+                    .link_icon {}
+                }
+            }
         }
     }
-    .footer__end{
+
+    .footer__end {
         justify-content: space-between;
         margin: 0;
         padding: 0;
-        .footer__misc{
+
+        .footer__misc {
             @include flex(row, nowrap, space-between, stretch, 3.2rem);
-            a{
+
+            a {
                 text-decoration: none;
             }
         }
     }
 }
 
-@media (max-width: 992px){
-    #footer{
-        .footer__form{
-            .form__items{
-                .form__input{
+@media (max-width: 992px) {
+    #footer {
+        .footer__form {
+            .form__items {
+                .form__input {
                     text-align: center;
                 }
             }
@@ -82,11 +115,11 @@
     }
 }
 
-@media (max-width: 768px){
-    #footer{
-        .footer__form{
-            .form__items{
-                .form__input{
+@media (max-width: 768px) {
+    #footer {
+        .footer__form {
+            .form__items {
+                .form__input {
                     min-width: 41.2rem;
                     font-size: 1.6em;
                 }
@@ -94,39 +127,44 @@
         }
     }
 }
-@media (max-width: 412px){
-    #footer{
+
+@media (max-width: 412px) {
+    #footer {
         padding: $lspace 0;
         text-align: center;
-        .footer__form{
-            .form__items{
-                .form__input{
+
+        .footer__form {
+            .form__items {
+                .form__input {
                     gap: 0;
                     min-width: 28rem;
                     font-size: 1.6em;
                 }
             }
         }
-        .footer__navbar{
-            .footer__menu{
+
+        .footer__navbar {
+            .footer__menu {
                 gap: 0;
             }
-            .footer__links{
+
+            .footer__links {
                 gap: 0;
             }
         }
     }
 }
 
-@media (max-width: 280px){
-    #footer{
-        .footer__form{
-            .form__items{
-                .form__input{
+@media (max-width: 280px) {
+    #footer {
+        .footer__form {
+            .form__items {
+                .form__input {
                     min-width: 16rem;
                     font-size: 1.6em;
                 }
-                .form__btn{
+
+                .form__btn {
                     width: 120px;
                     height: 46px;
                 }
@@ -134,6 +172,3 @@
         }
     }
 }
-
-
-
