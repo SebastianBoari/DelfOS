@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css":"node-sass --include-path scss scss/main.scss css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "watch-sass": "sass --watch scss/main.scss:css/index.css"
   },
   "repository": {
     "type": "git",
@@ -21,6 +20,6 @@
   "homepage": "https://github.com/SebastianBoari/tercerentregaboari.github.io#readme",
   "devDependencies": {
     "node-sass": "^8.0.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^3.0.1"
   }
 }
