@@ -1,4 +1,6 @@
 .footer {
+    display: flex;
+    flex-direction: column;
     padding: $xlspace 0;
 
     &_form {
@@ -55,10 +57,9 @@
     }
 
     .footer_navbar {
-        justify-content: space-between;
-        border-bottom: solid rgba(0, 0, 0, 0.16) .2rem;
+        @include flex(row, nowrap, space-between, center, 0);
         margin: 0;
-        padding: $lspace 0 $sspace;
+        padding: $lspace 0 $mspace;
 
         &-menu {
             @include flex(row, nowrap, space-between, stretch, 3.2rem);
@@ -82,22 +83,45 @@
 
             .social_item {
                 &-link {
-                    .link_icon {}
+                    .link_icon {
+                        fill: silver;
+                        width: 32px;
+                        height: 32px;
+                        transition: all .3s ease-in;
+
+                        &:hover {
+                            fill: $darkblue;
+                        }
+                    }
                 }
             }
         }
     }
 
-    .footer__end {
+    #line {
+        @include sizes(100%, .2rem);
+
+        background: silver;
+        border-radius: 6px;
+
+        align-self: center;
+    }
+
+    .footer_end {
         justify-content: space-between;
         margin: 0;
-        padding: 0;
+        padding: $lspace 0 $sspace;
 
-        .footer__misc {
+        .footer_misc {
             @include flex(row, nowrap, space-between, stretch, 3.2rem);
 
-            a {
+            .misc_link {
                 text-decoration: none;
+                transition: all .2s ease-in;
+
+                &:hover {
+                    color: silver;
+                }
             }
         }
     }
