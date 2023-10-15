@@ -1,22 +1,26 @@
 // DESKTOP 
-.prefooter{
+.prefooter {
     @include flex(column, nowrap, space-between, stretch, 6.4rem);
     padding: $xlspace 0;
-    .prefooter__title{
+
+    &_title {
         text-align: center;
     }
-    .prefooter__datos{
+
+    &_datos {
         @include flex(row, wrap, space-between, stretch, 0);
-        .dato{
+
+        .dato {
             @include max-sizes(24rem, none);
             text-align: center;
         }
     }
 }
+
 // RESPONSIVE
-@media (max-width: 992px){
-    .prefooter{
-        .prefooter__datos{
+@media (max-width: 992px) {
+    .prefooter {
+        &_datos {
             @include flex(column, nowrap, space-between, center, 3.2rem);
         }
     }
