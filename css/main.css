@@ -558,11 +558,11 @@ body {
   }
 }
 /* INICIO */
-.section1__home {
+.welcome-container .welcome {
   justify-content: space-between;
   padding: 12.8rem 0;
 }
-.section1__home .home1__txt {
+.welcome-container .welcome_text {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -572,7 +572,7 @@ body {
   max-width: 55rem;
   max-height: none;
 }
-.section1__home .home1__txt .home1__txt--up {
+.welcome-container .welcome_text-up {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -580,14 +580,29 @@ body {
   align-items: stretch;
   gap: 3.2rem;
 }
-.section1__home .home1__txt .home1__button {
+.welcome-container .welcome_text-up .text_description {
+  font-size: 1.6rem;
+}
+.welcome-container .welcome_text-up .text_caption {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+.welcome-container .welcome_text-button {
   align-self: flex-end;
 }
-.section1__home .home1__img {
+.welcome-container .welcome_text-button .button_link {
+  font-size: 1.6rem;
+  color: #ffffff;
+  background: #5D7698;
+  transition: all 0.3s ease-in;
+}
+.welcome-container .welcome_text-button .button_link:hover {
+  background: #244975;
+}
+.welcome-container .welcome_figure {
   max-width: 60rem;
   max-height: none;
 }
-
 .workstation-container .workstation {
   justify-content: space-between;
   padding: 12.8rem 0;
@@ -799,14 +814,14 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .section1__home {
+  .welcome {
     justify-content: center;
     padding: 6.4rem 0;
   }
-  .section1__home .home1__txt {
+  .welcome_text {
     margin: 0 auto;
   }
-  .section1__home .home1__img {
+  .welcome_figure {
     order: -1;
   }
   .workstation {
@@ -870,10 +885,10 @@ body {
   }
 }
 @media (max-width: 576px) {
-  .section1__home {
+  .welcome {
     padding: 3.2rem 0;
   }
-  .section1__home .home1__txt {
+  .welcome_text {
     padding: 3.2rem;
   }
   .workstation {
@@ -884,7 +899,7 @@ body {
   }
 }
 @media (max-width: 412px) {
-  .section1__home {
+  .welcome {
     padding: 3.2rem 0;
   }
   .workstation {

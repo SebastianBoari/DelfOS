@@ -1,24 +1,49 @@
-// DESKTOP
-// BLOQUE 1
-.section1__home {
-    justify-content: space-between;
-    padding: $xxlspace 0;
+// WELCOME
+.welcome-container {
+    .welcome {
+        justify-content: space-between;
+        padding: $xxlspace 0;
 
-    .home1__txt {
-        @include flex (column, nowrap, space-between, stretch, 3.2rem);
-        @include max-sizes(55rem, none);
+        &_text {
+            @include flex (column, nowrap, space-between, stretch, 3.2rem);
+            @include max-sizes(55rem, none);
 
-        .home1__txt--up {
-            @include flex (column, nowrap, flex-start, stretch, 3.2rem);
+            &-up {
+                @include flex (column, nowrap, flex-start, stretch, 3.2rem);
+
+                .text_title {}
+
+                .text_description {
+                    font-size: 1.6rem;
+                }
+
+                .text_caption {
+                    font-size: 1.4rem;
+                    line-height: 2.4rem;
+                }
+            }
+
+            &-button {
+                align-self: flex-end;
+
+                .button_link {
+                    font-size: 1.6rem;
+                    color: $white;
+                    background: $greyblue;
+                    transition: all .3s ease-in;
+
+                    &:hover {
+                        background: $darkblue;
+                    }
+                }
+            }
         }
 
-        .home1__button {
-            align-self: flex-end
-        }
-    }
+        &_figure {
+            @include max-sizes(60rem, none);
 
-    .home1__img {
-        @include max-sizes(60rem, none);
+            &-image {}
+        }
     }
 }
 
@@ -71,7 +96,6 @@
         }
     }
 }
-
 
 // ENTERTAINMENT
 .entertainment {
@@ -232,20 +256,21 @@
 }
 
 
+// RESPONSIVE
 
 //1200PX
 @media (max-width: 1200px) {
 
     //BLOQUE 1
-    .section1__home {
+    .welcome {
         justify-content: center;
         padding: $xlspace 0;
 
-        .home1__txt {
+        &_text {
             margin: 0 auto;
         }
 
-        .home1__img {
+        &_figure {
             order: -1;
         }
     }
@@ -326,10 +351,10 @@
 @media (max-width: 576px) {
 
     //BLOQUE 1
-    .section1__home {
+    .welcome {
         padding: $lspace 0;
 
-        .home1__txt {
+        &_text {
             padding: $lspace;
         }
     }
@@ -348,7 +373,7 @@
 @media (max-width: 412px) {
 
     //BLOQUE 1
-    .section1__home {
+    .welcome {
         padding: $lspace 0;
     }
 
