@@ -49,7 +49,7 @@
      <main id="main">
           <!-- BLOQUE 1 -->
           <div class="container">
-               <section class="section1__home row" data-aos="fade-down" data-aos-duration="800">
+               <section class="section1__home row">
                     <article class="home1__txt col-xl-6">
                          <div class="home1__txt--up">
                               <h1 class="bigtitle">Por qué DelfOS?</h1>
@@ -76,7 +76,7 @@
           <!--BLOQUE 2-->
           <div class="container">
                <section class="section2__home row">
-                    <article class="home2__txt col-xl-6" data-aos="fade-left" data-aos-duration="800">
+                    <article class="home2__txt col-xl-6">
                          <div class="home2__txt--up">
                               <h2 class="bigtitle">Productividad y workstation</h1>
                                    <p class="txt--grey">DelfOS 14 cuenta con herramientas fáciles de usar que te
@@ -92,7 +92,7 @@
                               <a class="btn btn-primary background__white" href="./pages/productos.html">Ver más</a>
                          </div>
                     </article>
-                    <figure class="home2__img col-xl-6" data-aos="fade-right" data-aos-duration="800">
+                    <figure class="home2__img col-xl-6">
                          <img class="img-fluid uncenteredimg" src="https://i.imgur.com/6WQmEkb.png"
                               alt="Banner publicitario de Delfos con una estatua de cuerpo completo de Julio Cesar.">
                          <img class="img-fluid centeredimg" src="https://i.imgur.com/4jQdy2W.png"
@@ -100,42 +100,51 @@
                     </figure>
                </section>
           </div>
-          <!--BLOQUE 3-->
+
+          <!--ENTERTAINMENT-->
           <div class="container">
-               <section class="section3__home row" data-aos="fade-right" data-aos-duration="800">
-                    <figure class="home3__img col-xl-6">
-                         <img class="img-fluid" src="https://i.imgur.com/1b4olLS.png"
+               <article class="entertainment row">
+                    <figure class="entertainment_figure col-xl-6">
+                         <img class="entertainment_figure-image img-fluid" src="https://i.imgur.com/1b4olLS.png"
                               alt="Un padre y su hijo disfrutando del centro de entrtenimiento DelfOS Live">
                     </figure>
-                    <article class="home3__txt col-xl-6">
-                         <h2 class="title">Centro de entretenimiento integrado.</h2>
-                         <p class="txt--grey">La mejor conectividad para tus dispositivos. Compatibilidad total con las
+
+                    <section class="entertainment_text col-xl-6">
+                         <h2 class="entertainment_text-title title">Centro de entretenimiento integrado.</h2>
+                         <p class="entertainment_text-description txt--grey">La mejor conectividad para tus
+                              dispositivos. Compatibilidad total con las
                               herramientas de trabajo más grandes del mercado. Mantente conectado con cualquiera de tus
                               dispositivos móviles de una forma súper intuitiva.</p>
-                    </article>
-               </section>
+                    </section>
+               </article>
           </div>
-          <!--BLOQUE 4-->
+
+          <!--PERFORMANCE-->
           <div class="container">
-               <section class="section4__home row" data-aos="fade-left" data-aos-duration="800">
-                    <article class="home4__txt col-xl-6">
-                         <h2 class="title">El mejor rendimiento con DelfOS.</h2>
-                         <p class="txt--grey">Disfruta de los juegos más recientes con gráficos que se asemejan a la
-                              realidad.
-                              Juega con otros jugadores en tu consola. Juega con los periféricos que te encantan. A la
-                              hora de jugar como a ti te gusta, DelfOS 14 lo hace realidad.</p>
-                         <p class="caption">Ahora compatible con API Vulkan, NVidia RTX y DLSS 2.0. </p>
-                    </article>
-                    <div class="home4__img col-xl-6">
-                         <img class="img-fluid" src="https://i.imgur.com/k9eJMKl.png"
+               <article class="performance row">
+                    <section class="performance_text col-xl-6">
+                         <h2 class="performance_text-title title">El mejor rendimiento con DelfOS.</h2>
+                         <p class="performance_text-description txt--grey">
+                              Disfruta de los juegos más recientes con gráficos que se asemejan a la realidad. Juega con
+                              otros jugadores en tu consola. Juega con los periféricos que te encantan. A la hora de
+                              jugar como a ti te gusta, DelfOS 14 lo hace realidad.
+                         </p>
+                         <p class="performance_text-caption caption">
+                              Ahora compatible con API Vulkan, NVidia RTX y DLSS
+                              2.0.
+                         </p>
+                    </section>
+
+                    <figure class="performance_figure col-xl-6">
+                         <img class="performance_figure-image img-fluid" src="https://i.imgur.com/k9eJMKl.png"
                               alt="Banners decorativos de videojuegos">
-                    </div>
-               </section>
+                    </figure>
+               </article>
           </div>
 
           <!--CARDS-->
           <div class="container">
-               <article class="primary_card-container row" data-aos="fade-right" data-aos-duration="800">
+               <article class="primary_card-container row">
                     <section class="primary_card col-xl-auto">
                          <div class="card">
                               <div class="card_header">
@@ -220,7 +229,7 @@
                </article>
           </div>
 
-          <!--BLOQUE 6-->
+          <!--PLANJULIUS-->
           <div class="bg_png">
                <article class="planjulius container">
                     <figure class="planjulius_figure">
@@ -252,7 +261,7 @@
 
           <!--CARDS-->
           <div class="container">
-               <article class="primary_card-container row" data-aos="fade-left" data-aos-duration="800">
+               <article class="primary_card-container row">
                     <section class="primary_card col-xl-auto">
                          <div class="card">
                               <div class="card_header">
@@ -475,10 +484,6 @@
           </footer>
      </div>
 
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-     <script>
-          AOS.init();
-     </script>
      <script src="./js/bootstrap.bundle.js"></script>
      <script src="./js/index.js"></script>
 </body>
