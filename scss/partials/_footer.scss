@@ -1,13 +1,7 @@
-.footer-container {
-    display: grid;
-    place-items: center;
-}
-
 .footer {
     display: flex;
     flex-direction: column;
     padding: $xlspace 0 0;
-    max-width: 120rem;
 
     &_form {
         margin: 0;

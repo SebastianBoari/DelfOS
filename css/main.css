@@ -201,16 +201,10 @@ body {
     gap: 3.2rem;
   }
 }
-.footer-container {
-  display: grid;
-  place-items: center;
-}
-
 .footer {
   display: flex;
   flex-direction: column;
   padding: 6.4rem 0 0;
-  max-width: 120rem;
 }
 .footer_form {
   margin: 0;
