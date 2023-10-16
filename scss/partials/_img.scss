@@ -1,15 +1,18 @@
 /* IMG */
-.centeredimg{
+.centeredimg {
     display: none;
 }
-@media (max-width: 1200px){
-    .uncenteredimg{
+
+@media (max-width: 1200px) {
+    .uncenteredimg {
         display: none;
     }
-    .centeredimg{
-        display: block;
+
+    .centeredimg {
+        display: flex;
     }
-    .img-fluid{
+
+    .img-fluid {
         width: 100%;
     }
 }

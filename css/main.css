@@ -137,7 +137,7 @@ body {
     display: none;
   }
   .centeredimg {
-    display: block;
+    display: flex;
   }
   .img-fluid {
     width: 100%;
@@ -611,6 +611,7 @@ body {
   background: #244975;
 }
 .welcome-container .welcome_figure {
+  align-self: center;
   max-width: 60rem;
   max-height: none;
 }
@@ -825,21 +826,30 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .welcome {
+  .welcome-container {
+    display: grid;
+    place-items: center;
+  }
+  .welcome-container .welcome {
     justify-content: center;
     padding: 6.4rem 0;
   }
-  .welcome_text {
+  .welcome-container .welcome_text {
     margin: 0 auto;
   }
-  .welcome_figure {
+  .welcome-container .welcome_figure {
     order: -1;
+    width: 100%;
   }
-  .workstation {
+  .workstation-container {
+    display: grid;
+    place-items: center;
+  }
+  .workstation-container .workstation {
     justify-content: center;
     padding: 6.4rem 0;
   }
-  .workstation .workstation_text {
+  .workstation-container .workstation .workstation_text {
     margin: 0 auto;
   }
   .entertainment-container {
@@ -889,10 +899,8 @@ body {
   .performance-container .performance_figure-image {
     border-radius: 6px 6px 0px 0px;
   }
-}
-@media (max-width: 992px) {
   .planjulius {
-    justify-content: center;
+    justify-content: center !important;
   }
 }
 @media (max-width: 576px) {

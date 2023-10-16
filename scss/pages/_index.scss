@@ -40,6 +40,7 @@
         }
 
         &_figure {
+            align-self: center;
             @include max-sizes(60rem, none);
 
             &-image {}
@@ -261,27 +262,38 @@
 //1200PX
 @media (max-width: 1200px) {
 
-    //BLOQUE 1
-    .welcome {
-        justify-content: center;
-        padding: $xlspace 0;
+    // WELCOME
+    .welcome-container {
+        display: grid;
+        place-items: center;
 
-        &_text {
-            margin: 0 auto;
-        }
+        .welcome {
+            justify-content: center;
+            padding: $xlspace 0;
 
-        &_figure {
-            order: -1;
+            &_text {
+                margin: 0 auto;
+            }
+
+            &_figure {
+                order: -1;
+                width: 100%;
+            }
         }
     }
 
     // WORKSTATION
-    .workstation {
-        justify-content: center;
-        padding: $xlspace 0;
+    .workstation-container {
+        display: grid;
+        place-items: center;
 
-        .workstation_text {
-            margin: 0 auto;
+        .workstation {
+            justify-content: center;
+            padding: $xlspace 0;
+
+            .workstation_text {
+                margin: 0 auto;
+            }
         }
     }
 
@@ -336,16 +348,13 @@
             }
         }
     }
-}
-
-//992
-@media (max-width: 992px) {
 
     // PLANJULIUS
     .planjulius {
-        justify-content: center;
+        justify-content: center !important;
     }
 }
+
 
 //576PX
 @media (max-width: 576px) {
