@@ -48,40 +48,103 @@
 
 // ENTERTAINMENT
 .entertainment {
-    padding-top: $xxlspace;
+    padding-top: $xlspace;
     padding-bottom: $lspace;
 
-    justify-content: space-between;
+    justify-content: center;
 
     &_figure {
-        @include flex(row, nowrap, flex-start, stretch, 0);
-        @include max-sizes(556px, none);
+        @include flex(row, nowrap, flex-end, stretch, 0);
+        padding: 0px;
+        margin: 0px;
 
-        &-image {}
+        -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+        &-image {
+            border-radius: 6px 0px 0px 6px;
+        }
     }
 
     &_text {
-        max-width: 55rem;
+        @include flex(column, nowrap, center, flex-end, 0);
+        padding: $lspace;
+        background: $white;
+        border-radius: 0px 6px 6px 0px;
 
-        &-title {}
+        -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 
-        &-description {}
+        &-title {
+            width: 100%;
+            font-weight: 500;
+            font-size: 2.4rem;
+            text-align: end;
+        }
+
+        &-description {
+            width: 100%;
+            font-weight: 400;
+            font-size: 1.8rem;
+            text-align: end;
+            text-wrap: balance;
+            line-height: 3.8rem;
+        }
     }
 }
 
 // PERFORMANCE
 .performance {
-    justify-content: space-between;
     padding-top: $lspace;
-    padding-bottom: $xxlspace;
+    padding-bottom: $xlspace;
+
+    justify-content: center;
 
     &_text {
-        max-width: 55rem;
+        @include flex(column, nowrap, center, flex-start, 0);
+        padding: $lspace;
+        background: $white;
+        border-radius: 6px 0px 0px 6px;
+
+        -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+        &-title {
+            width: 100%;
+            font-weight: 500;
+            font-size: 2.4rem;
+        }
+
+        &-description {
+            width: 100%;
+            font-weight: 400;
+            font-size: 1.8rem;
+            text-wrap: balance;
+            line-height: 3.8rem;
+            margin-bottom: $mspace;
+        }
+
+        &-caption {
+            font-weight: 400;
+            font-size: 1.4rem;
+        }
     }
 
     &_figure {
         @include flex(row, nowrap, flex-end, stretch, 0);
-        @include max-sizes(556px, none);
+        padding: 0px;
+        margin: 0px;
+
+        -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+        &-image {
+            border-radius: 0px 6px 6px 0px;
+        }
     }
 }
 
@@ -185,6 +248,8 @@
 
 //992
 @media (max-width: 992px) {
+
+    // PLANJULIUS
     .planjulius {
         justify-content: center;
     }
