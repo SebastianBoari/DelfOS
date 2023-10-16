@@ -2,208 +2,235 @@
 // BLOQUE 1
 .section1__home {
     justify-content: space-between;
-    padding:  $xxlspace 0;
-    .home1__txt{
+    padding: $xxlspace 0;
+
+    .home1__txt {
         @include flex (column, nowrap, space-between, stretch, 3.2rem);
         @include max-sizes(55rem, none);
-        .home1__txt--up{
+
+        .home1__txt--up {
             @include flex (column, nowrap, flex-start, stretch, 3.2rem);
         }
-        .home1__button{
+
+        .home1__button {
             align-self: flex-end
         }
     }
-    .home1__img{
+
+    .home1__img {
         @include max-sizes(60rem, none);
     }
 }
+
 // BLOQUE 2
 .section2__home {
     justify-content: space-between;
-    padding:  $xxlspace 0;
-    .home2__txt{
+    padding: $xxlspace 0;
+
+    .home2__txt {
         @include flex (column, nowrap, space-between, stretch, 3.2rem);
         @include max-sizes(55rem, none);
-        .home2__txt--up{
+
+        .home2__txt--up {
             @include flex (column, nowrap, flex-start, stretch, 3.2rem);
         }
-        .home2__button{
+
+        .home2__button {
             align-self: flex-end
         }
     }
-    .home2__img{
+
+    .home2__img {
         @include max-sizes(60rem, none);
         order: -1;
     }
 }
+
 // BLOQUE 3
-.section3__home{
+.section3__home {
     justify-content: space-between;
     padding-top: $xxlspace;
     padding-bottom: $lspace;
-    .home3__txt{
+
+    .home3__txt {
         max-width: 55rem;
     }
-    .home3__img{
+
+    .home3__img {
         @include flex(row, nowrap, flex-start, stretch, 0);
         @include max-sizes(556px, none);
     }
 }
+
 //BLOQUE 4
-.section4__home{
+.section4__home {
     justify-content: space-between;
     padding-top: $lspace;
     padding-bottom: $xxlspace;
-    .home4__txt{
+
+    .home4__txt {
         max-width: 55rem;
     }
-    .home4__img{
+
+    .home4__img {
         @include flex(row, nowrap, flex-end, stretch, 0);
         @include max-sizes(556px, none);
     }
 }
-// BLOQUE 5
-.home__cards1{
-    justify-content: space-between;
-    grid-auto-flow: column;
-    padding: $xxlspace 0;
-    .card{
-        @include flex (column, nowrap, space-between, stretch, 0);
-        height: 100%;
-        max-width: 32rem;
-        -webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);
-        -moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);
-        box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.16);
-        border-radius: 4px 4px 4px 4px;
-        transition: all .8s;
-        .card__header{
-            .card__txt{
-                padding: $sspace;
-                .card__title{
-                    padding-bottom: .8rem;
-                    line-height: 2.4rem;
-                }
-            }
-        }
-        .card__buttons{
-            @include flex (row, wrap, flex-start, stretch, 1rem);
-            .card__link{
-                text-decoration: none;
-                padding: .8rem 1.6rem;
-                font-size: $smalltxt;
-                color: $lightblue;
-                line-height: 1.6rem;
-                transition: .3s;
-            }
-            .card__link:hover{
-                color: $darkblue;
-            }
-        }        
-    }
-    .card:hover{
-        -webkit-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
-    }
-}
+
 // BLOQUE 6
-.background__img1{
-    background-image: url(https://i.imgur.com/xo5mo08.png);
+.bg_png {
+    background-image: url(https://i.imgur.com/1HMS1Wh.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-.section6__home{
-    @include flex (row, wrap, space-between, stretch, 1rem);
+
+.planjulius {
+    @include flex (row, wrap, space-between, center, 0);
     padding: $xlspace 0;
-    .home6__txt{
-        @include flex (column, wrap, space-between, stretch, 0);
+
+
+    &_img {}
+
+    &_text-container {
+        @include flex (column, wrap, space-between, stretch, $lspace);
         max-width: 42rem;
-        background-color: rgba(242, 244, 247, .8);
-        border-radius: .4rem;
         padding: $lspace;
-        div .title{
-            padding-bottom: $sspace;
+        height: fit-content;
+        background: rgba(242, 244, 247, .8);
+
+        border-radius: .6rem;
+
+        .planjulius_text {
+            @include flex (column, wrap, space-between, stretch, $lspace);
+
+            &-title {
+                font-size: 2.4rem;
+                font-weight: 500;
+                color: $darkblue;
+            }
+
+            &-description {
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: $darkblue;
+                text-wrap: balance;
+                line-height: 3rem;
+            }
+        }
+
+        .planjulius_button {
+            &-link {
+                color: $white;
+                background: $greyblue;
+                font-size: 1.6rem;
+
+                &:hover {
+                    background: $darkblue;
+                }
+            }
         }
     }
 }
+
 // RESPONSIVE
 //1200PX
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
+
     //BLOQUE 1
-    .section1__home{
+    .section1__home {
         justify-content: center;
-        padding:  $xlspace 0;
-        .home1__txt{
+        padding: $xlspace 0;
+
+        .home1__txt {
             margin: 0 auto;
         }
-        .home1__img{
+
+        .home1__img {
             order: -1;
         }
     }
+
     //BLOQUE 2
-    .section2__home{
+    .section2__home {
         justify-content: center;
-        padding:  $xlspace 0;
-        .home2__txt{
+        padding: $xlspace 0;
+
+        .home2__txt {
             margin: 0 auto;
         }
     }
+
     //BLOQUE 3
-    .section3__home{
+    .section3__home {
         @include flex(column, nowrap, space-between, center, 3.2rem);
     }
+
     //BLOQUE 4
-    .section4__home{
+    .section4__home {
         @include flex(column, nowrap, space-between, center, 3.2rem);
-        .home4__img{
-           order: -1;
+
+        .home4__img {
+            order: -1;
         }
     }
+
     //BLOQUE 5
-    .home__cards1{
+    .home__cards1 {
         @include flex(column, nowrap, center, stretch, 3.2rem);
-        .home__card{
+
+        .home__card {
             @include flex(row, nowrap, center, stretch, 0);
-            
+
         }
     }
 }
+
 //992
-@media (max-width: 992px){
-    .section6__home{
+@media (max-width: 992px) {
+    .section6__home {
         justify-content: center;
     }
 }
+
 //576PX
-@media (max-width: 576px){
+@media (max-width: 576px) {
+
     //BLOQUE 1
-    .section1__home{
-        padding:  $lspace 0;
-        .home1__txt{
+    .section1__home {
+        padding: $lspace 0;
+
+        .home1__txt {
             padding: $lspace;
         }
     }
+
     //BLOQUE 2
-    .section2__home{
-        padding:  $lspace 0;
-        .home2__txt{
+    .section2__home {
+        padding: $lspace 0;
+
+        .home2__txt {
             padding: $lspace;
         }
     }
+
     //BLOQUE 5
-    .home__cards1{
+    .home__cards1 {
         padding: $lspace 0;
     }
 }
+
 //412PX
-@media (max-width: 412px){
+@media (max-width: 412px) {
+
     //BLOQUE 1
-    .section1__home{
-        padding:  $lspace 0;
+    .section1__home {
+        padding: $lspace 0;
     }
+
     //BLOQUE 2
-    .section2__home{
-        padding:  $lspace 0;
+    .section2__home {
+        padding: $lspace 0;
     }
 }

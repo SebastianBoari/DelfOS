@@ -1,0 +1,95 @@
+.primary_card-container {
+    justify-content: space-between;
+    grid-auto-flow: column;
+    padding: $xxlspace 0;
+
+    .card {
+        @include flex (column, nowrap, space-between, stretch, 0);
+
+        height: 100%;
+        max-width: 32rem;
+
+        -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+        border: none;
+        border-radius: .6rem;
+
+        transition: all .3s ease-in;
+
+        &_header {
+            &-img {
+                overflow: hidden;
+
+                img {
+                    border-radius: .6rem .6rem 0px 0px;
+                }
+            }
+
+            &-text {
+                @include flex (column, nowrap, space-between, stretch, $sspace);
+                padding: $mspace;
+                padding-top: 0;
+
+                .text_title {
+                    margin: 0;
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                }
+
+                .text_description {
+                    margin: 0;
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    text-wrap: balance;
+                }
+            }
+        }
+
+        &_buttons {
+            @include flex (row, wrap, flex-start, stretch, 1rem);
+            padding: $mspace;
+
+            &-link {
+                padding: $sspace $mspace;
+
+                font-size: 1.4rem;
+                text-decoration: none;
+
+                color: $white;
+                background: $greyblue;
+
+                transition: all .3s ease-in;
+
+                &:hover {
+                    background: $darkblue;
+                }
+            }
+        }
+
+        &:hover {
+            -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
+// RESPONSIVE
+@media (max-width: 1200px) {
+    .home__cards1 {
+        @include flex(column, nowrap, center, stretch, 3.2rem);
+
+        .home__card {
+            @include flex(row, nowrap, center, stretch, 0);
+
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .home__cards1 {
+        padding: $lspace 0;
+    }
+}
