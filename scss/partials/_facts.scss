@@ -1,7 +1,7 @@
 .facts {
     @include flex(column, nowrap, space-between, stretch, 0);
     padding: $lspace 0 $xlspace;
-    max-width: 60%;
+
 
     &_title {
         text-align: center;

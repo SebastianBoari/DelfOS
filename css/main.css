@@ -178,7 +178,6 @@ body {
   align-items: stretch;
   gap: 0;
   padding: 3.2rem 0 6.4rem;
-  max-width: 60%;
 }
 .facts_title {
   text-align: center;
