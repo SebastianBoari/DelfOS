@@ -22,29 +22,32 @@
     }
 }
 
-// BLOQUE 2
-.section2__home {
-    justify-content: space-between;
-    padding: $xxlspace 0;
+// WORKSTATION
+.workstation-container {
+    .workstation {
+        justify-content: space-between;
+        padding: $xxlspace 0;
 
-    .home2__txt {
-        @include flex (column, nowrap, space-between, stretch, 3.2rem);
-        @include max-sizes(55rem, none);
+        .workstation_text {
+            @include flex (column, nowrap, space-between, stretch, 3.2rem);
+            @include max-sizes(55rem, none);
 
-        .home2__txt--up {
-            @include flex (column, nowrap, flex-start, stretch, 3.2rem);
+            .workstation_text-up {
+                @include flex (column, nowrap, flex-start, stretch, 3.2rem);
+            }
+
+            .workstation_text-button {
+                align-self: flex-end
+            }
         }
 
-        .home2__button {
-            align-self: flex-end
+        .workstation_figure {
+            @include max-sizes(60rem, none);
+            order: -1;
         }
-    }
-
-    .home2__img {
-        @include max-sizes(60rem, none);
-        order: -1;
     }
 }
+
 
 // ENTERTAINMENT
 .entertainment {
@@ -154,55 +157,57 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
 
-.planjulius {
-    @include flex (row, wrap, space-between, center, 0);
-    padding: $xlspace 0;
+    .planjulius {
+        @include flex (row, wrap, space-between, center, 0);
+        padding: $xlspace 0;
 
 
-    &_img {}
+        &_img {}
 
-    &_text-container {
-        @include flex (column, wrap, space-between, stretch, $lspace);
-        max-width: 42rem;
-        padding: $lspace;
-        height: fit-content;
-        background: rgba(242, 244, 247, .8);
-
-        border-radius: .6rem;
-
-        .planjulius_text {
+        &_text-container {
             @include flex (column, wrap, space-between, stretch, $lspace);
+            max-width: 42rem;
+            padding: $lspace;
+            height: fit-content;
+            background: rgba(242, 244, 247, .8);
 
-            &-title {
-                font-size: 2.4rem;
-                font-weight: 500;
-                color: $darkblue;
+            border-radius: .6rem;
+
+            .planjulius_text {
+                @include flex (column, wrap, space-between, stretch, $lspace);
+
+                &-title {
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                    color: $darkblue;
+                }
+
+                &-description {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: $darkblue;
+                    text-wrap: balance;
+                    line-height: 3rem;
+                }
             }
 
-            &-description {
-                font-size: 1.6rem;
-                font-weight: 400;
-                color: $darkblue;
-                text-wrap: balance;
-                line-height: 3rem;
-            }
-        }
+            .planjulius_button {
+                &-link {
+                    color: $white;
+                    background: $greyblue;
+                    font-size: 1.6rem;
 
-        .planjulius_button {
-            &-link {
-                color: $white;
-                background: $greyblue;
-                font-size: 1.6rem;
-
-                &:hover {
-                    background: $darkblue;
+                    &:hover {
+                        background: $darkblue;
+                    }
                 }
             }
         }
     }
 }
+
+
 
 //1200PX
 @media (max-width: 1200px) {
@@ -221,12 +226,12 @@
         }
     }
 
-    //BLOQUE 2
-    .section2__home {
+    // WORKSTATION
+    .workstation {
         justify-content: center;
         padding: $xlspace 0;
 
-        .home2__txt {
+        .workstation_text {
             margin: 0 auto;
         }
     }
@@ -305,11 +310,11 @@
         }
     }
 
-    //BLOQUE 2
-    .section2__home {
+    // WORKSTATION
+    .workstation {
         padding: $lspace 0;
 
-        .home2__txt {
+        .workstation_text {
             padding: $lspace;
         }
     }
@@ -323,8 +328,8 @@
         padding: $lspace 0;
     }
 
-    //BLOQUE 2
-    .section2__home {
+    // WORKSTATION
+    .workstation {
         padding: $lspace 0;
     }
 }

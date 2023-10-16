@@ -588,11 +588,11 @@ body {
   max-height: none;
 }
 
-.section2__home {
+.workstation-container .workstation {
   justify-content: space-between;
   padding: 12.8rem 0;
 }
-.section2__home .home2__txt {
+.workstation-container .workstation .workstation_text {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -602,7 +602,7 @@ body {
   max-width: 55rem;
   max-height: none;
 }
-.section2__home .home2__txt .home2__txt--up {
+.workstation-container .workstation .workstation_text .workstation_text-up {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -610,10 +610,10 @@ body {
   align-items: stretch;
   gap: 3.2rem;
 }
-.section2__home .home2__txt .home2__button {
+.workstation-container .workstation .workstation_text .workstation_text-button {
   align-self: flex-end;
 }
-.section2__home .home2__img {
+.workstation-container .workstation .workstation_figure {
   max-width: 60rem;
   max-height: none;
   order: -1;
@@ -728,8 +728,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-
-.planjulius {
+.bg_png .planjulius {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -738,7 +737,7 @@ body {
   gap: 0;
   padding: 6.4rem 0;
 }
-.planjulius_text-container {
+.bg_png .planjulius_text-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -751,7 +750,7 @@ body {
   background: rgba(242, 244, 247, 0.8);
   border-radius: 0.6rem;
 }
-.planjulius_text-container .planjulius_text {
+.bg_png .planjulius_text-container .planjulius_text {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -759,24 +758,24 @@ body {
   align-items: stretch;
   gap: 3.2rem;
 }
-.planjulius_text-container .planjulius_text-title {
+.bg_png .planjulius_text-container .planjulius_text-title {
   font-size: 2.4rem;
   font-weight: 500;
   color: #244975;
 }
-.planjulius_text-container .planjulius_text-description {
+.bg_png .planjulius_text-container .planjulius_text-description {
   font-size: 1.6rem;
   font-weight: 400;
   color: #244975;
   text-wrap: balance;
   line-height: 3rem;
 }
-.planjulius_text-container .planjulius_button-link {
+.bg_png .planjulius_text-container .planjulius_button-link {
   color: #ffffff;
   background: #5D7698;
   font-size: 1.6rem;
 }
-.planjulius_text-container .planjulius_button-link:hover {
+.bg_png .planjulius_text-container .planjulius_button-link:hover {
   background: #244975;
 }
 
@@ -791,11 +790,11 @@ body {
   .section1__home .home1__img {
     order: -1;
   }
-  .section2__home {
+  .workstation {
     justify-content: center;
     padding: 6.4rem 0;
   }
-  .section2__home .home2__txt {
+  .workstation .workstation_text {
     margin: 0 auto;
   }
   .entertainment-container {
@@ -858,10 +857,10 @@ body {
   .section1__home .home1__txt {
     padding: 3.2rem;
   }
-  .section2__home {
+  .workstation {
     padding: 3.2rem 0;
   }
-  .section2__home .home2__txt {
+  .workstation .workstation_text {
     padding: 3.2rem;
   }
 }
@@ -869,7 +868,7 @@ body {
   .section1__home {
     padding: 3.2rem 0;
   }
-  .section2__home {
+  .workstation {
     padding: 3.2rem 0;
   }
 }
