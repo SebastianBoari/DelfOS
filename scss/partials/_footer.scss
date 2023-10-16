@@ -1,7 +1,13 @@
+.footer-container {
+    display: grid;
+    place-items: center;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
-    padding: $xlspace 0;
+    padding: $xlspace 0 0;
+    max-width: 120rem;
 
     &_form {
         margin: 0;
@@ -15,6 +21,7 @@
         &-items {
             @include flex(row, wrap, center, center, .8rem);
             @include sizes(none, 23rem);
+            padding: $lspace $xlspace;
 
             .items_email {
                 @include sizes(none, 5.6rem);
@@ -59,7 +66,7 @@
     &_navbar {
         @include flex(row, wrap, space-between, center, 0);
         margin: 0;
-        padding: $lspace 0 $mspace;
+        padding: $lspace 0;
 
         &-menu {
             @include flex(row, nowrap, space-between, stretch, 3.2rem);
@@ -86,8 +93,8 @@
                 &-link {
                     .link_icon {
                         fill: silver;
-                        width: 32px;
-                        height: 32px;
+                        width: 2.4rem;
+                        height: 2.4rem;
                         transition: all .3s ease-in;
 
                         &:hover {
@@ -113,7 +120,7 @@
         justify-content: space-between;
         align-items: center;
         margin: 0;
-        padding: $lspace 0 $sspace;
+        padding: $lspace 0;
 
         &-rights {
             .caption {
@@ -160,16 +167,6 @@
 
             &-menu {
                 width: 80%;
-            }
-
-            &-social {
-                .social_item {
-                    &-link {
-                        .link_icon {
-                            max-width: 2.4rem;
-                        }
-                    }
-                }
             }
         }
     }
