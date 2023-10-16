@@ -926,11 +926,11 @@ body {
   }
 }
 /* NOSOTROS */
-.section1__nosotros {
+.philosophy-container .philosophy {
   justify-content: space-between;
   padding: 0 0 6.4rem;
 }
-.section1__nosotros .nosotros1__article {
+.philosophy-container .philosophy .philosophy_text {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -940,7 +940,7 @@ body {
   max-width: 56rem;
   max-height: auto;
 }
-.section1__nosotros .nosotros1__article .article__txt {
+.philosophy-container .philosophy .philosophy_text-header {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -948,17 +948,17 @@ body {
   align-items: stretch;
   gap: 1.6rem;
 }
-.section1__nosotros .nosotros1__article .article__txt h1 {
+.philosophy-container .philosophy .philosophy_text-header .header_title {
   line-height: 7.3rem;
 }
-.section1__nosotros .nosotros1__article .article__button {
+.philosophy-container .philosophy .philosophy_text-button {
   align-self: flex-end;
 }
-.section1__nosotros .nosotros1__article .article__button a {
+.philosophy-container .philosophy .philosophy_text-button .button_link {
   width: 18rem;
   height: 6.7;
 }
-.section1__nosotros .nosotros1__article .article__img {
+.philosophy-container .philosophy .philosophy_text-brand {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -966,7 +966,6 @@ body {
   align-items: stretch;
   gap: 0;
 }
-
 .section2__nosotros {
   display: flex;
   flex-direction: column;
@@ -1138,7 +1137,7 @@ body {
     align-items: stretch;
     gap: 0;
   }
-  .background__img5 .section1__nosotros {
+  .background__img5 .philosophy {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1146,7 +1145,7 @@ body {
     align-items: stretch;
     gap: 0;
   }
-  .background__img5 .section1__nosotros .nosotros1__article {
+  .background__img5 .philosophy_text {
     max-width: 120rem;
     max-height: auto;
     background-color: rgba(242, 244, 247, 0.8);
@@ -1159,10 +1158,10 @@ body {
     align-items: stretch;
     gap: 6.4rem;
   }
-  .background__img5 .section1__nosotros .nosotros1__article .article__button {
+  .background__img5 .philosophy_text-button {
     align-self: center;
   }
-  .background__img5 .section1__nosotros .nosotros1__img {
+  .background__img5 .philosophy_figure {
     display: none;
   }
   .section2__nosotros {
@@ -1252,7 +1251,7 @@ body {
   }
 }
 @media (max-width: 576px) {
-  .background__img5 .section1__nosotros .nosotros1__article {
+  .background__img5 .philosophy_text {
     max-width: none;
     max-height: none;
     background-color: rgba(242, 244, 247, 0.8);
@@ -1265,10 +1264,10 @@ body {
     align-items: stretch;
     gap: 6.4rem;
   }
-  .background__img5 .section1__nosotros .nosotros1__article .article__button {
+  .background__img5 .philosophy_text-button {
     align-self: center;
   }
-  .background__img5 .section1__nosotros .nosotros1__img {
+  .background__img5 .philosophy_figure {
     display: none;
   }
   .nosotros3__article iframe {

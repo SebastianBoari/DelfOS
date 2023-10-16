@@ -36,7 +36,7 @@
                             <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
                             <li class="nav-item"><a class="nav-link" href="./partners.html">Partners</a></li>
                         </ul>
-                        <a class="btn btn-primary" href="./tienda.html" role="button">Tienda</a>
+                        <a class="nav-button btn btn-primary" href="./tienda.html" role="button">Tienda</a>
                     </div>
                 </div>
             </nav>
@@ -44,46 +44,78 @@
     </div>
 
     <main id="main">
-        <!-- BLOQUE 1 -->
+        <!--PHILOSOPHY-->
         <div class="background__grey background__img5">
-            <div class="container">
-                <section class="section1__nosotros row" data-aos="fade-up" data-aos-duration="800">
-                    <article class="nosotros1__article col-xl-auto">
-                        <div class="article__txt">
-                            <h1 class="bigtitle">Diversidad como filosofia de trabajo</h1>
-                            <p class="txt--grey">Nuestra gente representa a comunidades y culturas de todo el mundo que
-                                se unen para ayudar a otros a lograr más.</p>
-                            <p class="txt--grey">El constante intercambio que mantenemos con nuestros clientes y
-                                colaboradores nos mantiene en constante aprendizaje y colabora en la modernización de
-                                los procesos.</p>
-                            <p class="txt--grey">Trabajamos codo a codo con más de 200 colaboradores y proveedores de
-                                servicios.</p>
-                        </div>
-                        <div class="article__button">
-                            <a class="btn btn-primary" href="https://www.microsoft.com/es-mx/about" target="_blank">Ver
-                                más</a>
-                        </div>
-                        <div class="article__img">
-                            <figure><img class="img-fluid" src="https://i.imgur.com/a2fi1Sg.png" alt="Logo de EPSON.">
-                            </figure>
-                            <figure><img class="img-fluid" src="https://i.imgur.com/0zT9HPJ.png" alt="Logo de ADOBE.">
-                            </figure>
-                            <figure><img class="img-fluid" src="https://i.imgur.com/VbgtdtJ.png" alt="Logo de IBM">
-                            </figure>
-                        </div>
-                    </article>
 
-                    <figure class="nosotros1__img  col-xl-auto">
-                        <img class="img-fluid" src="https://i.imgur.com/g5Oc9Qn.png"
+            <div class="container philosophy-container">
+
+                <article class="philosophy row">
+
+                    <section class="philosophy_text col-xl-auto">
+                        <header class="philosophy_text-header">
+
+                            <h1 class="header_title bigtitle">Diversidad como filosofia de trabajo</h1>
+
+                            <p class="header_description txt--grey">Nuestra gente representa a comunidades y culturas de
+                                todo el mundo que
+                                se unen para ayudar a otros a lograr más.
+                            </p>
+
+                            <p class="header_description txt--grey">El constante intercambio que mantenemos con nuestros
+                                clientes y
+                                colaboradores nos mantiene en constante aprendizaje y colabora en la modernización de
+                                los procesos.
+                            </p>
+
+                            <p class="header_description txt--grey">Trabajamos codo a codo con más de 200 colaboradores
+                                y proveedores de
+                                servicios.
+                            </p>
+
+                        </header>
+
+                        <div class="philosophy_text-button">
+                            <a class="button_link btn btn-primary" href="https://www.microsoft.com/es-mx/about"
+                                target="_blank" rel="noopener">
+                                Ver más
+                            </a>
+                        </div>
+
+                        <div class="philosophy_text-brand">
+                            <figure class="brand_figure">
+                                <img class="brand_figure-image img-fluid" src="https://i.imgur.com/a2fi1Sg.png"
+                                    alt="Logo de EPSON.">
+                            </figure>
+
+                            <figure class="brand_figure">
+                                <img class="brand_figure-image img-fluid" src="https://i.imgur.com/0zT9HPJ.png"
+                                    alt="Logo de ADOBE.">
+                            </figure>
+
+                            <figure class="brand_figure">
+                                <img class="brand_figure-image img-fluid" src="https://i.imgur.com/VbgtdtJ.png"
+                                    alt="Logo de IBM">
+                            </figure>
+                        </div>
+                    </section>
+
+                    <figure class="philosophy_figure  col-xl-auto">
+                        <img class="philosophy_figure-image img-fluid" src="https://i.imgur.com/g5Oc9Qn.png"
                             alt="Un empleado de DelfOS en una reunion.">
                     </figure>
-                </section>
+
+                </article>
+
             </div>
+
         </div>
+
+
+
         <!-- BLOQUE 2 -->
         <div class="background__white">
             <section class="section2__nosotros container">
-                <article class="employee__right background__grey" data-aos="fade-right" data-aos-duration="800">
+                <article class="employee__right background__grey">
                     <div class="employee__txt">
                         <h2 class="title">
                             Emily Brown
@@ -116,7 +148,7 @@
                     </div>
                 </article>
 
-                <article class="employee__left background__grey" data-aos="fade-left" data-aos-duration="800">
+                <article class="employee__left background__grey">
                     <div class="employee__img">
                         <figure class="employeecard"><img src="https://i.imgur.com/XgKYaM0.png"
                                 alt="Foto de nuestro Chief Dev. Nate Brancheau."></figure>
@@ -151,7 +183,7 @@
                     </div>
                 </article>
 
-                <article class="employee__right background__grey" data-aos="fade-right" data-aos-duration="800">
+                <article class="employee__right background__grey">
                     <div class="employee__txt">
                         <h2 class="title">
                             Matt Douglas
@@ -186,7 +218,7 @@
                     </div>
                 </article>
 
-                <article class="employee__left background__grey" data-aos="fade-left" data-aos-duration="800">
+                <article class="employee__left background__grey">
                     <div class="employee__img">
                         <figure class="employeecard"><img src="https://i.imgur.com/ph0XsUF.png"
                                 alt="Foto de nuestro CEO y fundador Andrew Marshall."></figure>
@@ -392,9 +424,6 @@
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
     <script src="../js/bootstrap.bundle.js"></script>
 </body>
 

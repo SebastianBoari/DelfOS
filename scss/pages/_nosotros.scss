@@ -1,267 +1,331 @@
 //DESKTOP STYLES
-// BLOQUE 1
-.section1__nosotros{
-    justify-content: space-between;
-    padding: 0 0 $xlspace;
-    .nosotros1__article{
-        @include flex(column, nowrap, flex-start, stretch, 6.4rem);
-        @include max-sizes(56rem, auto);
-        .article__txt{
-            @include flex(column, nowrap, space-between, stretch, 1.6rem);
-            h1{
-                line-height: 7.3rem;
+.philosophy-container {
+    .philosophy {
+        justify-content: space-between;
+        padding: 0 0 $xlspace;
+
+        .philosophy_text {
+            @include flex(column, nowrap, flex-start, stretch, 6.4rem);
+            @include max-sizes(56rem, auto);
+
+            &-header {
+                @include flex(column, nowrap, space-between, stretch, 1.6rem);
+
+                .header_title {
+                    line-height: 7.3rem;
+                }
+
+                .header_description {}
             }
-        }
-        .article__button{
-            align-self: flex-end;
-            a{
-                @include sizes(18rem, 6.7);
+
+            &-button {
+                align-self: flex-end;
+
+                .button_link {
+                    @include sizes(18rem, 6.7);
+                }
             }
-        }
-        .article__img{
-            @include flex(row, nowrap, space-between, stretch, 0);
+
+            &-brand {
+                @include flex(row, nowrap, space-between, stretch, 0);
+
+                .brand_figure {
+                    &-image {}
+                }
+            }
         }
     }
 }
+
 // BLOQUE 2
-.section2__nosotros{
+.section2__nosotros {
     @include flex(column, nowrap, space-between, stretch, 12.8rem);
     padding-top: $xlspace;
     padding-bottom: $xlspace;
-    .employee__right{
+
+    .employee__right {
         @include flex(row, nowrap, space-between, stretch, 6.4rem);
         @include max-sizes(auto, 49.8rem);
         align-self: flex-end;
-        -webkit-box-shadow: -2px 5px 7px -2px rgba(0,0,0,0.75);
-        -moz-box-shadow: -2px 5px 7px -2px rgba(0,0,0,0.75);
-        box-shadow: -2px 5px 7px -2px rgba(0,0,0,0.75);
-        .employee__txt{
+        -webkit-box-shadow: -2px 5px 7px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -2px 5px 7px -2px rgba(0, 0, 0, 0.75);
+        box-shadow: -2px 5px 7px -2px rgba(0, 0, 0, 0.75);
+
+        .employee__txt {
             @include flex(column, nowrap, space-between, stretch, 0);
             @include max-sizes(55rem, auto);
             padding-top: $lspace;
             padding-bottom: $lspace;
             padding-left: $lspace;
             padding-right: 0;
-            figure{
+
+            figure {
                 align-self: flex-end;
-            }     
+            }
         }
-        .employee__img{
-                .employeecol{
-                    display: none;
-                }
+
+        .employee__img {
+            .employeecol {
+                display: none;
+            }
         }
     }
-    .employee__left{
+
+    .employee__left {
         @include flex(row, nowrap, space-between, stretch, 6.4rem);
         @include max-sizes(auto, 49.8rem);
         align-self: flex-start;
-        -webkit-box-shadow: 2px 5px 7px -2px rgba(0,0,0,0.75);
-        -moz-box-shadow: 2px 5px 7px -2px rgba(0,0,0,0.75);
-        box-shadow: 2px 5px 7px -2px rgba(0,0,0,0.75);
-        .employee__txt{
+        -webkit-box-shadow: 2px 5px 7px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 2px 5px 7px -2px rgba(0, 0, 0, 0.75);
+        box-shadow: 2px 5px 7px -2px rgba(0, 0, 0, 0.75);
+
+        .employee__txt {
             @include flex(column, nowrap, space-between, stretch, 0);
             @include max-sizes(55rem, auto);
             padding-top: $lspace;
             padding-bottom: $lspace;
             padding-left: 0;
             padding-right: $lspace;
-            figure{
+
+            figure {
                 align-self: flex-start;
             }
         }
-        .employee__img{
-            .employeecol{
+
+        .employee__img {
+            .employeecol {
                 display: none;
             }
         }
     }
 }
+
 // BLOQUE 3 
-.section3__nosotros{
+.section3__nosotros {
     padding-top: $xlspace;
     padding-bottom: $xlspace;
-    .nosotros3__article{
+
+    .nosotros3__article {
         @include flex(row, wrap, space-between, stretch, 0);
-        h2{
+
+        h2 {
             @include max-sizes(41rem, auto);
             line-height: 10rem;
         }
-        iframe{
-            width: 84.8rem; 
+
+        iframe {
+            width: 84.8rem;
             height: 48rem;
-        }        
+        }
     }
 }
+
 // BLOQUE 4 
-.section4__nosotros{
+.section4__nosotros {
     padding-top: $xlspace;
     padding-bottom: $xlspace;
-    .nosotros4__article{
+
+    .nosotros4__article {
         justify-content: space-between;
-        figure{
+
+        figure {
             order: -1;
         }
-        h2{
+
+        h2 {
             @include max-sizes(45rem, auto);
             line-height: 10rem;
         }
-        p{
+
+        p {
             @include max-sizes(45rem, auto);
         }
     }
 }
+
 //RESPONSIVE
 // 1400PX
-@media (max-width: 1400px){
+@media (max-width: 1400px) {
+
     //BLOQUE 3
-    .section3__nosotros{
-        .nosotros3__article{
+    .section3__nosotros {
+        .nosotros3__article {
             @include flex(row, wrap, center, stretch, 1.6rem);
-            h2{
+
+            h2 {
                 @include max-sizes(120rem, auto);
                 text-align: center;
-            }        
+            }
         }
     }
+
     //BLOQUE4
-    .section4__nosotros{
-        .nosotros4__article{
+    .section4__nosotros {
+        .nosotros4__article {
             @include flex(row, wrap, center, stretch, 1.6rem);
-            figure{
+
+            figure {
                 order: 0;
             }
-            h2{
+
+            h2 {
                 @include max-sizes(120rem, auto);
                 text-align: center
             }
-            p{
+
+            p {
                 @include max-sizes(120rem, auto);
                 text-align: center;
             }
         }
     }
 }
+
 // 1200PX
-@media (max-width: 1200px){
-    //BLOQUE 1
-    .background__img5{
+@media (max-width: 1200px) {
+
+    // PHILOSOPHY
+    .background__img5 {
         background-image: url(https://i.imgur.com/g5Oc9Qn.png);
         background-repeat: no-repeat;
         background-position: bottom;
         background-attachment: fixed;
         background-size: cover;
         @include flex(row, wrap, center, stretch, 0);
-        .section1__nosotros{
+
+        .philosophy {
             @include flex(row, wrap, center, stretch, 0);
-            .nosotros1__article{
+
+            &_text {
                 @include max-sizes(120rem, auto);
                 background-color: rgba(242, 244, 247, .8);
                 border-radius: .4rem;
                 padding: $xlspace;
                 @include flex(column, nowrap, center, stretch, 6.4rem);
-                .article__button{
+
+                &-button {
                     align-self: center;
-                }       
+                }
             }
-            .nosotros1__img{
+
+            &_figure {
                 display: none;
             }
         }
     }
+
     // BLOQUE 2
-    .section2__nosotros{
+    .section2__nosotros {
         justify-content: center;
-        .employee__right{
+
+        .employee__right {
             align-self: center;
         }
-        .employee__left{
+
+        .employee__left {
             align-self: center;
         }
     }
 }
 
 // 992PX
-@media (max-width: 992px){
+@media (max-width: 992px) {
+
     //BLOQUE 2
-    .section2__nosotros{
-        .employee__right{
+    .section2__nosotros {
+        .employee__right {
             -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
             -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
             box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
             @include flex(column, nowrap, space-between, stretch, 1.6rem);
             @include max-sizes(none, none);
-            .employee__txt{
+
+            .employee__txt {
                 @include flex(column, nowrap, space-between, stretch, 1.6rem);
                 @include max-sizes(55rem, none);
                 padding: $lspace;
-                figure{
+
+                figure {
                     align-self: flex-end;
-                    }  
+                }
             }
-            .employee__img{
+
+            .employee__img {
                 align-self: center;
                 order: -1;
-                .employeecol{
+
+                .employeecol {
                     display: block;
                 }
-                .employeecard{
+
+                .employeecard {
                     display: none;
                 }
             }
         }
-        .employee__left{
+
+        .employee__left {
             -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
             -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
             box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
             @include flex(column, nowrap, space-between, stretch, 1.6rem);
             @include max-sizes(none, none);
-            .employee__txt{
+
+            .employee__txt {
                 @include flex(column, nowrap, space-between, stretch, 1.6rem);
                 @include max-sizes(55rem, none);
                 padding: $lspace;
-                figure{
+
+                figure {
                     align-self: flex-end;
-                    }  
+                }
             }
-            .employee__img{
+
+            .employee__img {
                 align-self: center;
                 order: -1;
-                .employeecol{
+
+                .employeecol {
                     display: block;
                 }
-                .employeecard{
+
+                .employeecard {
                     display: none;
                 }
             }
         }
     }
 }
+
 //576px
-@media (max-width: 576px){
-    //BLOQUE 1
-    .background__img5{
-        .section1__nosotros{
-            .nosotros1__article{
+@media (max-width: 576px) {
+
+    // PHILOSOPHY
+    .background__img5 {
+        .philosophy {
+            &_text {
                 @include max-sizes(none, none);
                 background-color: rgba(242, 244, 247, .8);
                 border-radius: .4rem;
                 padding: $lspace;
                 @include flex(column, nowrap, center, stretch, 6.4rem);
-                .article__button{
+
+                &-button {
                     align-self: center;
-                }       
+                }
             }
-            .nosotros1__img{
+
+            &_figure {
                 display: none;
             }
         }
     }
+
     //BLOQUE 3
-    .nosotros3__article{
-        iframe{
-            width: auto; 
+    .nosotros3__article {
+        iframe {
+            width: auto;
             height: auto;
-        }        
+        }
     }
 }
