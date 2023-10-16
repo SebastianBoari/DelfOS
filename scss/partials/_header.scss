@@ -1,32 +1,53 @@
 /* HEADER Y NAVBAR */
-#header{
+#header {
     padding: $mspace 0;
-    .navbar{
-        .nav-item{
+
+    .navbar {
+        .navbar-brand {
+            img {
+                max-width: 7.2rem;
+            }
+        }
+
+        .nav-item {
             padding: 1.6rem 2rem;
-            .nav-link{
-                color: $darkblue;
-                font-size: $txt;
+
+            .nav-link {
+                color: $greyblue;
+                font-size: 1.6rem;
                 font-weight: 400;
-                transition: .8s;
-            
-                &:hover{
-                    color: $lightblue;
+                transition: all .3 ease-in;
+
+                &:hover {
+                    color: $darkblue;
                 }
+            }
+        }
+
+        .nav-button {
+            font-size: 1.6rem;
+            color: $white;
+            background: $greyblue;
+            transition: all .3s ease-in;
+
+            &:hover {
+                background: $darkblue;
             }
         }
     }
 }
-@media (max-width: 1400px){
-    #header{
+
+@media (max-width: 1400px) {
+    #header {
         padding: $sspace 0;
     }
 }
-@media (max-width: 576px){
-    #header{
-        .navbar{
-            .navbar-brand{
-                img{
+
+@media (max-width: 576px) {
+    #header {
+        .navbar {
+            .navbar-brand {
+                img {
                     max-width: 5rem;
                 }
             }

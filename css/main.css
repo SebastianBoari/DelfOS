@@ -147,17 +147,29 @@ body {
 #header {
   padding: 1.6rem 0;
 }
+#header .navbar .navbar-brand img {
+  max-width: 7.2rem;
+}
 #header .navbar .nav-item {
   padding: 1.6rem 2rem;
 }
 #header .navbar .nav-item .nav-link {
-  color: #244975;
-  font-size: 2em;
+  color: #5D7698;
+  font-size: 1.6rem;
   font-weight: 400;
-  transition: 0.8s;
+  transition: all 0.3 ease-in;
 }
 #header .navbar .nav-item .nav-link:hover {
-  color: #0373E2;
+  color: #244975;
+}
+#header .navbar .nav-button {
+  font-size: 1.6rem;
+  color: #ffffff;
+  background: #5D7698;
+  transition: all 0.3s ease-in;
+}
+#header .navbar .nav-button:hover {
+  background: #244975;
 }
 
 @media (max-width: 1400px) {
