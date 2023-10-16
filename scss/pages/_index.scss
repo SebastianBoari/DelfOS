@@ -232,16 +232,54 @@
     }
 
     // ENTERTAINMENT
-    .entertainment {
-        @include flex(column, nowrap, space-between, center, 3.2rem);
+    .entertainment-container {
+        display: grid;
+        place-items: center;
+
+        .entertainment {
+            @include flex(column, nowrap, space-between, center, 0);
+            max-width: 80%;
+
+            &_text {
+                border-radius: 0px 0px 6px 6px;
+
+                &-title {
+                    text-align: start;
+                }
+
+                &-description {
+                    text-align: start;
+                }
+            }
+
+            &_figure {
+                &-image {
+                    border-radius: 6px 6px 0px 0px;
+                }
+            }
+        }
     }
 
-    //BLOQUE 4
-    .performance {
-        @include flex(column, nowrap, space-between, center, 3.2rem);
+    //PERFORMANCE
+    .performance-container {
+        display: grid;
+        place-items: center;
 
-        &_figure {
-            order: -1;
+        .performance {
+            @include flex(column, nowrap, space-between, center, 0);
+            max-width: 80%;
+
+            &_text {
+                border-radius: 0px 0px 6px 6px;
+            }
+
+            &_figure {
+                order: -1;
+
+                &-image {
+                    border-radius: 6px 6px 0px 0px;
+                }
+            }
         }
     }
 }
