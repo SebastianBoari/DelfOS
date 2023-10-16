@@ -596,9 +596,9 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: stretch;
-  gap: 3.2rem;
+  gap: 6.4rem;
   max-width: 55rem;
   max-height: none;
 }
@@ -610,8 +610,27 @@ body {
   align-items: stretch;
   gap: 3.2rem;
 }
+.workstation-container .workstation .workstation_text .workstation_text-up .text_title {
+  font-size: 2.4rem;
+}
+.workstation-container .workstation .workstation_text .workstation_text-up .text_description {
+  font-size: 1.6rem;
+}
+.workstation-container .workstation .workstation_text .workstation_text-up .text_caption {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
 .workstation-container .workstation .workstation_text .workstation_text-button {
   align-self: flex-end;
+}
+.workstation-container .workstation .workstation_text .workstation_text-button .button_link {
+  font-size: 1.6rem;
+  color: #ffffff;
+  background: #5D7698;
+  transition: all 0.3s ease-in;
+}
+.workstation-container .workstation .workstation_text .workstation_text-button .button_link:hover {
+  background: #244975;
 }
 .workstation-container .workstation .workstation_figure {
   max-width: 60rem;

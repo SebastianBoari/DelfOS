@@ -29,15 +29,39 @@
         padding: $xxlspace 0;
 
         .workstation_text {
-            @include flex (column, nowrap, space-between, stretch, 3.2rem);
+            @include flex (column, nowrap, flex-start, stretch, $xlspace);
             @include max-sizes(55rem, none);
 
             .workstation_text-up {
                 @include flex (column, nowrap, flex-start, stretch, 3.2rem);
+
+                .text_title {
+                    font-size: 2.4rem;
+                }
+
+                .text_description {
+                    font-size: 1.6rem;
+                }
+
+                .text_caption {
+                    font-size: 1.4rem;
+                    line-height: 2.4rem;
+                }
             }
 
             .workstation_text-button {
-                align-self: flex-end
+                align-self: flex-end;
+
+                .button_link {
+                    font-size: 1.6rem;
+                    color: $white;
+                    background: $greyblue;
+                    transition: all .3s ease-in;
+
+                    &:hover {
+                        background: $darkblue;
+                    }
+                }
             }
         }
 
