@@ -78,7 +78,7 @@
     }
 }
 
-// BLOQUE 6
+// PLANJULIUS
 .bg_png {
     background-image: url(https://i.imgur.com/1HMS1Wh.png);
     background-repeat: no-repeat;
@@ -175,21 +175,11 @@
             order: -1;
         }
     }
-
-    //BLOQUE 5
-    .home__cards1 {
-        @include flex(column, nowrap, center, stretch, 3.2rem);
-
-        .home__card {
-            @include flex(row, nowrap, center, stretch, 0);
-
-        }
-    }
 }
 
 //992
 @media (max-width: 992px) {
-    .section6__home {
+    .planjulius {
         justify-content: center;
     }
 }
@@ -213,11 +203,6 @@
         .home2__txt {
             padding: $lspace;
         }
-    }
-
-    //BLOQUE 5
-    .home__cards1 {
-        padding: $lspace 0;
     }
 }
 

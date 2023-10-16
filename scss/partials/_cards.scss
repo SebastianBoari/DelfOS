@@ -78,10 +78,10 @@
 
 // RESPONSIVE
 @media (max-width: 1200px) {
-    .home__cards1 {
+    .primary_card-container {
         @include flex(column, nowrap, center, stretch, 3.2rem);
 
-        .home__card {
+        .primary_card {
             @include flex(row, nowrap, center, stretch, 0);
 
         }
@@ -89,7 +89,7 @@
 }
 
 @media (max-width: 576px) {
-    .home__cards1 {
+    .primary_card-container {
         padding: $lspace 0;
     }
 }

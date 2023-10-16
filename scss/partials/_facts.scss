@@ -1,13 +1,12 @@
-// DESKTOP 
 .facts {
     @include flex(column, nowrap, space-between, stretch, 0);
     padding: $lspace 0 $xlspace;
-    max-width: 110rem;
+    max-width: 60%;
 
     &_title {
         text-align: center;
 
-        padding: $mspace 0;
+        padding: $mspace $sspace;
 
         border-radius: $sspace $sspace 0px 0px;
         border: solid 1px $greyblue;
@@ -22,8 +21,8 @@
         }
     }
 
-    &_datos {
-        @include flex(row, wrap, space-between, stretch, 0);
+    &_data {
+        @include flex(row, wrap, space-between, stretch, $mspace);
         flex-grow: 1;
         padding: $mspace;
         border-radius: 0px 0px $sspace $sspace;
@@ -31,7 +30,7 @@
         border-top: none;
         background: $white;
 
-        .dato {
+        .data {
             @include flex(column, nowrap, space-between, center, 0);
             @include max-sizes(26rem, none);
 
@@ -66,13 +65,12 @@
     }
 }
 
-// RESPONSIVE
 @media (max-width: 992px) {
     .facts {
-        &_datos {
+        &_data {
             @include flex(column, nowrap, space-between, center, 3.2rem);
 
-            .dato {
+            .data {
                 max-width: none;
 
                 &-2 {
@@ -80,5 +78,11 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 576px) {
+    .facts {
+        max-width: 80%;
     }
 }
