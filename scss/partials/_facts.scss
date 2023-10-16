@@ -1,7 +1,8 @@
 // DESKTOP 
-.prefooter {
+.facts {
     @include flex(column, nowrap, space-between, stretch, 0);
-    padding: $xlspace 0;
+    padding: $lspace 0 $xlspace;
+    max-width: 110rem;
 
     &_title {
         text-align: center;
@@ -67,7 +68,7 @@
 
 // RESPONSIVE
 @media (max-width: 992px) {
-    .prefooter {
+    .facts {
         &_datos {
             @include flex(column, nowrap, space-between, center, 3.2rem);
 
