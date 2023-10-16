@@ -1,18 +1,66 @@
 // DESKTOP 
 .prefooter {
-    @include flex(column, nowrap, space-between, stretch, 6.4rem);
+    @include flex(column, nowrap, space-between, stretch, 0);
     padding: $xlspace 0;
 
     &_title {
         text-align: center;
+
+        padding: $mspace 0;
+
+        border-radius: $sspace $sspace 0px 0px;
+        border: solid 1px $greyblue;
+
+        background: $greyblue;
+
+        .title {
+            font-weight: 400;
+            font-size: 2.4rem;
+            margin: 0;
+            color: $white
+        }
     }
 
     &_datos {
         @include flex(row, wrap, space-between, stretch, 0);
+        flex-grow: 1;
+        padding: $mspace;
+        border-radius: 0px 0px $sspace $sspace;
+        border: solid 1px $greyblue;
+        border-top: none;
+        background: $white;
 
         .dato {
-            @include max-sizes(24rem, none);
-            text-align: center;
+            @include flex(column, nowrap, space-between, center, 0);
+            @include max-sizes(26rem, none);
+
+            .icon {
+                width: 3.6rem;
+                height: 3.6rem;
+                fill: $darkblue;
+            }
+
+            .smalltitle {
+                margin: 0;
+
+                text-align: center;
+
+                font-weight: 500;
+                font-size: 2.4rem;
+            }
+
+            .txt {
+                margin: 0;
+                text-align: center;
+
+                text-wrap: balance;
+                font-size: 1.6rem;
+            }
+
+            &-2 {
+                align-self: flex-start;
+            }
+
         }
     }
 }
@@ -22,6 +70,14 @@
     .prefooter {
         &_datos {
             @include flex(column, nowrap, space-between, center, 3.2rem);
+
+            .dato {
+                max-width: none;
+
+                &-2 {
+                    align-self: center;
+                }
+            }
         }
     }
 }
