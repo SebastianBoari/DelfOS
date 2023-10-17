@@ -1,167 +1,190 @@
-// DESKTOP
-//BLOQUE 1
-.section1__tienda{
-justify-content: space-between;
-align-items: center;
-margin: $xlspace 0;
-padding: $xlspace;
-background-image: url(https://i.imgur.com/aTKykIf.png);
-background-repeat: no-repeat;
-background-size: cover;
-.tienda1__txt{
-    @include max-sizes(60rem, none);
-    @include flex(column, nowrap, space-between, stretch, 6.4rem);
-    .txt--up{
-        @include flex (column, nowrap, flex-start, stretch, 6.4rem);
-    }
-    .tienda1__btns{
-        @include flex (row, nowrap, flex-start, center, 3.2rem);
-            .tienda1__link2{
-                text-decoration: none;
-                font-size: $smalltxt;
-                color: $darkblue;
-                font-weight: 400;
-                transition: .8s;
-            }
-            .tienda1__link2:hover{
-                color: $lightblue;
-            }
-            .tienda1__link1{
-                background-color: $lightblue;
-                color: $white;
-                padding: 1.6rem 3.2rem;
-                font-size: $smalltxt;
-                border-radius: 0 0 0 0;
-                transition: all .3s;
-            }
-            .tienda1__link1:hover{
-                background-color: $darkblue;
-                color: $white;
+// JULIUSPLANS
+.juliusplans {
+    justify-content: space-between;
+    align-items: center;
+
+    margin: $xlspace 0;
+    padding: $xlspace;
+
+    border-radius: .6rem 5rem .6rem;
+
+    background-image: url(https://i.imgur.com/aTKykIf.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &_text {
+        @include max-sizes(60rem, none);
+        @include flex(column, nowrap, space-between, stretch, 6.4rem);
+
+        &-up {
+            @include flex (column, nowrap, flex-start, stretch, 6.4rem);
+
+            .text_title {}
+
+            .text_description {}
+        }
+
+        &-buttons {
+            @include flex (row, nowrap, flex-start, center, 3.2rem);
+
+            .button_link {
+                transition: all .3s ease-in;
+
+                &-1 {
+                    background: $greyblue;
+                    color: $white;
+                    padding: 1.6rem 3.2rem;
+                    font-size: $smalltxt;
+
+
+                    &:hover {
+                        background: $darkblue;
+                    }
+                }
+
+                &-2 {
+                    text-decoration: none;
+                    font-size: $smalltxt;
+                    color: $darkblue;
+                    font-weight: 400;
+
+                    &:hover {
+                        color: $greyblue;
+                    }
+                }
             }
         }
     }
 }
+
 //BLOQUE 2
-.section2__tienda{
+.section2__tienda {
     padding: $xxlspace 0;
     @include flex(row, wrap, space-between, stretch, 0);
     row-gap: 6.4rem;
-    .card2{
+
+    .card2 {
+        position: relative;
         @include flex (column, nowrap, flex-start, stretch, 0);
         @include max-sizes(36.1rem, none);
-        transition: all .3s;
+
         padding: 0;
-        .card2__txt{
+        border-radius: .6rem;
+
+        transition: all .3s ease-in;
+
+        &__txt {
             @include flex (column, nowrap, space-between, stretch, 0);
             padding: .8rem 3.2rem .8rem 3.2rem;
-            .card2__txt--upper{
+
+            &--upper {
                 @include flex (column, nowrap, flex-start, stretch, 1.6rem);
-            }    
+
+                .card2__price {
+                    position: absolute;
+                    padding: .6rem 1.6rem;
+                    background: seagreen;
+                    border-radius: 5rem;
+                    color: $white;
+                    width: fit-content;
+                    top: .8rem;
+                    right: .8rem;
+                }
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+
+        &__img {
+            border-radius: .6rem .6rem 0 0;
+
+            img {
+                border-radius: .6rem .6rem 0 0;
+            }
+        }
+
+        &:hover {
+            -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         }
     }
-    .card2:hover{
-        -webkit-box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
-        -moz-box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
-        box-shadow: -1px 3px 21px -6px rgba(0,0,0,0.91);
-    }
 }
-//BLOQUE 3
-.section3__tienda{
+
+// DELFOS
+.delfos {
     @include flex (row, wrap, space-between, stretch, 0);
+
     margin: 6.4rem auto;
+    border-radius: .6rem 5rem .6rem;
+
     background-image: url(https://i.imgur.com/OeXk21l.png);
     background-repeat: no-repeat;
     background-size: cover;
-    .tienda3__txt{
+    background-position: center;
+
+    .delfos_text {
         @include flex (column, nowrap, flex-start, stretch, 6.4rem);
         @include max-sizes(55rem, none);
         padding: 3.2rem 0 17.4rem 3.2rem;
-        .tienda3__title, .tienda3__descrip{
+
+        &-title,
+        &-description {
             color: $white;
         }
     }
-    .tienda3__btn a{
-        background-color: $lightblue;
-        color: $white;
-        padding: 1.6rem 3.2rem;
-        font-size: $smalltxt;
-        border-radius: 0 0 0 0;
-        transition: all .3s;
+
+    .delfos_text-button {
+        .button_link {
+            background: $greyblue;
+            padding: 1.6rem 3.2rem;
+
+            color: $white;
+            font-size: $smalltxt;
+
+            transition: all .3s ease-in;
+
+            &:hover {
+                background: $darkblue;
+            }
+        }
     }
-    .tienda3__btn a:hover{
-        background-color: $darkblue;
-        color: $white;
-    }
 }
-// BLOQUE 4
-.tienda4__maintitle{
-    padding: 12.8rem 0;
-    text-align: center;
-}
-.tienda4__aoeimg{
-    background-image: url(https://i.imgur.com/5k0j6Oi.png);
-}
-.tienda4__haloimg{
-    background-image: url(https://i.imgur.com/YmhYMTv.png);
-}
-.tienda4__fh5img{
-    background-image: url(https://i.imgur.com/InrFws6.png);
-}
-.tienda4__bgimg{
-    @include sizes(100%, 31rem);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.tienda4__txt{
-    @include flex (column, nowrap, flex-start, stretch, 0);
-    row-gap: 1.6rem;
-}
-.tienda4__txtdescrip{
-    @include flex (column, nowrap, flex-start, stretch, 0);
-    row-gap: 1.6rem;
-    padding-bottom: 6.4rem;
-}
+
+
 //RESPONSIVE
 //1200PX
-@media (max-width: 1200px){
-    .section1__tienda{
+@media (max-width: 1200px) {
+    .juliusplans {
         @include flex(column, nowrap, space-between, center, 0);
-        .tienda1__img{
+
+        &_figure {
             order: -1;
             @include max-sizes(24rem, none);
         }
     }
 }
+
 //912PX
-@media (max-width: 992px){
-    .section2__tienda{
+@media (max-width: 992px) {
+    .section2__tienda {
         justify-content: center;
     }
 }
+
 //412PX
-@media (max-width: 412px){
-    .section1__tienda{
+@media (max-width: 412px) {
+    .juliusplans {
         @include flex(column, nowrap, space-between, center, 0);
         margin-top: 0;
         padding: $xlspace 0;
-        .tienda1__img{
+
+        &_figure {
             order: -1;
             @include max-sizes(24rem, none);
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

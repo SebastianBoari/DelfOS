@@ -2142,16 +2142,18 @@ body {
   }
 }
 /* TIENDA */
-.section1__tienda {
+.juliusplans {
   justify-content: space-between;
   align-items: center;
   margin: 6.4rem 0;
   padding: 6.4rem;
+  border-radius: 0.6rem 5rem 0.6rem;
   background-image: url(https://i.imgur.com/aTKykIf.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
-.section1__tienda .tienda1__txt {
+.juliusplans_text {
   max-width: 60rem;
   max-height: none;
   display: flex;
@@ -2161,7 +2163,7 @@ body {
   align-items: stretch;
   gap: 6.4rem;
 }
-.section1__tienda .tienda1__txt .txt--up {
+.juliusplans_text-up {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -2169,7 +2171,7 @@ body {
   align-items: stretch;
   gap: 6.4rem;
 }
-.section1__tienda .tienda1__txt .tienda1__btns {
+.juliusplans_text-buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -2177,27 +2179,26 @@ body {
   align-items: center;
   gap: 3.2rem;
 }
-.section1__tienda .tienda1__txt .tienda1__btns .tienda1__link2 {
+.juliusplans_text-buttons .button_link {
+  transition: all 0.3s ease-in;
+}
+.juliusplans_text-buttons .button_link-1 {
+  background: #5D7698;
+  color: #ffffff;
+  padding: 1.6rem 3.2rem;
+  font-size: 1.6em;
+}
+.juliusplans_text-buttons .button_link-1:hover {
+  background: #244975;
+}
+.juliusplans_text-buttons .button_link-2 {
   text-decoration: none;
   font-size: 1.6em;
   color: #244975;
   font-weight: 400;
-  transition: 0.8s;
 }
-.section1__tienda .tienda1__txt .tienda1__btns .tienda1__link2:hover {
-  color: #0373E2;
-}
-.section1__tienda .tienda1__txt .tienda1__btns .tienda1__link1 {
-  background-color: #0373E2;
-  color: #ffffff;
-  padding: 1.6rem 3.2rem;
-  font-size: 1.6em;
-  border-radius: 0 0 0 0;
-  transition: all 0.3s;
-}
-.section1__tienda .tienda1__txt .tienda1__btns .tienda1__link1:hover {
-  background-color: #244975;
-  color: #ffffff;
+.juliusplans_text-buttons .button_link-2:hover {
+  color: #5D7698;
 }
 
 .section2__tienda {
@@ -2211,6 +2212,7 @@ body {
   row-gap: 6.4rem;
 }
 .section2__tienda .card2 {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -2219,10 +2221,11 @@ body {
   gap: 0;
   max-width: 36.1rem;
   max-height: none;
-  transition: all 0.3s;
   padding: 0;
+  border-radius: 0.6rem;
+  transition: all 0.3s ease-in;
 }
-.section2__tienda .card2 .card2__txt {
+.section2__tienda .card2__txt {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -2231,7 +2234,7 @@ body {
   gap: 0;
   padding: 0.8rem 3.2rem 0.8rem 3.2rem;
 }
-.section2__tienda .card2 .card2__txt .card2__txt--upper {
+.section2__tienda .card2__txt--upper {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -2239,13 +2242,32 @@ body {
   align-items: stretch;
   gap: 1.6rem;
 }
+.section2__tienda .card2__txt--upper .card2__price {
+  position: absolute;
+  padding: 0.6rem 1.6rem;
+  background: seagreen;
+  border-radius: 5rem;
+  color: #ffffff;
+  width: fit-content;
+  top: 0.8rem;
+  right: 0.8rem;
+}
+.section2__tienda .card2__txt p {
+  font-size: 1.4rem;
+}
+.section2__tienda .card2__img {
+  border-radius: 0.6rem 0.6rem 0 0;
+}
+.section2__tienda .card2__img img {
+  border-radius: 0.6rem 0.6rem 0 0;
+}
 .section2__tienda .card2:hover {
-  -webkit-box-shadow: -1px 3px 21px -6px rgba(0, 0, 0, 0.91);
-  -moz-box-shadow: -1px 3px 21px -6px rgba(0, 0, 0, 0.91);
-  box-shadow: -1px 3px 21px -6px rgba(0, 0, 0, 0.91);
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.section3__tienda {
+.delfos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -2253,11 +2275,13 @@ body {
   align-items: stretch;
   gap: 0;
   margin: 6.4rem auto;
+  border-radius: 0.6rem 5rem 0.6rem;
   background-image: url(https://i.imgur.com/OeXk21l.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
-.section3__tienda .tienda3__txt {
+.delfos .delfos_text {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -2268,70 +2292,22 @@ body {
   max-height: none;
   padding: 3.2rem 0 17.4rem 3.2rem;
 }
-.section3__tienda .tienda3__txt .tienda3__title, .section3__tienda .tienda3__txt .tienda3__descrip {
+.delfos .delfos_text-title, .delfos .delfos_text-description {
   color: #ffffff;
 }
-.section3__tienda .tienda3__btn a {
-  background-color: #0373E2;
-  color: #ffffff;
+.delfos .delfos_text-button .button_link {
+  background: #5D7698;
   padding: 1.6rem 3.2rem;
-  font-size: 1.6em;
-  border-radius: 0 0 0 0;
-  transition: all 0.3s;
-}
-.section3__tienda .tienda3__btn a:hover {
-  background-color: #244975;
   color: #ffffff;
+  font-size: 1.6em;
+  transition: all 0.3s ease-in;
 }
-
-.tienda4__maintitle {
-  padding: 12.8rem 0;
-  text-align: center;
-}
-
-.tienda4__aoeimg {
-  background-image: url(https://i.imgur.com/5k0j6Oi.png);
-}
-
-.tienda4__haloimg {
-  background-image: url(https://i.imgur.com/YmhYMTv.png);
-}
-
-.tienda4__fh5img {
-  background-image: url(https://i.imgur.com/InrFws6.png);
-}
-
-.tienda4__bgimg {
-  width: 100%;
-  height: 31rem;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.tienda4__txt {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  gap: 0;
-  row-gap: 1.6rem;
-}
-
-.tienda4__txtdescrip {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  gap: 0;
-  row-gap: 1.6rem;
-  padding-bottom: 6.4rem;
+.delfos .delfos_text-button .button_link:hover {
+  background: #244975;
 }
 
 @media (max-width: 1200px) {
-  .section1__tienda {
+  .juliusplans {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -2339,7 +2315,7 @@ body {
     align-items: center;
     gap: 0;
   }
-  .section1__tienda .tienda1__img {
+  .juliusplans_figure {
     order: -1;
     max-width: 24rem;
     max-height: none;
@@ -2351,7 +2327,7 @@ body {
   }
 }
 @media (max-width: 412px) {
-  .section1__tienda {
+  .juliusplans {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -2361,7 +2337,7 @@ body {
     margin-top: 0;
     padding: 6.4rem 0;
   }
-  .section1__tienda .tienda1__img {
+  .juliusplans_figure {
     order: -1;
     max-width: 24rem;
     max-height: none;
