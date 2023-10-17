@@ -1,54 +1,77 @@
-// DESKTOP
-// BLOQUE 1
-.section1__partners {
+// PARTNERS
+.partners {
     justify-content: space-between;
     padding: $xlspace 0;
 
-    .partners1__article1 {
+    .partners_left {
         @include flex (column, nowrap, space-between, stretch, 0);
         @include max-sizes(56rem, none);
 
-        .article1__txt {
+        .partners_left-text {
             @include flex (column, nowrap, space-between, stretch, 1.6rem);
+
+            .text_title {}
+
+            .text_subtitle {}
+
+            .text_description {}
         }
 
-        .article1__img {
+        .partners_left-figure {
             @include flex (row, nowrap, space-between, stretch, 0);
+
+            .figure_image {}
         }
     }
 
-    .partners1__article2 {
+    .partners_right {
         @include flex (column, nowrap, space-between, stretch, 0);
         @include max-sizes(56rem, none);
+
+        &-image {}
+
+        &-text {}
     }
 }
 
-// BLOQUE 2
-.section2__partners {
+// ADVANTAGES
+.advantages {
     justify-content: space-between;
     padding: $xlspace 0;
 
-    .partners2__article1 {
+    &_security {
         @include flex (column, nowrap, space-between, stretch, 3.2rem);
         @include max-sizes(55rem, none);
 
-        p {
+        &-figure {
+            .figure_image {}
+        }
+
+        &-title {}
+
+        &-description {
             line-height: 3.2rem;
         }
     }
 
-    .partners2__article2 {
+    &_experience {
         @include flex (column, nowrap, space-between, stretch, 3.2rem);
         @include max-sizes(55rem, none);
 
-        p {
+        &-figure {
+            .figure_image {}
+        }
+
+        &-title {}
+
+        &-description {
             line-height: 3.2rem;
         }
     }
 }
 
-// BLOQUE 3
-.background__img3 {
+// CLOUD
+.bg_image-cloud {
     background-image: url(https://i.imgur.com/s0awAEU.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -57,17 +80,17 @@
     @include sizes(100%, 65rem);
     @include flex (column, nowrap, center, center, 0);
 
-    .section3__partners {
+    .cloud {
         @include flex (column, nowrap, center, center, 3.2rem);
 
-        .bigtitle--white {
+        &_title {
             @extend .bigtitle;
             text-align: center;
             color: $white;
             font-size: 4em;
         }
 
-        .txt--white {
+        &_description {
             @include max-sizes(120rem, auto);
             @extend .txt;
             color: $white;
@@ -77,90 +100,121 @@
     }
 }
 
-//BLOQUE 4
-.section4__partners {
+// SERVICES
+.services {
     justify-content: space-between;
     padding: $xlspace 0;
 
-    .partners4__article2 {
+    &_left {
         @include flex (column, nowrap, space-between, stretch, 0);
         @include max-sizes(56rem, none);
 
-        .article2__txt {
+        &-text {
             @include flex (column, nowrap, space-between, stretch, 1.6rem);
         }
 
-        .article2__img {
+        &-image {
             @include flex (row, nowrap, space-between, stretch, 0);
         }
     }
 
-    .partners4__article1 {
+    &_right {
         @include flex (column, nowrap, space-between, stretch, 1.6rem);
         @include max-sizes(56rem, none);
+
+        &-text {
+            .text_title {}
+
+            .text_subtitle {}
+
+            .text_description {}
+        }
+
+        &-figure {
+            @include flex (row, nowrap, space-between, stretch, 0);
+        }
     }
 }
 
-// BLOQUE 5
-.section5__partners {
+// ORACLE
+.oracle {
     justify-content: space-between;
     padding: $xlspace 0;
 
-    .partners5__article1 {
+    .oracle_analisis {
         @include flex (column, nowrap, space-between, stretch, .6rem);
         @include max-sizes(33.3rem, none);
 
-        h3 {
+        .oracle_analisis-figure {
+            .figure_image {}
+        }
+
+        .oracle_analisis-title {
             font-size: 2.5em;
             line-height: 3.2rem;
         }
+
+        .oracle_analisis-description {}
     }
 
-    .partners5__article2 {
+    .oracle_business {
         @include flex (column, nowrap, space-between, stretch, .6rem);
         @include max-sizes(33.3rem, none);
 
-        h3 {
+        .oracle_business-figure {
+            .figure_image {}
+        }
+
+        .oracle_business-title {
             font-size: 2.5em;
             line-height: 3.2rem;
         }
+
+        .oracle_business-description {}
     }
 
-    .partners5__article3 {
+    .oracle_fast {
         @include flex (column, nowrap, space-between, stretch, .6rem);
         @include max-sizes(33.3rem, none);
 
-        h3 {
+        .oracle_fast-figure {
+            .figure_image {}
+        }
+
+        .oracle_fast-title {
             font-size: 2.5em;
             line-height: 3.2rem;
         }
+
+        .oracle_fast-description {}
     }
 }
 
-// BLOQUE 6
-.background__img4 {
+// CONSULTANCY
+.bg_image-consultancy {
     background-image: url(https://i.imgur.com/NBJbLJN.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
+
     @include sizes(100%, 65rem);
     @include flex (column, nowrap, center, center, 0);
 
-    .section6__partners {
+    .consultancy {
         @include flex (column, nowrap, center, center, 0rem);
 
-        .partners6__article {
+        &_text {
             @include flex (column, nowrap, center, center, 3.2rem);
             background-color: rgba(242, 244, 247, .8);
             border-radius: .4rem;
             padding: $xlspace;
 
-            .bigtitle {
+            &-title {
                 text-align: center;
             }
 
-            .txt {
+            &-description {
                 @include max-sizes(120rem, auto);
                 text-align: center;
                 line-height: 3.2rem;
@@ -173,30 +227,30 @@
 // 1200 PX
 @media (max-width: 1200px) {
 
-    //BLOQUE 1
-    .section1__partners {
+    // PARTNERS
+    .partners {
         justify-content: center;
         padding: $xlspace 0;
 
-        .partners1__article1 {
+        &_left {
             @include flex (column, nowrap, space-between, stretch, 3.2rem);
             @include max-sizes(none, none);
 
-            .article1__img {
+            &-figure {
                 @include flex (row, nowrap, flex-start, stretch, 3.2rem);
             }
         }
 
-        .partners1__article2 {
+        &_right {
             @include flex (row, wrap, space-between, stretch, 0);
             @include max-sizes(none, none);
             padding: $xlspace 0;
 
-            img {
+            &-image {
                 @include max-sizes(56rem, none);
             }
 
-            p {
+            &-description {
                 @include max-sizes(36rem, none);
                 line-height: 4.2rem;
                 font-size: 2em;
@@ -204,43 +258,45 @@
         }
     }
 
-    //BLOQUE 2
-    .section2__partners {
+    // ADVANTAGES
+    .advantages {
         padding: 0 0 $xlspace;
 
-        .partners2__article1 {
+        .advantages_security {
             @include max-sizes(46rem, none);
         }
 
-        .partners2__article2 {
+        .advantages_experience {
             @include max-sizes(46rem, none);
         }
     }
 
-    //BLOQUE 4
-    .section4__partners {
+    // SERVICES
+    .services {
         justify-content: center;
         padding: $xlspace 0;
 
-        .partners4__article2 {
+        &_left {
             @include flex (column, nowrap, space-between, stretch, 3.2rem);
             @include max-sizes(none, none);
 
-            .article2__img {
+            &-image {
                 @include flex (row, nowrap, flex-start, stretch, 3.2rem);
             }
         }
 
-        .partners4__article1 {
+        &_right {
             @include flex (row, wrap, space-between, stretch, 0);
             @include max-sizes(none, none);
             padding: $xlspace 0;
 
-            img {
-                @include max-sizes(56rem, none);
+            &-figure {
+                .figure_image {
+                    @include max-sizes(56rem, none);
+                }
             }
 
-            p {
+            &-text p {
                 @include max-sizes(36rem, none);
                 line-height: 6.4rem;
                 font-size: 2.2em;
@@ -248,20 +304,20 @@
         }
     }
 
-    //BLOQUE 5
-    .section5__partners {
+    // ORACLE
+    .oracle {
         justify-content: space-between;
         padding: $xlspace 0;
 
-        .partners5__article1 {
+        &_analisis {
             @include max-sizes(46rem, none);
         }
 
-        .partners5__article2 {
+        &_business {
             @include max-sizes(46rem, none);
         }
 
-        .partners5__article3 {
+        &_fast {
             @include max-sizes(none, none);
             padding: $xlspace 0 0;
         }
@@ -271,32 +327,32 @@
 //992PX
 @media (max-width: 992px) {
 
-    //BLOQUE 1
-    .section1__partners {
+    // PARTNERS
+    .partners {
         padding: $lspace 0;
 
-        .partners1__article1 {
-            .article1__txt {
-                h1 {
+        &_left {
+            &-text {
+                .text_title {
                     font-size: 3.8em;
                 }
             }
 
-            .article1__img {
+            &-figure {
                 @include flex (row, nowrap, space-between, stretch, 0);
             }
         }
 
-        .partners1__article2 {
+        &_right {
             @include flex (column, nowrap, space-between, center, 3.2rem);
             @include max-sizes(none, none);
             padding: $xlspace 0 0;
 
-            img {
+            &-image {
                 @include max-sizes(none, none);
             }
 
-            p {
+            &-text {
                 @include max-sizes(none, none);
                 line-height: 2.4rem;
                 font-size: 1.6em;
@@ -304,66 +360,66 @@
         }
     }
 
-    //BLOQUE 2
-    .section2__partners {
+    // ADVANTAGES
+    .advantages {
         padding: 0 0 $xlspace;
 
-        .partners2__article1 {
+        &_experience {
             @include max-sizes(none, none);
         }
 
-        .partners2__article2 {
+        &_security {
             @include max-sizes(none, none);
         }
     }
 
-    //BLOQUE 4
-    .section4__partners {
+    // SERVICES
+    .services {
         padding: $lspace 0;
 
-        .partners4__article2 {
-            .article2__txt {
-                h2 {
-                    font-size: 3.8em;
-                }
-            }
-
-            .article2__img {
-                @include flex (row, nowrap, space-between, stretch, 0);
-            }
-        }
-
-        .partners4__article1 {
+        &_left {
             @include flex (column, nowrap, space-between, center, 3.2rem);
             @include max-sizes(none, none);
             padding: $xlspace 0 0;
 
-            img {
+            &-image {
                 @include max-sizes(none, none);
             }
 
-            p {
+            &-description {
                 @include max-sizes(none, none);
                 line-height: 2.4rem;
                 font-size: 1.6em;
+            }
+        }
+
+        &_right {
+            &-text {
+                .text_title {
+                    font-size: 3.8em;
+                }
+            }
+
+            .services_right-figure {
+                @include flex (row, nowrap, space-between, stretch, 0);
             }
         }
     }
 
     //BLOQUE 5
-    .section5__partners {
+    .oracle {
         justify-content: space-between;
         padding: $xlspace 0;
 
-        .partners5__article1 {
+        &_analisis {
             @include max-sizes(none, none);
         }
 
-        .partners5__article2 {
+        &_business {
             @include max-sizes(none, none);
         }
 
-        .partners5__article3 {
+        &_fast {
             @include max-sizes(none, none);
             padding: 0;
         }
@@ -372,10 +428,10 @@
 
 @media (max-width: 412px) {
 
-    // BLOQUE 6
-    .background__img4 {
-        .section6__partners {
-            .partners6__article {
+    // CONSULTANCY
+    .bg_image-consultancy {
+        .consultancy {
+            &_text {
                 padding: $xlspace 0;
             }
         }
