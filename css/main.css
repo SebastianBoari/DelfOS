@@ -927,8 +927,9 @@ body {
 }
 /* NOSOTROS */
 .philosophy-container .philosophy {
+  position: relative;
   justify-content: space-between;
-  padding: 0 0 6.4rem;
+  padding: 3.2rem 6.4rem 0;
 }
 .philosophy-container .philosophy .philosophy_text {
   display: flex;
@@ -936,7 +937,7 @@ body {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 6.4rem;
+  gap: 3.2rem;
   max-width: 56rem;
   max-height: auto;
 }
@@ -949,23 +950,47 @@ body {
   gap: 1.6rem;
 }
 .philosophy-container .philosophy .philosophy_text-header .header_title {
-  line-height: 7.3rem;
+  font-size: 3.6rem;
+}
+.philosophy-container .philosophy .philosophy_text-header .header_description {
+  font-size: 1.6rem;
 }
 .philosophy-container .philosophy .philosophy_text-button {
   align-self: flex-end;
 }
 .philosophy-container .philosophy .philosophy_text-button .button_link {
-  width: 18rem;
-  height: 6.7;
+  background: #5D7698;
+  color: #ffffff;
+  font-size: 1.6rem;
+  transition: all 0.3s ease-in;
+}
+.philosophy-container .philosophy .philosophy_text-button .button_link:hover {
+  background: #244975;
 }
 .philosophy-container .philosophy .philosophy_text-brand {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   gap: 0;
 }
+.philosophy-container .philosophy .philosophy_text-brand .brand_figure-svg {
+  width: 12rem;
+  height: auto;
+  fill: #5D7698;
+}
+.philosophy-container .philosophy .philosophy_text-brand .brand_figure .adobe {
+  max-height: 5.6rem;
+}
+.philosophy-container .philosophy_figure-image {
+  object-fit: cover;
+  height: 110%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .section2__nosotros {
   display: flex;
   flex-direction: column;
@@ -973,7 +998,7 @@ body {
   justify-content: space-between;
   align-items: stretch;
   gap: 12.8rem;
-  padding-top: 6.4rem;
+  padding-top: 24rem;
   padding-bottom: 6.4rem;
 }
 .section2__nosotros .employee__right {
@@ -986,9 +1011,9 @@ body {
   max-width: auto;
   max-height: 49.8rem;
   align-self: flex-end;
-  -webkit-box-shadow: -2px 5px 7px -2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px 5px 7px -2px rgba(0, 0, 0, 0.75);
-  box-shadow: -2px 5px 7px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 .section2__nosotros .employee__right .employee__txt {
   display: flex;
@@ -1020,9 +1045,9 @@ body {
   max-width: auto;
   max-height: 49.8rem;
   align-self: flex-start;
-  -webkit-box-shadow: 2px 5px 7px -2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 5px 7px -2px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 5px 7px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 .section2__nosotros .employee__left .employee__txt {
   display: flex;
@@ -1088,6 +1113,12 @@ body {
 }
 
 @media (max-width: 1400px) {
+  .philosophy-container .philosophy {
+    justify-content: center;
+  }
+  .philosophy-container .philosophy_figure-image {
+    display: none;
+  }
   .section3__nosotros .nosotros3__article {
     display: flex;
     flex-direction: row;
@@ -1251,6 +1282,9 @@ body {
   }
 }
 @media (max-width: 576px) {
+  .background__img5 .philosophy {
+    padding: 3.2rem;
+  }
   .background__img5 .philosophy_text {
     max-width: none;
     max-height: none;
@@ -1267,8 +1301,15 @@ body {
   .background__img5 .philosophy_text-button {
     align-self: center;
   }
-  .background__img5 .philosophy_figure {
-    display: none;
+  .background__img5 .philosophy_text-brand {
+    justify-content: center !important;
+    gap: 1.6rem !important;
+  }
+  .background__img5 .philosophy_text-brand .brand_figure-svg {
+    max-width: 5.6rem;
+  }
+  .background__img5 .philosophy_text-brand .brand_figure .adobe {
+    max-height: 5.6rem;
   }
   .nosotros3__article iframe {
     width: auto;
