@@ -1401,7 +1401,7 @@ body {
   justify-content: space-between;
   padding: 12.8rem 6.4rem 12.8rem;
 }
-.apollo .apollo_text {
+.apollo_text {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -1411,7 +1411,7 @@ body {
   max-width: 48rem;
   max-height: auto;
 }
-.apollo .apollo_text .apollo_text-up {
+.apollo_text-up {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -1419,22 +1419,22 @@ body {
   align-items: stretch;
   gap: 4rem;
 }
-.apollo .apollo_text .apollo_text-up .text_description {
+.apollo_text-up .text_description {
   font-size: 1.6rem;
 }
-.apollo .apollo_text .apollo_text-button {
+.apollo_text-button {
   align-self: flex-end;
 }
-.apollo .apollo_text .apollo_text-button .button_link {
+.apollo_text-button .button_link {
   font-size: 1.6rem;
   color: #ffffff;
   background: #5D7698;
   transition: all 0.3s ease-in;
 }
-.apollo .apollo_text .apollo_text-button .button_link:hover {
+.apollo_text-button .button_link:hover {
   background: #244975;
 }
-.apollo .apollo_figure {
+.apollo_figure {
   max-width: 58rem;
   max-height: none;
 }
@@ -1443,7 +1443,7 @@ body {
   justify-content: space-between;
   padding: 12.8rem 6.4rem 12.8rem;
 }
-.plstudio .plstudio_text {
+.plstudio_text {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -1453,7 +1453,7 @@ body {
   max-width: 45rem;
   max-height: auto;
 }
-.plstudio .plstudio_text .plstudio_text-up {
+.plstudio_text-up {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -1461,22 +1461,22 @@ body {
   align-items: stretch;
   gap: 1.6rem;
 }
-.plstudio .plstudio_text .plstudio_text-up .text_description {
+.plstudio_text-up .text_description {
   font-size: 1.6rem;
 }
-.plstudio .plstudio_text .plstudio_text-button {
+.plstudio_text-button {
   align-self: flex-end;
 }
-.plstudio .plstudio_text .plstudio_text-button .button_link {
+.plstudio_text-button .button_link {
   font-size: 1.6rem;
   color: #ffffff;
   background: #5D7698;
   transition: all 0.3s ease-in;
 }
-.plstudio .plstudio_text .plstudio_text-button .button_link:hover {
+.plstudio_text-button .button_link:hover {
   background: #244975;
 }
-.plstudio .plstudio_figure {
+.plstudio_figure {
   max-width: 58rem;
   max-height: none;
 }
@@ -1498,13 +1498,13 @@ body {
   gap: 2rem;
   padding: 38.4rem 0 12.8rem;
 }
-.bg_image-viewplans .viewplans .viewplans_button .viewplans_button-link {
+.bg_image-viewplans .viewplans_button-link {
   font-size: 1.6rem;
   color: #ffffff;
   background: #5D7698;
   transition: all 0.3s ease-in;
 }
-.bg_image-viewplans .viewplans .viewplans_button .viewplans_button-link:hover {
+.bg_image-viewplans .viewplans_button-link:hover {
   background: #244975;
 }
 
@@ -1512,7 +1512,7 @@ body {
   justify-content: space-between;
   padding: 12.8rem 6.4rem 12.8rem;
 }
-.julius .julius_text {
+.julius_text {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -1522,7 +1522,7 @@ body {
   max-width: 45rem;
   max-height: auto;
 }
-.julius .julius_text .julius_text-up {
+.julius_text-up {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -1530,22 +1530,22 @@ body {
   align-items: stretch;
   gap: 1.6rem;
 }
-.julius .julius_text .julius_text-up .text_description {
+.julius_text-up .text_description {
   font-size: 1.6rem;
 }
-.julius .julius_text .julius_text-button {
+.julius_text-button {
   align-self: flex-end;
 }
-.julius .julius_text .julius_text-button .button_link {
+.julius_text-button .button_link {
   font-size: 1.6rem;
   color: #ffffff;
   background: #5D7698;
   transition: all 0.3s ease-in;
 }
-.julius .julius_text .julius_text-button .button_link:hover {
+.julius_text-button .button_link:hover {
   background: #244975;
 }
-.julius .julius_figure {
+.julius_figure {
   max-width: 58rem;
   max-height: none;
 }
@@ -1554,7 +1554,7 @@ body {
   justify-content: space-between;
   padding: 12.8rem 6.4rem 12.8rem;
 }
-.picshop .picshop_text {
+.picshop_text {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -1564,7 +1564,7 @@ body {
   max-width: 45rem;
   max-height: auto;
 }
-.picshop .picshop_text .picshop_text {
+.picshop_text-up {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -1572,22 +1572,22 @@ body {
   align-items: stretch;
   gap: 3.2rem;
 }
-.picshop .picshop_text .picshop_text .text_description {
+.picshop_text-up .text_description {
   font-size: 1.6rem;
 }
-.picshop .picshop_text .picshop_text-button {
+.picshop_text-button {
   align-self: flex-end;
 }
-.picshop .picshop_text .picshop_text-button .button_link {
+.picshop_text-button .button_link {
   font-size: 1.6rem;
   color: #ffffff;
   background: #5D7698;
   transition: all 0.3s ease-in;
 }
-.picshop .picshop_text .picshop_text-button .button_link:hover {
+.picshop_text-button .button_link:hover {
   background: #244975;
 }
-.picshop .picshop_figure {
+.picshop_figure {
   max-width: 58rem;
   max-height: none;
 }
@@ -1610,65 +1610,65 @@ body {
   .apollo {
     justify-content: center;
   }
-  .apollo .apollo_text {
+  .apollo_text {
     max-width: none;
     max-height: none;
     text-align: center;
     padding: 3.2rem 0 0;
     gap: 3.2rem;
   }
-  .apollo .apollo_text .apollo_text-button {
+  .apollo_text-button {
     align-self: center;
   }
-  .apollo .apollo_figure {
+  .apollo_figure {
     order: -1;
   }
   .plstudio {
     justify-content: center;
   }
-  .plstudio .plstudio_text {
+  .plstudio_text {
     max-width: none;
     max-height: none;
     text-align: center;
     padding: 3.2rem 0 0;
     gap: 3.2rem;
   }
-  .plstudio .plstudio_text .plstudio_text-button {
+  .plstudio_text-button {
     align-self: center;
   }
-  .plstudio .plstudio_figure {
+  .plstudio_figure {
     order: -1;
   }
   .julius {
     justify-content: center;
   }
-  .julius .julius_text {
+  .julius_text {
     max-width: none;
     max-height: none;
     text-align: center;
     padding: 3.2rem 0 0;
     gap: 3.2rem;
   }
-  .julius .julius_text .julius_text-button {
+  .julius_text-button {
     align-self: center;
   }
-  .julius .julius_figure {
+  .julius_figure {
     order: -1;
   }
   .picshop {
     justify-content: center;
   }
-  .picshop .picshop_text {
+  .picshop_text {
     max-width: none;
     max-height: none;
     text-align: center;
     padding: 3.2rem 0 0;
     gap: 3.2rem;
   }
-  .picshop .picshop_text .picshop_text-button {
+  .picshop_text-button {
     align-self: center;
   }
-  .picshop .picshop_figure {
+  .picshop_figure {
     order: -1;
   }
 }

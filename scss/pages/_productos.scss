@@ -3,11 +3,11 @@
     justify-content: space-between;
     padding: $xxlspace $xlspace $xxlspace;
 
-    .apollo_text {
+    &_text {
         @include flex (column, nowrap, flex-start, stretch, 12.8rem);
         @include max-sizes(48rem, auto);
 
-        .apollo_text-up {
+        &-up {
             @include flex (column, nowrap, space-between, stretch, 4rem);
 
             .text_title {}
@@ -17,7 +17,7 @@
             }
         }
 
-        .apollo_text-button {
+        &-button {
             align-self: flex-end;
 
             .button_link {
@@ -33,7 +33,7 @@
         }
     }
 
-    .apollo_figure {
+    &_figure {
         @include max-sizes(58rem, none);
     }
 }
@@ -43,11 +43,11 @@
     justify-content: space-between;
     padding: $xxlspace $xlspace $xxlspace;
 
-    .plstudio_text {
+    &_text {
         @include flex (column, nowrap, space-between, stretch, 0);
         @include max-sizes(45rem, auto);
 
-        .plstudio_text-up {
+        &-up {
             @include flex (column, nowrap, space-between, stretch, 1.6rem);
 
             .text_title {}
@@ -57,7 +57,7 @@
             }
         }
 
-        .plstudio_text-button {
+        &-button {
             align-self: flex-end;
 
             .button_link {
@@ -73,7 +73,7 @@
         }
     }
 
-    .plstudio_figure {
+    &_figure {
         @include max-sizes(58rem, none);
     }
 }
@@ -92,8 +92,8 @@
 
         padding: 38.4rem 0 $xxlspace;
 
-        .viewplans_button {
-            .viewplans_button-link {
+        &_button {
+            &-link {
                 font-size: 1.6rem;
                 color: $white;
                 background: $greyblue;
@@ -112,11 +112,11 @@
     justify-content: space-between;
     padding: $xxlspace $xlspace $xxlspace;
 
-    .julius_text {
+    &_text {
         @include flex (column, nowrap, space-between, stretch, 0);
         @include max-sizes(45rem, auto);
 
-        .julius_text-up {
+        &-up {
             @include flex (column, nowrap, space-between, stretch, 1.6rem);
 
             .text_title {}
@@ -126,7 +126,7 @@
             }
         }
 
-        .julius_text-button {
+        &-button {
             align-self: flex-end;
 
             .button_link {
@@ -142,7 +142,7 @@
         }
     }
 
-    .julius_figure {
+    &_figure {
         @include max-sizes(58rem, none);
     }
 }
@@ -152,11 +152,11 @@
     justify-content: space-between;
     padding: $xxlspace $xlspace $xxlspace;
 
-    .picshop_text {
+    &_text {
         @include flex (column, nowrap, space-between, stretch, 0);
         @include max-sizes(45rem, auto);
 
-        .picshop_text {
+        &-up {
             @include flex (column, nowrap, space-between, stretch, 3.2rem);
 
             .text_title {}
@@ -166,7 +166,7 @@
             }
         }
 
-        .picshop_text-button {
+        &-button {
             align-self: flex-end;
 
             .button_link {
@@ -182,7 +182,7 @@
         }
     }
 
-    .picshop_figure {
+    &_figure {
         @include max-sizes(58rem, none);
     }
 }
@@ -220,18 +220,18 @@
     .apollo {
         justify-content: center;
 
-        .apollo_text {
+        &_text {
             @include max-sizes(none, none);
             text-align: center;
             padding: $lspace 0 0;
             gap: 3.2rem;
 
-            .apollo_text-button {
+            &-button {
                 align-self: center;
             }
         }
 
-        .apollo_figure {
+        &_figure {
             order: -1;
         }
     }
@@ -240,18 +240,18 @@
     .plstudio {
         justify-content: center;
 
-        .plstudio_text {
+        &_text {
             @include max-sizes(none, none);
             text-align: center;
             padding: $lspace 0 0;
             gap: 3.2rem;
 
-            .plstudio_text-button {
+            &-button {
                 align-self: center;
             }
         }
 
-        .plstudio_figure {
+        &_figure {
             order: -1;
         }
     }
@@ -260,18 +260,18 @@
     .julius {
         justify-content: center;
 
-        .julius_text {
+        &_text {
             @include max-sizes(none, none);
             text-align: center;
             padding: $lspace 0 0;
             gap: 3.2rem;
 
-            .julius_text-button {
+            &-button {
                 align-self: center;
             }
         }
 
-        .julius_figure {
+        &_figure {
             order: -1;
         }
     }
@@ -280,18 +280,18 @@
     .picshop {
         justify-content: center;
 
-        .picshop_text {
+        &_text {
             @include max-sizes(none, none);
             text-align: center;
             padding: $lspace 0 0;
             gap: 3.2rem;
 
-            .picshop_text-button {
+            &-button {
                 align-self: center;
             }
         }
 
-        .picshop_figure {
+        &_figure {
             order: -1;
         }
     }
