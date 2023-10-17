@@ -1,226 +1,298 @@
-//DESKTOP
-// BLOQUE 1
-.section1__producto{
-    justify-content: space-between;
-    padding: $xlspace $xlspace $xlspace;
-    .producto1__txt{
-        @include flex (column, nowrap, flex-start, stretch, 12.8rem);
-        @include max-sizes(45rem, auto);
-        .txt1--up{
-            @include flex (column, nowrap, space-between, stretch, 4rem);
-        }
-        .producto1__btn{
-            align-self: flex-end;
-        }
-    }
-    .producto1__img{
-        @include max-sizes(58rem, none);
-    }
-}
-// BLOQUE 2
-.section2__producto{
+// APOLLO
+.apollo {
     justify-content: space-between;
     padding: $xxlspace $xlspace $xxlspace;
-    .producto2__txt{
-        @include flex (column, nowrap, space-between, stretch, 0);
-        @include max-sizes(45rem, auto);
-        .txt2--up{
-            @include flex (column, nowrap, space-between, stretch, 1.6rem);
+
+    .apollo_text {
+        @include flex (column, nowrap, flex-start, stretch, 12.8rem);
+        @include max-sizes(48rem, auto);
+
+        .apollo_text-up {
+            @include flex (column, nowrap, space-between, stretch, 4rem);
+
+            .text_title {}
+
+            .text_description {
+                font-size: 1.6rem;
+            }
         }
-        .producto2__btn{
+
+        .apollo_text-button {
             align-self: flex-end;
+
+            .button_link {
+                font-size: 1.6rem;
+                color: $white;
+                background: $greyblue;
+                transition: all .3s ease-in;
+
+                &:hover {
+                    background: $darkblue;
+                }
+            }
         }
     }
-    .producto2__img{
+
+    .apollo_figure {
         @include max-sizes(58rem, none);
     }
 }
-// BLOQUE 3
-.background__img2{
+
+// PLSTUDIO
+.plstudio {
+    justify-content: space-between;
+    padding: $xxlspace $xlspace $xxlspace;
+
+    .plstudio_text {
+        @include flex (column, nowrap, space-between, stretch, 0);
+        @include max-sizes(45rem, auto);
+
+        .plstudio_text-up {
+            @include flex (column, nowrap, space-between, stretch, 1.6rem);
+
+            .text_title {}
+
+            .text_description {
+                font-size: 1.6rem;
+            }
+        }
+
+        .plstudio_text-button {
+            align-self: flex-end;
+
+            .button_link {
+                font-size: 1.6rem;
+                color: $white;
+                background: $greyblue;
+                transition: all .3s ease-in;
+
+                &:hover {
+                    background: $darkblue;
+                }
+            }
+        }
+    }
+
+    .plstudio_figure {
+        @include max-sizes(58rem, none);
+    }
+}
+
+// VIEWPLANS
+.bg_image-viewplans {
     background-image: url(https://i.imgur.com/qwOSfLK.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    .section3__producto{
-        padding: 38.4rem 0 $xxlspace;
+
+    .viewplans {
         @include flex (column, nowrap, flex-end, center, 2rem);
-    }
-}
-// BLOQUE 4
-.section4__producto{
-    justify-content: space-between;
-    padding: $xxlspace $xlspace $xxlspace;
-    .producto4__txt{
-        @include flex (column, nowrap, space-between, stretch, 0);
-        @include max-sizes(45rem, auto);
-        .txt4--up{
-            @include flex (column, nowrap, space-between, stretch, 1.6rem);
-        }
-        .producto4__btn{
-            align-self: flex-end;
-        }
-    }
-    .producto4__img{
-        @include max-sizes(58rem, none);
-    }
-}
-// BLOQUE 5
-.section5__producto{
-    justify-content: space-between;
-    padding: $xxlspace $xlspace $xxlspace;
-    .producto5__txt{
-        @include flex (column, nowrap, space-between, stretch, 0);
-        @include max-sizes(45rem, auto);
-        .txt5--up{
-            @include flex (column, nowrap, space-between, stretch, 3.2rem);
-        }
-        .producto5__btn{
-            align-self: flex-end;
-        }
-    }
-    .producto5__img{
-        @include max-sizes(58rem, none);
-    }
-}
-// BLOQUE 6
-.section6__producto{
-    padding: $xxlspace 0;
-    .producto6__maintitle{
-        padding: 0 0 $xxlspace;
-        text-align: center;
-    }
-    .producto6__article{
-        justify-content: space-between;
-        .producto6__txt{
-            @include flex(column, nowrap, space-between, stretch, 1.6rem);
-            p{
-                font-size: 3.2em;
-                line-height: 3.6rem;
-                @include max-sizes(36rem, 36rem);
-            }
-        }
-        .producto6__txt--responsive{
-            display: none;
-        }
-    .product6__images{
-       @include flex(row, nowrap, space-between, stretch, 1.6rem);
-        }
-    }
-}
-//RESPONSIVE
-// 1400 PX
-@media (max-width: 1400px){
-    //BLOQUE 1
-    .section1__producto{
-        padding: 0 0 $xlspace;
-    }
-    //BLOQUE 2
-    .section2__producto{
-        padding: $xxlspace 0 $xlspace;
-    }
-    //BLOQUE 4
-    .section4__producto{
-        padding: $xxlspace 0 $xlspace;
-    }
-    //BLOQUE 5
-    .section5__producto{
-        padding: $xxlspace 0 $xlspace;
-    }
-    //BLOQUE 6
-    .section6__producto{
-        justify-content: center;
-        padding: $xlspace 0;
-        .producto6__maintitle{
-            padding: 0 0 $xlspace;
-        }
-        .producto6__article{
-            text-align: center;
-            .producto6__txt{
-                display: none;
-            }
-            .producto6__txt--responsive{
-                display: block;
-                padding: 0 0 $xlspace;
-                p{
-                    font-size: 3.2em;
-                    line-height: 3.6rem;
+
+        padding: 38.4rem 0 $xxlspace;
+
+        .viewplans_button {
+            .viewplans_button-link {
+                font-size: 1.6rem;
+                color: $white;
+                background: $greyblue;
+                transition: all .3s ease-in;
+
+                &:hover {
+                    background: $darkblue;
                 }
             }
-        .product6__images{
-            margin: 0 auto;
-            }
         }
     }
 }
+
+// JULIUS
+.julius {
+    justify-content: space-between;
+    padding: $xxlspace $xlspace $xxlspace;
+
+    .julius_text {
+        @include flex (column, nowrap, space-between, stretch, 0);
+        @include max-sizes(45rem, auto);
+
+        .julius_text-up {
+            @include flex (column, nowrap, space-between, stretch, 1.6rem);
+
+            .text_title {}
+
+            .text_description {
+                font-size: 1.6rem;
+            }
+        }
+
+        .julius_text-button {
+            align-self: flex-end;
+
+            .button_link {
+                font-size: 1.6rem;
+                color: $white;
+                background: $greyblue;
+                transition: all .3s ease-in;
+
+                &:hover {
+                    background: $darkblue;
+                }
+            }
+        }
+    }
+
+    .julius_figure {
+        @include max-sizes(58rem, none);
+    }
+}
+
+// PICSHOP
+.picshop {
+    justify-content: space-between;
+    padding: $xxlspace $xlspace $xxlspace;
+
+    .picshop_text {
+        @include flex (column, nowrap, space-between, stretch, 0);
+        @include max-sizes(45rem, auto);
+
+        .picshop_text {
+            @include flex (column, nowrap, space-between, stretch, 3.2rem);
+
+            .text_title {}
+
+            .text_description {
+                font-size: 1.6rem;
+            }
+        }
+
+        .picshop_text-button {
+            align-self: flex-end;
+
+            .button_link {
+                font-size: 1.6rem;
+                color: $white;
+                background: $greyblue;
+                transition: all .3s ease-in;
+
+                &:hover {
+                    background: $darkblue;
+                }
+            }
+        }
+    }
+
+    .picshop_figure {
+        @include max-sizes(58rem, none);
+    }
+}
+
+
+//RESPONSIVE
+// 1400 PX
+@media (max-width: 1400px) {
+
+    // APOLLO
+    .apollo {
+        padding: 0 0 $xlspace;
+    }
+
+    // PLSTUDIO
+    .plstudio {
+        padding: $xxlspace 0 $xlspace;
+    }
+
+    // JULIUS
+    .julius {
+        padding: $xxlspace 0 $xlspace;
+    }
+
+    // PICSHOP
+    .picshop {
+        padding: $xxlspace 0 $xlspace;
+    }
+}
+
 // 1200 PX
-@media (max-width: 1200px){
-    //BLOQUE 1
-    .section1__producto{
+@media (max-width: 1200px) {
+
+    // APOLLO
+    .apollo {
         justify-content: center;
-        .producto1__txt{
+
+        .apollo_text {
             @include max-sizes(none, none);
             text-align: center;
             padding: $lspace 0 0;
             gap: 3.2rem;
-            .producto1__btn{
+
+            .apollo_text-button {
                 align-self: center;
             }
         }
-        .producto1__img{
+
+        .apollo_figure {
             order: -1;
-        }   
+        }
     }
-    //BLOQUE 2
-    .section2__producto{
+
+    // PLSTUDIO
+    .plstudio {
         justify-content: center;
-        .producto2__txt{
+
+        .plstudio_text {
             @include max-sizes(none, none);
             text-align: center;
             padding: $lspace 0 0;
             gap: 3.2rem;
-            .producto2__btn{
+
+            .plstudio_text-button {
                 align-self: center;
             }
         }
-        .producto2__img{
+
+        .plstudio_figure {
             order: -1;
-        }   
+        }
     }
-    //BLOQUE 4
-    .section4__producto{
+
+    // JULIUS
+    .julius {
         justify-content: center;
-        .producto4__txt{
+
+        .julius_text {
             @include max-sizes(none, none);
             text-align: center;
             padding: $lspace 0 0;
             gap: 3.2rem;
-            .producto4__btn{
+
+            .julius_text-button {
                 align-self: center;
             }
         }
-        .producto4__img{
+
+        .julius_figure {
             order: -1;
-        }   
+        }
     }
-    //BLOQUE 5
-    .section5__producto{
+
+    // PICSHOP
+    .picshop {
         justify-content: center;
-        .producto5__txt{
+
+        .picshop_text {
             @include max-sizes(none, none);
             text-align: center;
             padding: $lspace 0 0;
             gap: 3.2rem;
-            .producto5__btn{
+
+            .picshop_text-button {
                 align-self: center;
             }
         }
-        .producto5__img{
+
+        .picshop_figure {
             order: -1;
-        }   
+        }
     }
 }
-
-
-
