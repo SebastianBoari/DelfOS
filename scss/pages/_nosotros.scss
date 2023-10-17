@@ -226,45 +226,54 @@
 }
 
 
-// BLOQUE 3 
-.section3__nosotros {
-    padding-top: $xlspace;
-    padding-bottom: $xlspace;
+// WORKERS
+.workers-container {
+    padding: $xlspace 0;
 
-    .nosotros3__article {
-        @include flex(row, wrap, space-between, stretch, 0);
+    .workers {
+        @include flex(column, wrap, space-between, center, $lspace);
 
-        h2 {
-            @include max-sizes(41rem, auto);
-            line-height: 10rem;
+        &_title {
+            padding: $xlspace 0;
+            text-align: center;
+            font-size: 3.2rem;
+            font-weight: 600;
+            width: 80%;
         }
 
         iframe {
-            width: 84.8rem;
-            height: 48rem;
+            width: 80%;
+            height: 54rem;
         }
     }
 }
 
-// BLOQUE 4 
-.section4__nosotros {
-    padding-top: $xlspace;
-    padding-bottom: $xlspace;
+// MISSION
+.mission-container {
+    padding: $xxlspace 0;
 
-    .nosotros4__article {
+    .mission {
         justify-content: space-between;
 
-        figure {
+        &_text {
+
+            &-title {
+                @include max-sizes(45rem, auto);
+                line-height: 6.8rem;
+            }
+
+            &-description {
+                @include max-sizes(45rem, auto);
+            }
+        }
+
+        &_figure {
             order: -1;
-        }
 
-        h2 {
-            @include max-sizes(45rem, auto);
-            line-height: 10rem;
-        }
-
-        p {
-            @include max-sizes(45rem, auto);
+            &-image {
+                max-width: 68rem;
+                border-radius: .6rem;
+            }
         }
     }
 }
@@ -286,35 +295,35 @@
         }
     }
 
-    //BLOQUE 3
-    .section3__nosotros {
-        .nosotros3__article {
+    // WORKERS
+    .workers-container {
+        .workers {
             @include flex(row, wrap, center, stretch, 1.6rem);
 
-            h2 {
+            &_title {
                 @include max-sizes(120rem, auto);
                 text-align: center;
             }
         }
     }
 
-    //BLOQUE4
-    .section4__nosotros {
-        .nosotros4__article {
-            @include flex(row, wrap, center, stretch, 1.6rem);
+    // MISSION
+    .mission_container {
+        .mission {
+            &_text {
+                &-title {
+                    @include max-sizes(120rem, auto);
+                    text-align: center
+                }
 
-            figure {
+                &-description {
+                    @include max-sizes(120rem, auto);
+                    text-align: center;
+                }
+            }
+
+            &_figure {
                 order: 0;
-            }
-
-            h2 {
-                @include max-sizes(120rem, auto);
-                text-align: center
-            }
-
-            p {
-                @include max-sizes(120rem, auto);
-                text-align: center;
             }
         }
     }
@@ -514,8 +523,8 @@
         }
     }
 
-    //BLOQUE 3
-    .nosotros3__article {
+    /// WORKERS
+    .workers {
         iframe {
             width: auto;
             height: auto;

@@ -1137,46 +1137,50 @@ body {
   border-radius: 0.6rem 0 0 0.6rem;
 }
 
-.section3__nosotros {
-  padding-top: 6.4rem;
-  padding-bottom: 6.4rem;
+.workers-container {
+  padding: 6.4rem 0;
 }
-.section3__nosotros .nosotros3__article {
+.workers-container .workers {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: stretch;
-  gap: 0;
+  align-items: center;
+  gap: 3.2rem;
 }
-.section3__nosotros .nosotros3__article h2 {
-  max-width: 41rem;
-  max-height: auto;
-  line-height: 10rem;
+.workers-container .workers_title {
+  padding: 6.4rem 0;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 600;
+  width: 80%;
 }
-.section3__nosotros .nosotros3__article iframe {
-  width: 84.8rem;
-  height: 48rem;
+.workers-container .workers iframe {
+  width: 80%;
+  height: 54rem;
 }
 
-.section4__nosotros {
-  padding-top: 6.4rem;
-  padding-bottom: 6.4rem;
+.mission-container {
+  padding: 12.8rem 0;
 }
-.section4__nosotros .nosotros4__article {
+.mission-container .mission {
   justify-content: space-between;
 }
-.section4__nosotros .nosotros4__article figure {
+.mission-container .mission_text-title {
+  max-width: 45rem;
+  max-height: auto;
+  line-height: 6.8rem;
+}
+.mission-container .mission_text-description {
+  max-width: 45rem;
+  max-height: auto;
+}
+.mission-container .mission_figure {
   order: -1;
 }
-.section4__nosotros .nosotros4__article h2 {
-  max-width: 45rem;
-  max-height: auto;
-  line-height: 10rem;
-}
-.section4__nosotros .nosotros4__article p {
-  max-width: 45rem;
-  max-height: auto;
+.mission-container .mission_figure-image {
+  max-width: 68rem;
+  border-radius: 0.6rem;
 }
 
 @media (max-width: 1400px) {
@@ -1186,7 +1190,7 @@ body {
   .philosophy-container .philosophy_figure-image {
     display: none;
   }
-  .section3__nosotros .nosotros3__article {
+  .workers-container .workers {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1194,31 +1198,23 @@ body {
     align-items: stretch;
     gap: 1.6rem;
   }
-  .section3__nosotros .nosotros3__article h2 {
+  .workers-container .workers_title {
     max-width: 120rem;
     max-height: auto;
     text-align: center;
   }
-  .section4__nosotros .nosotros4__article {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    gap: 1.6rem;
+  .mission_container .mission_text-title {
+    max-width: 120rem;
+    max-height: auto;
+    text-align: center;
   }
-  .section4__nosotros .nosotros4__article figure {
+  .mission_container .mission_text-description {
+    max-width: 120rem;
+    max-height: auto;
+    text-align: center;
+  }
+  .mission_container .mission_figure {
     order: 0;
-  }
-  .section4__nosotros .nosotros4__article h2 {
-    max-width: 120rem;
-    max-height: auto;
-    text-align: center;
-  }
-  .section4__nosotros .nosotros4__article p {
-    max-width: 120rem;
-    max-height: auto;
-    text-align: center;
   }
 }
 @media (max-width: 1200px) {
@@ -1395,7 +1391,7 @@ body {
   .background__img5 .philosophy_text-brand .brand_figure .adobe {
     max-height: 5.6rem;
   }
-  .nosotros3__article iframe {
+  .workers iframe {
     width: auto;
     height: auto;
   }
