@@ -2,6 +2,7 @@
 .apollo {
     justify-content: space-between;
     padding: $xxlspace $xlspace $xxlspace;
+    padding-top: $xlspace;
 
     &_text {
         @include flex (column, nowrap, flex-start, stretch, 12.8rem);

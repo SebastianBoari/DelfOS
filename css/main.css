@@ -1400,6 +1400,7 @@ body {
 .apollo {
   justify-content: space-between;
   padding: 12.8rem 6.4rem 12.8rem;
+  padding-top: 6.4rem;
 }
 .apollo_text {
   display: flex;
