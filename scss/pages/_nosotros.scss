@@ -1,4 +1,4 @@
-//DESKTOP STYLES
+// PHILOSOPHY
 .philosophy-container {
     .philosophy {
         position: relative;
@@ -56,6 +56,7 @@
 
         &_figure {
             &-image {
+                border-radius: .6rem;
                 object-fit: cover;
                 height: 110%;
                 position: absolute;
@@ -272,6 +273,28 @@
 
 // 992PX
 @media (max-width: 992px) {
+
+    // PHILOSOPHY
+    .background__img5 {
+        .philosophy {
+            padding: $lspace;
+
+            &_text {
+                &-brand {
+                    .brand_figure {
+                        &-svg {
+                            max-width: 7.4rem;
+                        }
+
+                        .adobe {
+                            max-height: 5.6rem
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 
     //BLOQUE 2
     .section2__nosotros {
