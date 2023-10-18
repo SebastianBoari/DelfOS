@@ -1,4 +1,4 @@
-# DelfOS
+# DelfOS v2.0.0
 
 DelfOS marca el inicio de mi aventura en el mundo del desarrollo web. Este sitio se gestó durante un curso de desarrollo web que cursé en CoderHouse durante los meses de octubre y noviembre de 2022.
 
